@@ -1,1 +1,29 @@
-toc file.
+format: jb-book
+root: index
+defaults:
+  numbered: false
+parts:
+- caption: Introduction
+  chapters:
+  - file: 01/introduction
+- caption: Study inception, planning, and ethics
+  chapters:
+  - file: 02/ipe
+- caption: xxx
+  chapters:
+  - file: 03/acq
+- caption: yyy
+  chapters:
+  - file: 04/data
+- caption: zzz
+  chapters:
+  - file: 05/proc
+- caption: ttt
+  chapters:
+  - file: 06/dist
+- caption: ppp
+  chapters:
+  - file: 07/conclusion
+- caption: eee
+  chapters:
+  - file: 08/contribution

@@ -1,3 +1,6 @@
+uuuu
+=========================================================
+
 Empirical observations of how labs conduct research indicate that the adoption rate of open practices for transparent, reproducible, 
 and collaborative science remains in its infancy. This is at odds with the overwhelming evidence for the necessity of these practices 
 and their benefits for individual researchers, scientific progress, and society in general. To date, information required for 
