@@ -3,27 +3,27 @@ root: index
 defaults:
   numbered: false
 parts:
-- caption: Introduction
+- caption: Overview
   chapters:
   - file: 01/introduction
-- caption: Study inception, planning, and ethics
+- caption: Design
   chapters:
   - file: 02/ipe
-- caption: xxx
+- caption: Acquisition
   chapters:
   - file: 03/acq
-- caption: yyy
+- caption: Data
   chapters:
   - file: 04/data
-- caption: zzz
+- caption: Processing
   chapters:
   - file: 05/proc
-- caption: ttt
+- caption: Sharing
   chapters:
   - file: 06/dist
-- caption: ppp
+- caption: Conclusion
   chapters:
   - file: 07/conclusion
-- caption: eee
+- caption: Contributions
   chapters:
   - file: 08/contribution

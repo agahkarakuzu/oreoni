@@ -1,4 +1,4 @@
-uuuu
+Abstract
 =========================================================
 
 Empirical observations of how labs conduct research indicate that the adoption rate of open practices for transparent, reproducible, 
@@ -11,12 +11,14 @@ provide an integrated overview of community-developed resources that can support
 inception to publication and across different neuroimaging modalities. We review tools and practices supporting study inception and planning, data acquisition,
 research data management, data processing and analysis, and research dissemination. We believe it will prove helpful for researchers and institutions to make a 
 successful and sustainable move towards open and reproducible science and to eventually take an active role in its future development.
-
-Keywords: Open Science, Reproducibility, MRI, PET, MEG, EEG
  
-Highlights:
+```{admonition} Highlights
+:class: seealso
 * There is a rising interest in openness and reproducibility in neuroimaging
 * Despite its clear benefits, adoption is slow and information is scattered 
 * We provide an integrated review of open resources covering the full research lifecycle
 * Consortium of 20+ experts across neuroimaging modalities (MRI, PET, MEG, EEG) 
 * List of ca. 250 resources supporting openness and reproducibility in neuroimaging
+```
+
+**Keywords:** Open Science, Reproducibility, MRI, PET, MEG, EEG
