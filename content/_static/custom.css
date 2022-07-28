@@ -10,6 +10,17 @@
     content: '\f14e';
 }
 
+.admonition-highlights {
+    border-left-color: goldenrod;
+}
+.admonition-highlights .admonition-title {
+    background-color: rgba(255, 217, 0, 0.746);
+    color: black;
+}
+.admonition-highlights .admonition-title:before {
+    color: orange;
+    content: '\f0a3';
+}
 
 .admonition-what-do-we-provide {
     border-left-color: rgba(38, 128, 0,1);

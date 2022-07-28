@@ -26,4 +26,7 @@ parts:
   - file: 07/conclusion
 - caption: Contributions
   chapters:
-  - file: 08/contribution
+  - file: 08/contributions
+- caption: Resources
+  chapters:
+  - file: 09/table

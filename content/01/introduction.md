@@ -34,7 +34,7 @@ In order to increase the likelihood of tools being sustainable, they should be r
 We also encourage the readers to join the development teams and leadership of those tools, becoming an active part of the open neuroimaging community. Contributions from individuals who are experiencing barriers to the uptake of specific practices are particularly encouraged, since they can help mitigate these barriers for the benefit of everyone.
  
 ```{admonition} Resources table
-To further guide the readers, the manuscript is accompanied by a detailed table containing links and pointers to the resources featured in the text of each section (see Table S1).
+To further guide the readers, the manuscript is accompanied by a detailed table containing links and pointers to the resources featured in the text of each section (see the [resources table](../09/table.md)).
 ```
 
 :::{dropdown} References on this page
