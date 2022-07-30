@@ -1,1 +1,7 @@
 .DS_Store
+
+_build
+
+# python virtual environment
+venv
+env
