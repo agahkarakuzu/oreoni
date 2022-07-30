@@ -14,9 +14,6 @@ exclude_patterns            : ["**/_build", Thumbs.db, .DS_Store, "**.ipynb_chec
 # Auto-exclude files not in the toc
 only_build_toc_files        : false
 
-bibtex_bibfiles:
-    - references.bib
-
 #######################################################################################
 # Execution settings
 execute:
@@ -64,7 +61,7 @@ html:
   comments:
     hypothesis              : false
     utterances              : false
-  
+
 
 #######################################################################################
 # LaTeX-specific settings
