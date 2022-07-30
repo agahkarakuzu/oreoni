@@ -1,0 +1,109 @@
+# See the json schema to help you create / update this form
+# yaml-language-server: $schema=https://json.schemastore.org/github-issue-forms.json
+
+name: Adding a resource
+
+description: Suggest a resource for this book
+
+title: "[ENH] "
+
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this form.
+
+  - type: textarea
+    id: name
+    attributes:
+      label: Resource name
+      description: Name of the resource you want to add.
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: link
+    attributes:
+      label: Link
+      description: Link to the resource you want to add (repository, website...).
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: description  
+    attributes:
+      label: Description
+      description: Description of the resource you want to add (repository, website...).
+      render: markdown
+    validations:
+      required: true
+
+  - type: dropdown
+    id: section
+    attributes:
+      label: Section
+      description: What section is this resource for?
+      options:
+        - "2.1. Study Preparation and Piloting"
+        - "2.2. Pre-registration "
+        - "2.3. Ethical review and data sharing plan "
+        - "2.4. Looking at the data early and ofter: Monitoring quality"
+        - "3.1. Brain data acquisition and reconstruction"
+        - "3.2. Stimulus presentation and behaviour"
+        - "4.1. Data standard: BIDS"
+        - "4.2. Metadata and data annotation"
+        - "4.3. Data management and tracking"
+        - "5.1. Software as a research instrument"
+        - "5.2. Standardized preprocessing and workflows"
+        - "5.3. Statistical modeling and advanced analysis"
+        - "5.4. Multiverse analysis"
+        - "6.1. Data sharing"
+        - "6.2. Methodological transparency"
+        - "6.3. Derived data sharing"
+        - "6.4. Publication of scientific results"
+        - "6.5. Beyond publication"
+        - "6.6. Towards inclusive, diverse and community driven research"
+        - "Other resources"
+    validations:
+      required: true  
+
+  - type: checkboxes
+    id: resource_type
+    attributes:
+      label: Resource type
+      description: What type of data is this resource for?
+      options:
+        - label: General
+        - label: EEG
+        - label: fMRI
+        - label: fNIRS
+        - label: iEEG
+        - label: MEG
+        - label: MRI
+        - label: PET
+    validations:
+      required: true   
+
+  - type: textarea
+    id: DOI
+    attributes:
+      label: DOI
+      description: What is the DOI of the resource?
+    validations:
+      required: true             
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+
+
+
+
