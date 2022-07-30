@@ -33,6 +33,7 @@ all: install view
 
 install: ## install the required packages
 	pip install -r requirements.txt
+	pre-commit install
 
 book: clean ## build the book
 	jupyter-book build content
@@ -42,3 +43,6 @@ view: book ## view the book in browser
 
 test: ## build the book and tests the links
 	jupyter-book build content -W --builder linkcheck
+
+lint:
+	pre-commit run -a
