@@ -17,7 +17,7 @@ Study inception and planning [^footnote1].
 ```
 
 :::{dropdown} {fa}`cogs` 2.1 Study preparation and piloting
-:title: bg-ch2 font-weight-bold
+:class-title: bg-ch2 font-weight-bold
 :animate: fade-in
 (s21)=
 Research projects usually begin with descriptions of general, theoretical questions in documents such as grants or thesis proposals. Such foundations are essential but necessarily broad. When the project moves from proposal to implementation, these descriptions are translated into concrete protocols and stimuli, a process that can be streamlined by the incorporation of open procedures and comprehensive piloting. The promise is that the more preparation and piloting is conducted prior to data collection, the more likely it is that the project will be successful: that analyses of its data can contribute to answering its motivating ideas and questions {cite:p}`Strand:2021tm`.
@@ -33,7 +33,7 @@ Analyses of the pilot data are very important and can take several forms. One is
 
 
 :::{dropdown} {fa}`plus-square` 2.2 Preregistration
-:title: bg-ch2 font-weight-bold
+:class-title: bg-ch2 font-weight-bold
 :animate: fade-in
 (s22)=
 Pre-registration is the specification of the research plan in advance, prior to data collection or at least prior to data analysis {cite:p}`Nosek2018-ft`. Pre-registration usually includes the study design, the hypotheses and the analysis plan. It is submitted to a registry, resulting in a frozen time-stamped version of the research plan. Its main aim is to distinguish between hypothesis-testing (confirmatory) research and hypothesis-generating (exploratory) research. While both are necessary for scientific progress, they require different tests and the conclusions that can be inferred based on them are different {cite:p}`Nosek2018-yr`.
@@ -50,7 +50,7 @@ Once the pre-registration is submitted, it can remain private or become public i
 :::
 
 :::{dropdown} {fa}`share-alt` 2.3 Ethical review and data sharing plan
-:title: bg-ch2 font-weight-bold
+:class-title: bg-ch2 font-weight-bold
 :animate: fade-in
 (s23)=
 The optimism of the scientific community about improving science by making all research assets open and transparent has to take into account privacy, ethics and the associated legal and regulatory needs for each institution and country. Whereas on the one hand sharing data (most often collected with public funds) is critical to advance science, on the other hand, sharing data can in some situations become infeasible to safeguard privacy. Data governance concerns the regulatory and ethical aspects of data management and sharing of data files, metadata and data-processing software (see sections {ref}`6.1 <s61>`, {ref}`6.2 <s62>` and {ref}`6.3 <s63>`). When data sharing crosses national borders, data governance is called International Data Governance (IDG). IDG depends on ethical, cultural and international laws.
@@ -63,7 +63,7 @@ Since 2014 the Open Brain Consent project (see the [resources table](../09/table
 :::
 
 :::{dropdown} {fa}`eye` 2.4 Looking at the data early and often: monitoring quality
-:title: bg-ch2 font-weight-bold
+:class-title: bg-ch2 font-weight-bold
 :animate: fade-in
 (s24)=
 Inevitably, unexpected events and errors will occur during every experiment and in every part of the research workflow. These can take many forms, including dozing participants, hardware malfunction, data transfer errors, and mislabeled results files. As data progresses through the workflow, issues are likely to cascade and amplify, perhaps masking or mediating experimental effects, thereby damaging the reliability of the results. The impact of such surprises can range from the trivial and easily corrected to the catastrophic, rendering the collected data unusable or conclusions drawn from it invalid. Identifying issues and errors as early as possible is important to enable adding corrective measures to the protocol, but also because some issues are much easier to detect when the data are in a less-processed form. For example, a number of typical artifacts in anatomical MRI are known to be easier to identify in the background of the image and regions of no-interest {cite:p}`Mortamet2009-lk`, and can easily remain undetected if the first quality control check is set up after, e.g., brain extraction, which masks out non brain tissue. Thus, it is fundamental to pre-establish within the SOPs (section 2.1) the mechanisms set in place to ensure the quality of the study. There are several mechanisms available that help to ensure that all required data are being recorded with sufficient quality and in a way that makes them analyzable.

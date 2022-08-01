@@ -17,7 +17,7 @@ Data processing and analysis [^footnote4].
 ```
 
 :::{dropdown} {fa}`microscope` 5.1 Software as a research instrument
-:title: bg-ch5 font-weight-bold
+:class-title: bg-ch5 font-weight-bold
 :animate: fade-in
 (s51)=
 The digital nature of neuroimaging data along with the large, and constantly increasing, net amounts of daily acquired data, place software as a central instrument of the neuroimaging research workflow. As a result, many toolboxes containing utilities ranging from early steps of preprocessing to statistical analysis and visualization of results have emerged, and some have largely shaped the software development in the field, e.g., AFNI {cite:p}`Cox1996-ui,Cox1997-nh`, FSL {cite:p}`Jenkinson2012-az`, SPM {cite:p}`Flandin2008-hr,Litvak2011-ik,Penny2011-nd`, FreeSurfer {cite:p}`Dale1993-cp,Dale1999-ku`, Brainstorm {cite:p}`Tadel2011-ju,Tadel2019-te`, EEGLAB {cite:p}`Delorme2004-ah,Delorme2021-ue`, MNE-Python {cite:p}`Gramfort2013-ok,Gramfort2014-kz`, FieldTrip {cite:p}`Oostenveld2011-qo` (see the [resources table](../09/table.md)). More recently, some software packages have been developed to cover additional aspects of the neuroimaging workflow. For instance, nibabel {cite:p}`Brett2020-hz` to read and write images in many formats, the Advanced Normalization Tools (ANTs) for image registration and segmentation, or Nilearn {cite:p}`Abraham2014-cr` for statistical analysis and visualization. Workflow engines conveniently connect between the building blocks and determine how the steps are executed in the computational environment. Solutions range from general-purpose scripting (e.g., Bash or Python) to neuroimaging-specific libraries (e.g., NiPype; {cite:p}`Gorgolewski2011-nf`). Researchers have all these tools (and others) at their disposal to “mix-and-match” in their workflow. Therefore, ensuring the proper development and operation of the software engine is critical to ensure the reproducibility of results {cite:p}`Tustison2013-rb`).
@@ -33,7 +33,7 @@ The first and foremost strategy available to maximize the transparency of resear
 
 
 :::{dropdown} {fa}`microchip` 5.2 Standardizing preprocessing and workflows
-:title: bg-ch5 font-weight-bold
+:class-title: bg-ch5 font-weight-bold
 :animate: fade-in
 (s52)=
 Although the diversity in methodological alternatives has been key to extracting scientific insights from neuroimaging data, appropriately combining heterogeneous tools into complete workflows requires substantial expertise. Traditionally, researchers used default workflows distributed along with individual software packages, or alternatively, individual laboratories have developed in-house analysis workflows that resulted in highly specialized pipelines. Such pipelines are often not thoroughly validated and difficult to reuse due to lack of documentation or accessibility to outside labs. In response, several community-led efforts have spearheaded the development of robust, standardized workflows.
@@ -48,7 +48,7 @@ In most cases, standardized workflows preprocess datasets in a fully automated m
 :::
 
 :::{dropdown} {fa}`calculator` 5.3 Statistical modeling and advanced analysis
-:title: bg-ch5 font-weight-bold
+:class-title: bg-ch5 font-weight-bold
 :animate: fade-in
 (s53)=
 Analysis of neuroimaging data is particularly heterogeneous and prone to excessive analytical flexibility and underspecified reporting {cite:p}`Carp2012-kj,Carp2012-zu`. Whereas preprocessing is ideally performed once per dataset, there is often a large number of types of analyses that may be used with the preprocessed data. In MRI and fNIRS, for example, analyses range from multi-stage general linear models (GLMs), multivariable decoding analyses, to anatomical and functional connectivity, and more. In PET, analyses consist of region-wise averaging, although voxel-wise approaches are gaining popularity, followed by kinetic modeling and subsequent statistical analyses, which can be GLM or more advanced, such as latent variable models. In MEG and EEG, the broad variety includes analyses such as evoked response potentials, power spectral density, source reconstructions, time-frequency, connectivity, advanced statistics and more. Each type of analysis also has a wide variety of subtypes, parameters, and statistical models that can be specified, and the form of that specification varies across the dozens of analysis packages that implement each type of analysis.
@@ -60,7 +60,7 @@ An additional challenge for the reproducibility of analysis workflows is the rep
 
 
 :::{dropdown} {fa}`globe` 5.4 Multiverse analysis
-:title: bg-ch5 font-weight-bold
+:class-title: bg-ch5 font-weight-bold
 :animate: fade-in
 (s54)=
 The variety of data workflows reflects the enormous interest and the need for novel software instruments, but it also poses an important risk to reproducibility. The multitude of possible combinations of methods and parameters in each of the analysis steps creates an extremely large number of combinations to select from. This problem is often referred to as “researcher degrees of freedom” or “the garden of forking paths” {cite:p}`Gelman2013-dw`. Importantly, analytical choices affect results. This has been shown for preprocessing of fMRI data already back in 2004 {cite:p}`Strother2004-nk`. More work in this direction followed in 2012 {cite:p}`Churchill2012-pi,Churchill2012-sr`. While this work focused mainly on the aspect of tailoring preprocessing to e.g. maximize predictive models, recent efforts in fMRI (task fMRI: {cite:p}`Botvinik-Nezer2020-hx,Carp2012-zu`; preprocessing of resting-state fMRI: {cite:p}`Li2021-pk`) and PET (specifically for preprocessing: {cite:p}`Norgaard2020-ak`) focused more on the variability of outcomes in general when analysis pipelines were varied. In addition, recent studies showed high variability in diffusion-based tractography dissection {cite:p}`Schilling2021-hd` and event-related potentials in EEG preprocessing {cite:p}`Clayson2021-nt,Soskic2021-wv`. Another large-scale attempt to estimate the analytical variability for EEG,  EEGManyPipelines (see the [resources table](../09/table.md)), is currently ongoing.

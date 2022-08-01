@@ -23,10 +23,10 @@ Disemmination [^footnote5].
 
 
 :::{dropdown} {fa}`share-alt` 6.1 Data sharing
-:title: bg-ch6 font-weight-bold
+:class-title: bg-ch6 font-weight-bold
 :animate: fade-in
 (s61)=
-Making data available to the community is important for reproducibility, allows more scientific knowledge to be obtained from the same number of participants (animal or human), and also enables scientists to learn and teach others to reuse data, develop new analysis techniques, advance scientific hypotheses, and combine data in mega- or meta-analyses {cite:p}`Laird2021-nb,Madan2021-bo,Poldrack2014-lr`. Moreover, the willingness to share has been shown to be positively related to the quality of the study {cite:p}`Aczel2021-hu,Wicherts2011-gd`. Because of the many advantages data sharing brings to the scientific community {cite:p}`Milham2018-pr`, more and more journals and funding agencies are requiring scientists to make their data public (curated and archived with a public record, but controlled access) or open (public data with uncontrolled access) upon the completion of the study, as long as it does not compromise participants’ privacy, legal regulations, or the ethical agreement between the researcher and participants (see {ref}`Section 2.3 <s23>` and [Section 7](../07/conclusions.md)).
+Making data available to the community is important for reproducibility, allows more scientific knowledge to be obtained from the same number of participants (animal or human), and also enables scientists to learn and teach others to reuse data, develop new analysis techniques, advance scientific hypotheses, and combine data in mega- or meta-analyses {cite:p}`Laird2021-nb,Madan2021-bo,Poldrack2014-lr`. Moreover, the willingness to share has been shown to be positively related to the quality of the study {cite:p}`Aczel2021-hu,Wicherts2011-gd`. Because of the many advantages data sharing brings to the scientific community {cite:p}`Milham2018-pr`, more and more journals and funding agencies are requiring scientists to make their data public (curated and archived with a public record, but controlled access) or open (public data with uncontrolled access) upon the completion of the study, as long as it does not compromise participants’ privacy, legal regulations, or the ethical agreement between the researcher and participants (see {ref}`Section 2.3 <s23>` and [Section 7](../07/conclusion.md)).
 
 For data to be interoperable and reusable, it should be organized following an accepted standard, such as BIDS ({ref}`Section 4.1 <s41>`) and with at least a minimal set of metadata. Free data-sharing platforms are available for publicly sharing neuroimaging data, such as OpenNeuro {cite:p}`Markiewicz2021-mi`, brainlife {cite:p}`Avesani2019-vi`, GIN (G-Node Infrastructure), Distributed Archives for Neurophysiology Data Integration (DANDI), International Neuroimaging Data-Sharing Initiative (INDI), NeuroImaging Tools & Resources Collaborator (NITRC), etc. (see the [resources table](../09/table.md)). Data could also be shared on institutional and funder archives such as the National Institute of Mental Health Data Archive (NDA); on dedicated repositories, such as the the Cambridge Centre for Ageing and Neuroscience, Cam-CAN {cite:p}`Shafto2014-pe,Taylor2017-nq` or The Open MEG Archive, OMEGA {cite:p}`Niso2016-gh`; or on generic archives that are not neuroscience or neuroimaging specific, such as figshare, GitHub, the Open Science Framework, and Zenodo. If allowed by the law and participants’ consent (see {ref}`Section 2.3 <s23>`), data sharing can be made open, or at least public.
 
@@ -37,7 +37,7 @@ It is important to note that there are unresolved issues with international data
 
 
 :::{dropdown} {fa}`eye` 6.2 Methodological transparency
-:title: bg-ch6 font-weight-bold
+:class-title: bg-ch6 font-weight-bold
 :animate: fade-in
 (s62)=
 Documenting performed analysis steps is key for reproducing studies’ results. For studies containing a small number of procedures, the methods section of an article could detail them in full length. This is, however, often not the case in current neuroimaging studies, where authors may need to summarize content in order to fit into the designated space, probably omitting relevant details. Therefore, the programming code itself becomes the most accurate source of the exact analysis steps performed on the data, and is anyway needed for reproducibility. Thus, it needs to be organized and clear (see recommendations suggested by {cite:p}`Sandve2013-kn,Van_Vliet2020-xd,Wilson2017-td`, otherwise, results may not be reproducible, or even correct {cite:p}`Casadevall2014-wf,Pavlov2021-tg`. It should be noted that sharing an imperfect code is still much better than not sharing at all {cite:p}`Barnes2010-rl,Gorgolewski2016-iy`.
@@ -48,7 +48,7 @@ To ensure long-term preservation of the shared code, we suggest using version co
 :::
 
 :::{dropdown} {fa}`filter` 6.3 Derived data sharing
-:title: bg-ch6 font-weight-bold
+:class-title: bg-ch6 font-weight-bold
 :animate: fade-in
 (s63)=
 Sharing data derivatives is perhaps the most critical yet most challenging aspect of data sharing in support of reproducible science. The BIDS standard provides a general description of common derivative data (e.g., preprocessed data and statistical maps) and is actively working towards extending advanced specific derivatives for the different neuroimaging modalities. Yet as of today, standards for the description of advanced derivatives (such as activation or connectivity maps, or diffusion measures) are not available or mature for wide use. As a result, to date, the community lacks clear guidance and tools on how derived data should be organized to maximize its reuse and to encompass its provenance, and where such data could be shared.
@@ -64,7 +64,7 @@ Sharing lighter-weight data products such as tables and figures is easier using 
 
 
 :::{dropdown} {fa}`copy` 6.4 Publication of scientific results
-:title: bg-ch6 font-weight-bold
+:class-title: bg-ch6 font-weight-bold
 :animate: fade-in
 (s64)=
 Scientific papers are currently the most important means for disseminating research results. However, they should also be written with reproducibility in mind. Guidelines to improve reproducibility can support the writing. The OHBM Committee on Best Practices in Data Analysis and Sharing (COBIDAS), has been promoting best practices, including open science. Recommendations from the committees for MRI {cite:p}{Nichols2017-qb} and MEG and EEG {cite:p}`Pernet2020-zo` provide guidance on what to report. Other recent community efforts also led to guidelines for PET {cite:p}`Knudsen2020-nz` and EEG reporting (e.g., Agreed Reporting Template for EEG Methodology - International Standard (ARTEM-IS) {cite:p}`Styles2021-wj`). One tool that could help authors follow these guidelines while writing their report are their web-based apps (see the [resources table](../09/table.md)). For the data description and preprocessing aspects, some tools (pyBIDS, bids-matlab) or pipelines (fMRIPrep) can also generate reports automatically, and/or method templates are provided (see {ref}`Section 5.2 <s52>`). Exact description of methods is mandatory for reproducibility alongside detailed reporting of results.
@@ -75,7 +75,7 @@ Crucially, papers should be accessible to others, preferably to everyone. Many s
 :::
 
 :::{dropdown} {fa}`book` 6.5 Beyond publication
-:title: bg-ch6 font-weight-bold
+:class-title: bg-ch6 font-weight-bold
 :animate: fade-in
 (s65)=
 The research lifecycle continues beyond paper publication. Disseminating scientific results to the broader scientific community and to the society in general is of utmost importance, to translate the newly acquired knowledge and give back to society. Oral and poster presentations at conferences contribute to the dissemination of results (including preliminary or intermediate results) within the scientific community, and also provide opportunities for feedback prior to publication. Workshops and other educational events contribute to expand the knowledge further and induce new communities. Popular and social media (e.g., press releases, interviews, podcasts, blog posts, twitter, facebook, linkedin, youtube, etc.) may reach an even wider and more heterogeneous audience. Different types of audiences may have different degrees of expertise and scientific knowledge, hence, for an effective communication, each of the outreach events should adapt accordingly (e.g., avoiding jargon and over interpretation, identifying your audience, promoting accessibility in content and language {cite:p}`Amano2021-wl`, and considering disabilities). See the TTW Guide for Communication for recommendations (https://the-turing-way.netlify.app/communication/communication.html). Slides presentations, and further outreach content should be shared FAIRly for higher impact (see {ref}`Section 6.3 <s63>`).
@@ -84,7 +84,7 @@ Hackathons - such as the Brainhacks in the neuroimaging community {cite:p}`Gau20
 :::
 
 :::{dropdown} {fa}`users` 6.6 Towards inclusive, diverse and community driven research
-:title: bg-ch6 font-weight-bold
+:class-title: bg-ch6 font-weight-bold
 :animate: fade-in
 (s66)=
 Taken to the next level, the described developments and introduced tools provide an opportunity for a paradigm shift: rather than carrying out a study from inception to results and only then disseminating the findings to the community, researchers now get multiple opportunities to share their ideas and results as they are being developed. Scientific research can now become more transparent, inclusive and collaborative throughout the research cycle.
@@ -100,6 +100,6 @@ Community efforts should aim for equity, diversity and inclusivity. Unfortunatel
 :::{dropdown} References on this page
 ```{bibliography}
 :filter: docname in docnames
-:labelprefix: E
+:labelprefix: F
 ```
 :::

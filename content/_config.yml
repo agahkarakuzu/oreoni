@@ -86,12 +86,13 @@ repository:
 #######################################################################################
 # Advanced and power-user settings
 sphinx:
-  extra_extensions          :   ['sphinx_panels']# A list of extra extensions to load by Sphinx (added to those already used by JB).
   local_extensions          :   # A list of local extensions to load by sphinx specified by "name: path" items
   recursive_update          : false # A boolean indicating whether to overwrite the Sphinx config (true) or recursively update (false)
   config                    :   # key-value pairs to directly over-ride the Sphinx configuration
     bibtex_reference_style: author_year
     bibtex_default_style: plain
     bibtex_tooltips: true
+    html_static_path: ['_static']
+    html_css_files: ['custom.css']
 bibtex_bibfiles:
   - references.bib

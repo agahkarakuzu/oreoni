@@ -17,7 +17,7 @@ Research data management [^footnote3].
 ```
 
 :::{dropdown} {fa}`folder` 4.1 Data organization and standards
-:title: bg-ch4 font-weight-bold
+:class-title: bg-ch4 font-weight-bold
 :animate: fade-in
 (s41)=
 Neuroimaging experiments result in complicated data that can be arranged in many different ways. Historically, data were organized differently between institutions and within labs. This lack of consensus (or a standard) could lead to misunderstandings and suboptimal usage of various resources: human (e.g., time wasted on rearranging data or rewriting scripts expecting certain structure), infrastructure (e.g., data storage space, duplicates), and financial (e.g., disorganized data has limited longevity and value after first publication, because it is hard or even impossible for other researchers to understand and use it). Finally, and most importantly, it produces poor reproducibility of results, even within the lab where data were collected, because it is more likely to include errors and less likely to be accessible to future lab members (or even to the original researcher who obtained the data, months or years after they worked on it). Therefore, the need for a data standard in the neuroimaging community became essential.
@@ -33,7 +33,7 @@ BIDS is a community-led standard and strives to be open and inclusive. The BIDS 
 
 
 :::{dropdown} {fa}`tags` 4.2 Metadata and data annotation
-:title: bg-ch4 font-weight-bold
+:class-title: bg-ch4 font-weight-bold
 :animate: fade-in
 (s42)=
 Metadata and data annotation induce consistency and facilitate data replication and reuse. It improves the clarity of the dataset, the ability for collaborators to understand the conditions in which the data were collected, and the ability to effectively share and reuse them. Commonly, metadata files are data dictionaries that map key terms from an agreed-upon vocabulary to data values that contain detailed and standardized information about the key terms. For example, a key called “SampleFrequency” might map to a numerical value, or a key “TaskDescription” might map to a free-form text that describes the task used in a specific experiment. The BIDS standard has proposed a consistent metadata structure in its specification along with a set of specification terms and tags.
@@ -47,7 +47,7 @@ Additionally, the Neuroimaging Data Model {cite:p}`Keator2013-az,Maumet2016-zq` 
 
 
 :::{dropdown} {fa}`database` 4.3 Data management and tracking
-:title: bg-ch4 font-weight-bold
+:class-title: bg-ch4 font-weight-bold
 :animate: fade-in
 (s43)=
 Raw data and derivatives (outputs from processed data) form the basis for scientific analyses and insights. Being able to efficiently store, retrieve, and update data, derivatives, and metadata across a variety of available storage options is crucial to enable further research {cite:p}`Borghi2021-fw`. As files change and evolve over the course of a project, there is a need to identify which data have been used in the generation of a result, and, in case the data were subject to change or updates, which exact version of the data has been used. The ability to manage data and metadata and track the data-analysis process provides a basis for rigor and reproducibility.
