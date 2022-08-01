@@ -4,11 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Study inception, planning, and ethics &#8212; Open and reproducible neuroimaging: from study inception to publication</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,21 +20,19 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -40,12 +40,13 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -63,7 +64,21 @@ const thebe_selector_output = ".output, .cell_output"
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint">This work is currently under review.</div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -72,9 +87,10 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -92,14 +108,15 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../index.html">
-   Abstract
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Abstract
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Overview
  </span>
@@ -209,12 +226,17 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
 </div>
 
 
@@ -222,61 +244,105 @@ const thebe_selector_output = ".output, .cell_output"
 
 
           
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
     
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
+    <div class="header-article row sticky-top noprint">
         
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/02/ipe.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/02/ipe.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
     </div>
 </div>
 
-            <!-- Source interaction buttons -->
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-        </div>
-    </div>
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Study inception, planning, and ethics</h1>
@@ -287,11 +353,12 @@ const thebe_selector_output = ".output, .cell_output"
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="study-inception-planning-and-ethics">
-<h1>Study inception, planning, and ethics<a class="headerlink" href="#study-inception-planning-and-ethics" title="Permalink to this headline">¶</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="study-inception-planning-and-ethics">
+<h1>Study inception, planning, and ethics<a class="headerlink" href="#study-inception-planning-and-ethics" title="Permalink to this headline">#</a></h1>
 <div class="admonition-issue admonition">
 <p class="admonition-title">Issue</p>
 <p>Each individual decision from the beginning of the study will contribute to facilitate or hamper reproducibility.</p>
@@ -300,186 +367,188 @@ const thebe_selector_output = ".output, .cell_output"
 <p class="admonition-title">What do we provide</p>
 <p>In the current section, we will describe practices and tools for preparation, piloting, pre-registration, obtaining participants’ consent and ongoing quality control and assessment.</p>
 </div>
-<div class="figure align-default" id="fig1">
+<figure class="align-default" id="fig1">
 <img alt="../_images/fig1.png" src="../_images/fig1.png" />
-<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Study inception and planning <a class="footnote-reference brackets" href="#footnote1" id="id1">1</a>.</span><a class="headerlink" href="#fig1" title="Permalink to this image">¶</a></p>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Study inception and planning <a class="footnote-reference brackets" href="#footnote1" id="id1">1</a>.</span><a class="headerlink" href="#fig1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+<summary class="sd-summary-title sd-card-header bg-ch2 font-weight-bold">
+<span class="fa fa-cogs"></span> 2.1 Study preparation and piloting<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text" id="s21">Research projects usually begin with descriptions of general, theoretical questions in documents such as grants or thesis proposals. Such foundations are essential but necessarily broad. When the project moves from proposal to implementation, these descriptions are translated into concrete protocols and stimuli, a process that can be streamlined by the incorporation of open procedures and comprehensive piloting. The promise is that the more preparation and piloting is conducted prior to data collection, the more likely it is that the project will be successful: that analyses of its data can contribute to answering its motivating ideas and questions <span id="id2">[<a class="reference internal" href="#id37" title="Julia Strand. Error tight: exercises for lab groups to prevent research mistakes. PsyArXiv, 2021.">Strand, 2021</a>]</span>.</p>
+<p class="sd-card-text">Standard Operating Procedures (SOPs) can take different forms, and are powerful tools for planning, conducting, recording, and sharing projects. Ideally, SOPs describe the entire data collection procedure (e.g., recruitment, performing the experiment, data storage, preprocessing, quality control analyses), in sufficient detail for a reader to conduct the experiment themselves with minimal supervision, thereby contributing to reproducibility. SOPs may begin as an outline with vague descriptions, preferably during the pilot stage, and then become more detailed over time. For example, if a session is lost due to a button box signal failure, an image of its correct settings could be added to the SOPs. At the end of the project, its SOPs should be released along with its publications and datasets, to provide a source of answers for the detailed procedural information that may be needed for experiment replication or dataset reuse, but are not included in typical publications.</p>
+<p class="sd-card-text">Many resources can assist with experiment planning and SOP creation. Documents and experiences from similar studies conducted locally are valuable, but should not be the only source of information during planning, since, for example, a procedure may be considered standard in one institution but not in another. Public SOPs can serve as examples, as can protocols published on specialized sites (e.g., Protocol Exchange, <a class="reference external" href="http://protocols.io">protocols.io</a>, Nature Protocols; see Table S1). Best practices guides are now available for many imaging modalities (MRI: <span id="id3">[<a class="reference internal" href="#id235" title="Thomas E Nichols, Samir Das, Simon B Eickhoff, Alan C Evans, Tristan Glatard, Michael Hanke, Nikolaus Kriegeskorte, Michael P Milham, Russell A Poldrack, Jean-Baptiste Poline, Erika Proal, Bertrand Thirion, David C Van Essen, Tonya White, and B T Thomas Yeo. Best practices in data analysis and sharing in neuroimaging using MRI. Nature Neuroscience, 20(3):299–303, February 2017.">Nichols <em>et al.</em>, 2017</a>]</span>; MEG/EEG: <span id="id4">[<a class="reference internal" href="#id166" title="Cyril R Pernet, Marta I Garrido, Alexandre Gramfort, Natasha Maurits, Christoph M Michel, Elizabeth Pang, Riitta Salmelin, Jan Mathijs Schoffelen, Pedro A Valdes-Sosa, and Aina Puce. Issues and recommendations from the OHBM COBIDAS MEEG committee for reproducible EEG and MEG research. Nature Neuroscience, 23(12):1473–1483, December 2020.">Pernet <em>et al.</em>, 2020</a>]</span>; fNIRS: <span id="id5">[<a class="reference internal" href="#id74" title="Meryem A Yücel, Alexander V Lühmann, Felix Scholkmann, Judit Gervain, Ippeita Dan, Hasan Ayaz, David Boas, Robert J Cooper, Joseph Culver, Clare E Elwell, Adam Eggebrecht, Maria A Franceschini, Christophe Grova, Fumitaka Homae, Frédéric Lesage, Hellmuth Obrig, Ilias Tachtsidis, Sungho Tak, Yunjie Tong, Alessandro Torricelli, Heidrun Wabnitz, and Martin Wolf. Best practices for fNIRS publications. Neurophotonics, 8(1):012101, January 2021.">Yücel <em>et al.</em>, 2021</a>]</span>; PET: <span id="id6">[<a class="reference internal" href="../06/dist.html#id126" title="Gitte M Knudsen, Melanie Ganz, Stefan Appelhoff, Ronald Boellaard, Guy Bormans, Richard E Carson, Ciprian Catana, Doris Doudet, Antony D Gee, Douglas N Greve, Roger N Gunn, Christer Halldin, Peter Herscovitch, Henry Huang, Sune H Keller, Adriaan A Lammertsma, Rupert Lanzenberger, Jeih-San Liow, Talakad G Lohith, Mark Lubberink, Chul H Lyoo, J John Mann, Granville J Matheson, Thomas E Nichols, Martin Nørgaard, Todd Ogden, Ramin Parsey, Victor W Pike, Julie Price, Gaia Rizzo, Pedro Rosa-Neto, Martin Schain, Peter Jh Scott, Graham Searle, Mark Slifstein, Tetsuya Suhara, Peter S Talbot, Adam Thomas, Mattia Veronese, Dean F Wong, Maqsood Yaqub, Francesca Zanderigo, Sami Zoghbi, and Robert B Innis. Guidelines for the content and format of PET brain data in publications and archives: a consensus paper. Journal of Cerebral Blood Flow and Metabolism, 40(8):1576–1585, August 2020.">Knudsen <em>et al.</em>, 2020</a>]</span>). Open resources for stimulus presentations and behavioral data acquisition are also recommended to increase reproducibility (see <a class="reference internal" href="../03/acq.html#s32"><span class="std std-ref">Section 3.2</span></a>).</p>
+<p class="sd-card-text">Piloting should be considered an integral part of the planning process. By “piloting” we mean the acquisition and evaluation of data prior to the collection of the actual experimental data; verifying the feasibility of the whole research workflow. While it is not a necessary prerequisite for reproducibility, it is a good scientific practice to produce higher quality research, and facilitates reproducibility via better documentation and SOPs. A piloting stage before starting data collection is important, not only for ensuring that the protocol will go smoothly when the first participant arrives, but also that the SOPs are complete and, critically, that the planned analyses can be carried out with the actual experimental data recorded. For example, pilot tests may be set up to confirm that the task produces the expected behavioral patterns (e.g., faster reaction time in condition A than B), that the log files are complete, and that image acquisition can be synchronized with stimulus presentation. Piloting should also include testing the data storage and retrieval strategies, which may include storing consent documents (see <a class="reference internal" href="#s23"><span class="std std-ref">Section 2.3</span></a>), questionnaire responses, imaging data, and quality control reports. SOPs also prescribe how data will be organized, preferably according to a schema (e.g., the Brain Imaging Data Structure, see <a class="reference internal" href="../04/data.html#s41"><span class="std std-ref">Section 4.1</span></a>). Data organization largely determines the efficient implementation of analysis pipelines and improved reproducibility, reusability, and shareability of the data and results.</p>
+<p class="sd-card-text">Analyses of the pilot data are very important and can take several forms. One is to test for the effects of interest: establishing that the desired analyses can be performed and that the data quality and effect sizes are sufficient to produce valid and reproducible results (see <a class="reference internal" href="#s22"><span class="std std-ref">Section 2.2</span></a> and see <a class="reference internal" href="#s24"><span class="std std-ref">2.4</span></a>; for power estimation tools see the <a class="reference internal" href="../09/table.html"><span class="doc std std-doc">resources table</span></a>). A second type of pilot analysis is to establish tests for effects not of direct interest, but suitable for controls. As discussed further in section 2.4, positive control analyses involve strong, well-understood effects that must be present in a valid dataset. It is worth mentioning that well structured and documented openly available datasets (see <a class="reference internal" href="../04/data.html"><span class="doc std std-doc">Section 4</span></a>) could also serve for analysis piloting though they would lack the test for potential site specific technical issues. Simulations could also be used to ensure that the planned analysis is doable and valid.</p>
 </div>
-<details class="sphinx-bs dropdown card mb-3 fade-in">
-<summary class="summary-title card-header bg-ch2 font-weight-bold">
-<span class="fa fa-cogs"></span> 2.1 Study preparation and piloting<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text" id="s21">Research projects usually begin with descriptions of general, theoretical questions in documents such as grants or thesis proposals. Such foundations are essential but necessarily broad. When the project moves from proposal to implementation, these descriptions are translated into concrete protocols and stimuli, a process that can be streamlined by the incorporation of open procedures and comprehensive piloting. The promise is that the more preparation and piloting is conducted prior to data collection, the more likely it is that the project will be successful: that analyses of its data can contribute to answering its motivating ideas and questions <span id="id2">[<a class="reference internal" href="#id37" title="Julia Strand. Error tight: exercises for lab groups to prevent research mistakes. PsyArXiv, 2021.">Strand, 2021</a>]</span>.</p>
-<p class="card-text">Standard Operating Procedures (SOPs) can take different forms, and are powerful tools for planning, conducting, recording, and sharing projects. Ideally, SOPs describe the entire data collection procedure (e.g., recruitment, performing the experiment, data storage, preprocessing, quality control analyses), in sufficient detail for a reader to conduct the experiment themselves with minimal supervision, thereby contributing to reproducibility. SOPs may begin as an outline with vague descriptions, preferably during the pilot stage, and then become more detailed over time. For example, if a session is lost due to a button box signal failure, an image of its correct settings could be added to the SOPs. At the end of the project, its SOPs should be released along with its publications and datasets, to provide a source of answers for the detailed procedural information that may be needed for experiment replication or dataset reuse, but are not included in typical publications.</p>
-<p class="card-text">Many resources can assist with experiment planning and SOP creation. Documents and experiences from similar studies conducted locally are valuable, but should not be the only source of information during planning, since, for example, a procedure may be considered standard in one institution but not in another. Public SOPs can serve as examples, as can protocols published on specialized sites (e.g., Protocol Exchange, <a class="reference external" href="http://protocols.io">protocols.io</a>, Nature Protocols; see Table S1). Best practices guides are now available for many imaging modalities (MRI: <span id="id3">[<a class="reference internal" href="#id235" title="Thomas E Nichols, Samir Das, Simon B Eickhoff, Alan C Evans, Tristan Glatard, Michael Hanke, Nikolaus Kriegeskorte, Michael P Milham, Russell A Poldrack, Jean-Baptiste Poline, Erika Proal, Bertrand Thirion, David C Van Essen, Tonya White, and B T Thomas Yeo. Best practices in data analysis and sharing in neuroimaging using MRI. Nature Neuroscience, 20(3):299–303, February 2017.">Nichols <em>et al.</em>, 2017</a>]</span>; MEG/EEG: <span id="id4">[<a class="reference internal" href="#id166" title="Cyril R Pernet, Marta I Garrido, Alexandre Gramfort, Natasha Maurits, Christoph M Michel, Elizabeth Pang, Riitta Salmelin, Jan Mathijs Schoffelen, Pedro A Valdes-Sosa, and Aina Puce. Issues and recommendations from the OHBM COBIDAS MEEG committee for reproducible EEG and MEG research. Nature Neuroscience, 23(12):1473–1483, December 2020.">Pernet <em>et al.</em>, 2020</a>]</span>; fNIRS: <span id="id5">[<a class="reference internal" href="#id74" title="Meryem A Yücel, Alexander V Lühmann, Felix Scholkmann, Judit Gervain, Ippeita Dan, Hasan Ayaz, David Boas, Robert J Cooper, Joseph Culver, Clare E Elwell, Adam Eggebrecht, Maria A Franceschini, Christophe Grova, Fumitaka Homae, Frédéric Lesage, Hellmuth Obrig, Ilias Tachtsidis, Sungho Tak, Yunjie Tong, Alessandro Torricelli, Heidrun Wabnitz, and Martin Wolf. Best practices for fNIRS publications. Neurophotonics, 8(1):012101, January 2021.">Yücel <em>et al.</em>, 2021</a>]</span>; PET: <span id="id6">[<a class="reference internal" href="../06/dist.html#id126" title="Gitte M Knudsen, Melanie Ganz, Stefan Appelhoff, Ronald Boellaard, Guy Bormans, Richard E Carson, Ciprian Catana, Doris Doudet, Antony D Gee, Douglas N Greve, Roger N Gunn, Christer Halldin, Peter Herscovitch, Henry Huang, Sune H Keller, Adriaan A Lammertsma, Rupert Lanzenberger, Jeih-San Liow, Talakad G Lohith, Mark Lubberink, Chul H Lyoo, J John Mann, Granville J Matheson, Thomas E Nichols, Martin Nørgaard, Todd Ogden, Ramin Parsey, Victor W Pike, Julie Price, Gaia Rizzo, Pedro Rosa-Neto, Martin Schain, Peter Jh Scott, Graham Searle, Mark Slifstein, Tetsuya Suhara, Peter S Talbot, Adam Thomas, Mattia Veronese, Dean F Wong, Maqsood Yaqub, Francesca Zanderigo, Sami Zoghbi, and Robert B Innis. Guidelines for the content and format of PET brain data in publications and archives: a consensus paper. Journal of Cerebral Blood Flow and Metabolism, 40(8):1576–1585, August 2020.">Knudsen <em>et al.</em>, 2020</a>]</span>). Open resources for stimulus presentations and behavioral data acquisition are also recommended to increase reproducibility (see <a class="reference internal" href="../03/acq.html#s32"><span class="std std-ref">Section 3.2</span></a>).</p>
-<p class="card-text">Piloting should be considered an integral part of the planning process. By “piloting” we mean the acquisition and evaluation of data prior to the collection of the actual experimental data; verifying the feasibility of the whole research workflow. While it is not a necessary prerequisite for reproducibility, it is a good scientific practice to produce higher quality research, and facilitates reproducibility via better documentation and SOPs. A piloting stage before starting data collection is important, not only for ensuring that the protocol will go smoothly when the first participant arrives, but also that the SOPs are complete and, critically, that the planned analyses can be carried out with the actual experimental data recorded. For example, pilot tests may be set up to confirm that the task produces the expected behavioral patterns (e.g., faster reaction time in condition A than B), that the log files are complete, and that image acquisition can be synchronized with stimulus presentation. Piloting should also include testing the data storage and retrieval strategies, which may include storing consent documents (see <a class="reference internal" href="#s23"><span class="std std-ref">Section 2.3</span></a>), questionnaire responses, imaging data, and quality control reports. SOPs also prescribe how data will be organized, preferably according to a schema (e.g., the Brain Imaging Data Structure, see <a class="reference internal" href="../04/data.html#s41"><span class="std std-ref">Section 4.1</span></a>). Data organization largely determines the efficient implementation of analysis pipelines and improved reproducibility, reusability, and shareability of the data and results.</p>
-<p class="card-text">Analyses of the pilot data are very important and can take several forms. One is to test for the effects of interest: establishing that the desired analyses can be performed and that the data quality and effect sizes are sufficient to produce valid and reproducible results (see <a class="reference internal" href="#s22"><span class="std std-ref">Section 2.2</span></a> and see <a class="reference internal" href="#s24"><span class="std std-ref">2.4</span></a>; for power estimation tools see the <a class="reference internal" href="../09/table.html"><span class="doc std std-doc">resources table</span></a>). A second type of pilot analysis is to establish tests for effects not of direct interest, but suitable for controls. As discussed further in section 2.4, positive control analyses involve strong, well-understood effects that must be present in a valid dataset. It is worth mentioning that well structured and documented openly available datasets (see <a class="reference internal" href="../04/data.html"><span class="doc std std-doc">Section 4</span></a>) could also serve for analysis piloting though they would lack the test for potential site specific technical issues. Simulations could also be used to ensure that the planned analysis is doable and valid.</p>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+<summary class="sd-summary-title sd-card-header bg-ch2 font-weight-bold">
+<span class="fa fa-plus-square"></span> 2.2 Preregistration<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text" id="s22">Pre-registration is the specification of the research plan in advance, prior to data collection or at least prior to data analysis <span id="id7">[<a class="reference internal" href="#id125" title="Brian A Nosek and D Stephen Lindsay. Preregistration becoming the norm in psychological science. APS Observer, February 2018.">Nosek and Stephen Lindsay, 2018</a>]</span>. Pre-registration usually includes the study design, the hypotheses and the analysis plan. It is submitted to a registry, resulting in a frozen time-stamped version of the research plan. Its main aim is to distinguish between hypothesis-testing (confirmatory) research and hypothesis-generating (exploratory) research. While both are necessary for scientific progress, they require different tests and the conclusions that can be inferred based on them are different <span id="id8">[<a class="reference internal" href="../04/data.html#id182" title="Brian A Nosek, Charles R Ebersole, Alexander C DeHaven, and David T Mellor. The preregistration revolution. Proceedings of the National Academy of Sciences, 2017(15):201708274, 2018.">Nosek <em>et al.</em>, 2018</a>]</span>.</p>
+<p class="sd-card-text">Registered reports is a relatively novel publishing format that can be seen as advanced pre-registration. This format is becoming very common, with a growing number of hundreds of participating journals <span id="id9">[<a class="reference internal" href="#id203" title="Chris Chambers. What's next for registered reports? Nature, 573(7773):187–189, September 2019.">Chambers, 2019</a>, <a class="reference internal" href="#id210" title="Tom E Hardwicke and John P A Ioannidis. Mapping the universe of registered reports. Nature Human Behaviour, 2(11):793–796, November 2018.">Hardwicke and Ioannidis, 2018</a>]</span>. In a registered report, a detailed pre-registration is submitted to a specific journal, including introduction, planned methods and potentially preliminary data. Then, it goes through peer review prior to data collection (or prior to data analysis in certain cases, for example for studies that rely on large-scale publicly shared data). If the proposed plan is approved following peer review, it receives an “in-principle acceptance”, indicating that if the researchers follow their accepted plan, and their conclusions fit their findings, their paper will be published. An in-principle accepted registered report is sometimes required to be additionally pre-registered. Recently, a platform for peer review of registered reports preprints was launched, named “Peer Community in registered reports” (see the <a class="reference internal" href="../09/table.html"><span class="doc std std-doc">resources table</span></a>).</p>
+<p class="sd-card-text">There are many benefits to pre-registration, from the field to the individual level. Transparency with regard to the research plan, and whether an analysis is confirmatory or exploratory, increases the credibility of scientific findings. It helps to mitigate some of the effects of human biases on the scientific process, and reduces analytical flexibility, p-hacking <span id="id10">[<a class="reference internal" href="#id217" title="Joseph P Simmons, Leif D Nelson, and Uri Simonsohn. False-positive psychology: undisclosed flexibility in data collection and analysis allows presenting anything as significant. Psychological Science, 22(11):1359–1366, 2011.">Simmons <em>et al.</em>, 2011</a>]</span> and hypothesizing after the results are known <span id="id11">[<a class="reference internal" href="#id268" title="Marcus R Munafò, Brian A Nosek, Dorothy V M Bishop, Katherine S Button, Christopher D Chambers, Nathalie Percie Du Sert, Uri Simonsohn, Eric Jan Wagenmakers, Jennifer J Ware, and John P A Ioannidis. A manifesto for reproducible science. Nature Human Behaviour, 1(1):1–9, 2017.">Munafò <em>et al.</em>, 2017</a>, <a class="reference internal" href="#id228" title="Brian A Nosek, Emorie D Beck, Lorne Campbell, Jessica K Flake, Tom E Hardwicke, David T Mellor, Anna E van 't Veer, and Simine Vazire. Preregistration is hard, and worthwhile. Trends in Cognitive Sciences, 23(10):815–818, October 2019.">Nosek <em>et al.</em>, 2019</a>, <a class="reference internal" href="#id252" title="N L Kerr. HARKing: hypothesizing after the results are known. Personality and Social Psychology Review, 2(3):196–217, 1998.">Kerr, 1998</a>, <a class="reference internal" href="#id170" title="Nature. Let's think about cognitive bias. Nature, 526(7572):163, October 2015.">Nature, 2015</a>]</span>. There is initial evidence that the quality of pre-registered research is judged higher than in conventional publications <span id="id12">[<a class="reference internal" href="#id213" title="Courtney K Soderberg, Timothy M Errington, Sarah R Schiavone, Julia Bottesini, Felix Singleton Thorn, Simine Vazire, Kevin M Esterling, and Brian A Nosek. Initial evidence of research quality of registered reports compared with the standard publishing model. Nature Human Behaviour, 5(8):990–997, August 2021.">Soderberg <em>et al.</em>, 2021</a>]</span>. Nonetheless, it should be noted that pre-registration is not sufficient to fully protect against questionable research practices <span id="id13">[<a class="reference internal" href="#id156" title="Berna Devezer, Danielle J Navarro, Joachim Vandekerckhove, and Erkan Ozge Buzbas. The case for formal methodology in scientific reform. Royal Society Open Science, 8(3):200805, March 2021.">Devezer <em>et al.</em>, 2021</a>, <a class="reference internal" href="#id276" title="Mariella Paul, Gisela Govaart, and Antonio Schettino. Making ERP research more transparent: guidelines for preregistration. International Journal of Psychophysiology, 164:52–63, 2021.">Paul <em>et al.</em>, 2021</a>, <a class="reference internal" href="#id62" title="Mark Rubin. Does preregistration improve the credibility of research findings? The Quantitative Methods in Psychology, 16(4):376–390, 2020.">Rubin, 2020</a>]</span> and their general impact will depend on the extent journals will implement them. Registered reports also mitigate publication bias by accepting papers based on hypothesis and methods, independently of the findings, and indeed it has been shown that pre-registration and registered reports lead to more published null findings <span id="id14">[<a class="reference internal" href="#id215" title="Christopher Allen and David M A Mehler. Open science challenges, benefits and tips in early career and beyond. PLoS Biology, 17(5):e3000246, May 2019.">Allen and Mehler, 2019</a>, <a class="reference internal" href="#id183" title="Robert M Kaplan and Veronica L Irvin. Likelihood of null effects of large NHLBI clinical trials has increased over time. PLoS One, 10(8):e0132382, August 2015.">Kaplan and Irvin, 2015</a>, <a class="reference internal" href="#id132" title="Anne M Scheel. Registered reports: a process to safeguard high-quality evidence. Quality of Life Research, 29(12):3181–3182, December 2020.">Scheel, 2020</a>]</span> and report lower effect sizes <span id="id15">[<a class="reference internal" href="#id215" title="Christopher Allen and David M A Mehler. Open science challenges, benefits and tips in early career and beyond. PLoS Biology, 17(5):e3000246, May 2019.">Allen and Mehler, 2019</a>, <a class="reference internal" href="#id183" title="Robert M Kaplan and Veronica L Irvin. Likelihood of null effects of large NHLBI clinical trials has increased over time. PLoS One, 10(8):e0132382, August 2015.">Kaplan and Irvin, 2015</a>, <a class="reference internal" href="#id132" title="Anne M Scheel. Registered reports: a process to safeguard high-quality evidence. Quality of Life Research, 29(12):3181–3182, December 2020.">Scheel, 2020</a>]</span>. For the individual researcher, registered reports with a two-stage review are an excellent example in which authors benefit from feedback on their methods before even starting data collection. They can help improve the research plan and spot mistakes in time, and provide assurance that the study will be published <span id="id16">[<a class="reference internal" href="../06/dist.html#id125" title="Mallory C Kidwell, Ljiljana B Lazarević, Erica Baranski, Tom E Hardwicke, Sarah Piechowski, Lina-Sophia Falkenberg, Curtis Kennett, Agnieszka Slowik, Carina Sonnleitner, Chelsey Hess-Holden, Timothy M Errington, Susann Fiedler, and Brian A Nosek. Badges to acknowledge open practices: a simple, low-cost, effective method for increasing transparency. PLoS Biology, 14(5):e1002456, May 2016.">Kidwell <em>et al.</em>, 2016</a>, <a class="reference internal" href="#id51" title="Eric-Jan Wagenmakers and Gilles Dutilh. Seven selfish reasons for preregistration. APS Observer, October 2016.">Wagenmakers and Dutilh, 2016</a>]</span>. It should be noted, though, that registered reports require a significant time commitment, that is likely to pay off in the long-term but is not easily accommodated in many traditional project funding models.</p>
+<p class="sd-card-text">While pre-registration is not the common practice yet, it is becoming more common over time <span id="id17">[<a class="reference internal" href="#id125" title="Brian A Nosek and D Stephen Lindsay. Preregistration becoming the norm in psychological science. APS Observer, February 2018.">Nosek and Stephen Lindsay, 2018</a>]</span> and requirements by journals and funding agencies are already changing. There are many available templates and forms for pre-registration, organized by discipline or study types, for example for fMRI and EEG (see the <a class="reference internal" href="../09/table.html"><span class="doc std std-doc">resources table</span></a>), and published guidelines for pre-registration in EEG are also available <span id="id18">[<a class="reference internal" href="#id276" title="Mariella Paul, Gisela Govaart, and Antonio Schettino. Making ERP research more transparent: guidelines for preregistration. International Journal of Psychophysiology, 164:52–63, 2021.">Paul <em>et al.</em>, 2021</a>]</span>. There are different approaches with respect to what should be pre-registered. For instance, some believe it should be an exhaustive description of the study, including the background and justification for the research plan, while others believe it should be short and concise, including only the necessary details to reduce the likelihood of p-hacking and allowing reviewers to review it properly during the peer review process <span id="id19">[<a class="reference internal" href="#id160" title="Joseph P Simmons, Leif Nelson, and Uri Simonsohn. Pre‐registration: why and how. Journal of Consumer Psychology, 31(1):151–162, January 2021.">Simmons <em>et al.</em>, 2021</a>]</span>. Pre-registration could also be more flexible and adaptive by pre-registering contingency plans or complex decision trees <span id="id20">[<a class="reference internal" href="#id194" title="Stephen D Benning, Rachel L Bachrach, Edward A Smith, Andrew J Freeman, and Aidan G C Wright. The registration continuum in clinical science: a guide toward transparent practices. J. Abnorm. Psychol., 128(6):528–540, August 2019.">Benning <em>et al.</em>, 2019</a>]</span>.</p>
+<p class="sd-card-text">Once researchers develop an idea and design a study, they can write and pre-register their research plan <span id="id21">[<a class="reference internal" href="#id125" title="Brian A Nosek and D Stephen Lindsay. Preregistration becoming the norm in psychological science. APS Observer, February 2018.">Nosek and Stephen Lindsay, 2018</a>, <a class="reference internal" href="#id276" title="Mariella Paul, Gisela Govaart, and Antonio Schettino. Making ERP research more transparent: guidelines for preregistration. International Journal of Psychophysiology, 164:52–63, 2021.">Paul <em>et al.</em>, 2021</a>]</span>. Pre-registration could be performed following the piloting stage (<a class="reference internal" href="#s21"><span class="std std-ref">Section 2.1</span></a>), but studies can be pre-registered irrespective of whether they include a piloting stage or not. There are many online registries where researchers can pre-register their study. The three most frequently used platforms are: (1) <a class="reference external" href="https://osf.io">OSF</a>, a platform that can also be used to share additional information about the study/project (such as data and code), with multiple templates and forms for different types of pre-registration, in addition to extensive resources about pre-registration and other open science practices; (2) <a class="reference external" href="https://aspredicted.org">aspredicted.org</a>, a simplified form for pre-registration (Simmons, Nelson, and Simonsohn 2021); and (3) <a class="reference external" href="https://clinicaltrials.gov">clinicaltrials.gov</a>, which is used for registration of clinical trials in the U.S. (see the <a class="reference internal" href="../09/table.html"><span class="doc std std-doc">resources table</span></a>).</p>
+<p class="sd-card-text">Once the pre-registration is submitted, it can remain private or become public immediately, depending on the platform and the researcher’s preferences. Then, the researcher collects the data and executes the research plan. When writing the manuscript to report the study, the researcher is advised to include a link to the pre-registration, clearly and transparently describe and justify any deviation from the pre-registered plan and also report all registered analyses. Additional analyses to deepen some results or look into unexpected effects are encouraged, and are part of the normal scientific investigation. The added benefit of pre-registration is that such analyses do not need to reach pre-specified levels of significance because they are reported as exploratory.</p>
 </div>
-</details><details class="sphinx-bs dropdown card mb-3 fade-in">
-<summary class="summary-title card-header bg-ch2 font-weight-bold">
-<span class="fa fa-plus-square"></span> 2.2 Preregistration<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text" id="s22">Pre-registration is the specification of the research plan in advance, prior to data collection or at least prior to data analysis <span id="id7">[<a class="reference internal" href="#id125" title="Brian A Nosek and D Stephen Lindsay. Preregistration becoming the norm in psychological science. APS Observer, February 2018.">Nosek and Stephen Lindsay, 2018</a>]</span>. Pre-registration usually includes the study design, the hypotheses and the analysis plan. It is submitted to a registry, resulting in a frozen time-stamped version of the research plan. Its main aim is to distinguish between hypothesis-testing (confirmatory) research and hypothesis-generating (exploratory) research. While both are necessary for scientific progress, they require different tests and the conclusions that can be inferred based on them are different <span id="id8">[<a class="reference internal" href="../04/data.html#id182" title="Brian A Nosek, Charles R Ebersole, Alexander C DeHaven, and David T Mellor. The preregistration revolution. Proceedings of the National Academy of Sciences, 2017(15):201708274, 2018.">Nosek <em>et al.</em>, 2018</a>]</span>.</p>
-<p class="card-text">Registered reports is a relatively novel publishing format that can be seen as advanced pre-registration. This format is becoming very common, with a growing number of hundreds of participating journals <span id="id9">[<a class="reference internal" href="#id203" title="Chris Chambers. What's next for registered reports? Nature, 573(7773):187–189, September 2019.">Chambers, 2019</a>, <a class="reference internal" href="#id210" title="Tom E Hardwicke and John P A Ioannidis. Mapping the universe of registered reports. Nature Human Behaviour, 2(11):793–796, November 2018.">Hardwicke and Ioannidis, 2018</a>]</span>. In a registered report, a detailed pre-registration is submitted to a specific journal, including introduction, planned methods and potentially preliminary data. Then, it goes through peer review prior to data collection (or prior to data analysis in certain cases, for example for studies that rely on large-scale publicly shared data). If the proposed plan is approved following peer review, it receives an “in-principle acceptance”, indicating that if the researchers follow their accepted plan, and their conclusions fit their findings, their paper will be published. An in-principle accepted registered report is sometimes required to be additionally pre-registered. Recently, a platform for peer review of registered reports preprints was launched, named “Peer Community in registered reports” (see the <a class="reference internal" href="../09/table.html"><span class="doc std std-doc">resources table</span></a>).</p>
-<p class="card-text">There are many benefits to pre-registration, from the field to the individual level. Transparency with regard to the research plan, and whether an analysis is confirmatory or exploratory, increases the credibility of scientific findings. It helps to mitigate some of the effects of human biases on the scientific process, and reduces analytical flexibility, p-hacking <span id="id10">[<a class="reference internal" href="#id217" title="Joseph P Simmons, Leif D Nelson, and Uri Simonsohn. False-positive psychology: undisclosed flexibility in data collection and analysis allows presenting anything as significant. Psychological Science, 22(11):1359–1366, 2011.">Simmons <em>et al.</em>, 2011</a>]</span> and hypothesizing after the results are known <span id="id11">[<a class="reference internal" href="#id268" title="Marcus R Munafò, Brian A Nosek, Dorothy V M Bishop, Katherine S Button, Christopher D Chambers, Nathalie Percie Du Sert, Uri Simonsohn, Eric Jan Wagenmakers, Jennifer J Ware, and John P A Ioannidis. A manifesto for reproducible science. Nature Human Behaviour, 1(1):1–9, 2017.">Munafò <em>et al.</em>, 2017</a>, <a class="reference internal" href="#id228" title="Brian A Nosek, Emorie D Beck, Lorne Campbell, Jessica K Flake, Tom E Hardwicke, David T Mellor, Anna E van 't Veer, and Simine Vazire. Preregistration is hard, and worthwhile. Trends in Cognitive Sciences, 23(10):815–818, October 2019.">Nosek <em>et al.</em>, 2019</a>, <a class="reference internal" href="#id252" title="N L Kerr. HARKing: hypothesizing after the results are known. Personality and Social Psychology Review, 2(3):196–217, 1998.">Kerr, 1998</a>, <a class="reference internal" href="#id170" title="Nature. Let's think about cognitive bias. Nature, 526(7572):163, October 2015.">Nature, 2015</a>]</span>. There is initial evidence that the quality of pre-registered research is judged higher than in conventional publications <span id="id12">[<a class="reference internal" href="#id213" title="Courtney K Soderberg, Timothy M Errington, Sarah R Schiavone, Julia Bottesini, Felix Singleton Thorn, Simine Vazire, Kevin M Esterling, and Brian A Nosek. Initial evidence of research quality of registered reports compared with the standard publishing model. Nature Human Behaviour, 5(8):990–997, August 2021.">Soderberg <em>et al.</em>, 2021</a>]</span>. Nonetheless, it should be noted that pre-registration is not sufficient to fully protect against questionable research practices <span id="id13">[<a class="reference internal" href="#id156" title="Berna Devezer, Danielle J Navarro, Joachim Vandekerckhove, and Erkan Ozge Buzbas. The case for formal methodology in scientific reform. Royal Society Open Science, 8(3):200805, March 2021.">Devezer <em>et al.</em>, 2021</a>, <a class="reference internal" href="#id276" title="Mariella Paul, Gisela Govaart, and Antonio Schettino. Making ERP research more transparent: guidelines for preregistration. International Journal of Psychophysiology, 164:52–63, 2021.">Paul <em>et al.</em>, 2021</a>, <a class="reference internal" href="#id62" title="Mark Rubin. Does preregistration improve the credibility of research findings? The Quantitative Methods in Psychology, 16(4):376–390, 2020.">Rubin, 2020</a>]</span> and their general impact will depend on the extent journals will implement them. Registered reports also mitigate publication bias by accepting papers based on hypothesis and methods, independently of the findings, and indeed it has been shown that pre-registration and registered reports lead to more published null findings <span id="id14">[<a class="reference internal" href="#id215" title="Christopher Allen and David M A Mehler. Open science challenges, benefits and tips in early career and beyond. PLoS Biology, 17(5):e3000246, May 2019.">Allen and Mehler, 2019</a>, <a class="reference internal" href="#id183" title="Robert M Kaplan and Veronica L Irvin. Likelihood of null effects of large NHLBI clinical trials has increased over time. PLoS One, 10(8):e0132382, August 2015.">Kaplan and Irvin, 2015</a>, <a class="reference internal" href="#id132" title="Anne M Scheel. Registered reports: a process to safeguard high-quality evidence. Quality of Life Research, 29(12):3181–3182, December 2020.">Scheel, 2020</a>]</span> and report lower effect sizes <span id="id15">[<a class="reference internal" href="#id215" title="Christopher Allen and David M A Mehler. Open science challenges, benefits and tips in early career and beyond. PLoS Biology, 17(5):e3000246, May 2019.">Allen and Mehler, 2019</a>, <a class="reference internal" href="#id183" title="Robert M Kaplan and Veronica L Irvin. Likelihood of null effects of large NHLBI clinical trials has increased over time. PLoS One, 10(8):e0132382, August 2015.">Kaplan and Irvin, 2015</a>, <a class="reference internal" href="#id132" title="Anne M Scheel. Registered reports: a process to safeguard high-quality evidence. Quality of Life Research, 29(12):3181–3182, December 2020.">Scheel, 2020</a>]</span>. For the individual researcher, registered reports with a two-stage review are an excellent example in which authors benefit from feedback on their methods before even starting data collection. They can help improve the research plan and spot mistakes in time, and provide assurance that the study will be published <span id="id16">[<a class="reference internal" href="../06/dist.html#id125" title="Mallory C Kidwell, Ljiljana B Lazarević, Erica Baranski, Tom E Hardwicke, Sarah Piechowski, Lina-Sophia Falkenberg, Curtis Kennett, Agnieszka Slowik, Carina Sonnleitner, Chelsey Hess-Holden, Timothy M Errington, Susann Fiedler, and Brian A Nosek. Badges to acknowledge open practices: a simple, low-cost, effective method for increasing transparency. PLoS Biology, 14(5):e1002456, May 2016.">Kidwell <em>et al.</em>, 2016</a>, <a class="reference internal" href="#id51" title="Eric-Jan Wagenmakers and Gilles Dutilh. Seven selfish reasons for preregistration. APS Observer, October 2016.">Wagenmakers and Dutilh, 2016</a>]</span>. It should be noted, though, that registered reports require a significant time commitment, that is likely to pay off in the long-term but is not easily accommodated in many traditional project funding models.</p>
-<p class="card-text">While pre-registration is not the common practice yet, it is becoming more common over time <span id="id17">[<a class="reference internal" href="#id125" title="Brian A Nosek and D Stephen Lindsay. Preregistration becoming the norm in psychological science. APS Observer, February 2018.">Nosek and Stephen Lindsay, 2018</a>]</span> and requirements by journals and funding agencies are already changing. There are many available templates and forms for pre-registration, organized by discipline or study types, for example for fMRI and EEG (see the <a class="reference internal" href="../09/table.html"><span class="doc std std-doc">resources table</span></a>), and published guidelines for pre-registration in EEG are also available <span id="id18">[<a class="reference internal" href="#id276" title="Mariella Paul, Gisela Govaart, and Antonio Schettino. Making ERP research more transparent: guidelines for preregistration. International Journal of Psychophysiology, 164:52–63, 2021.">Paul <em>et al.</em>, 2021</a>]</span>. There are different approaches with respect to what should be pre-registered. For instance, some believe it should be an exhaustive description of the study, including the background and justification for the research plan, while others believe it should be short and concise, including only the necessary details to reduce the likelihood of p-hacking and allowing reviewers to review it properly during the peer review process <span id="id19">[<a class="reference internal" href="#id160" title="Joseph P Simmons, Leif Nelson, and Uri Simonsohn. Pre‐registration: why and how. Journal of Consumer Psychology, 31(1):151–162, January 2021.">Simmons <em>et al.</em>, 2021</a>]</span>. Pre-registration could also be more flexible and adaptive by pre-registering contingency plans or complex decision trees <span id="id20">[<a class="reference internal" href="#id194" title="Stephen D Benning, Rachel L Bachrach, Edward A Smith, Andrew J Freeman, and Aidan G C Wright. The registration continuum in clinical science: a guide toward transparent practices. J. Abnorm. Psychol., 128(6):528–540, August 2019.">Benning <em>et al.</em>, 2019</a>]</span>.</p>
-<p class="card-text">Once researchers develop an idea and design a study, they can write and pre-register their research plan <span id="id21">[<a class="reference internal" href="#id125" title="Brian A Nosek and D Stephen Lindsay. Preregistration becoming the norm in psychological science. APS Observer, February 2018.">Nosek and Stephen Lindsay, 2018</a>, <a class="reference internal" href="#id276" title="Mariella Paul, Gisela Govaart, and Antonio Schettino. Making ERP research more transparent: guidelines for preregistration. International Journal of Psychophysiology, 164:52–63, 2021.">Paul <em>et al.</em>, 2021</a>]</span>. Pre-registration could be performed following the piloting stage (<a class="reference internal" href="#s21"><span class="std std-ref">Section 2.1</span></a>), but studies can be pre-registered irrespective of whether they include a piloting stage or not. There are many online registries where researchers can pre-register their study. The three most frequently used platforms are: (1) <a class="reference external" href="https://osf.io">OSF</a>, a platform that can also be used to share additional information about the study/project (such as data and code), with multiple templates and forms for different types of pre-registration, in addition to extensive resources about pre-registration and other open science practices; (2) <a class="reference external" href="https://aspredicted.org">aspredicted.org</a>, a simplified form for pre-registration (Simmons, Nelson, and Simonsohn 2021); and (3) <a class="reference external" href="https://clinicaltrials.gov">clinicaltrials.gov</a>, which is used for registration of clinical trials in the U.S. (see the <a class="reference internal" href="../09/table.html"><span class="doc std std-doc">resources table</span></a>).</p>
-<p class="card-text">Once the pre-registration is submitted, it can remain private or become public immediately, depending on the platform and the researcher’s preferences. Then, the researcher collects the data and executes the research plan. When writing the manuscript to report the study, the researcher is advised to include a link to the pre-registration, clearly and transparently describe and justify any deviation from the pre-registered plan and also report all registered analyses. Additional analyses to deepen some results or look into unexpected effects are encouraged, and are part of the normal scientific investigation. The added benefit of pre-registration is that such analyses do not need to reach pre-specified levels of significance because they are reported as exploratory.</p>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+<summary class="sd-summary-title sd-card-header bg-ch2 font-weight-bold">
+<span class="fa fa-share-alt"></span> 2.3 Ethical review and data sharing plan<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text" id="s23">The optimism of the scientific community about improving science by making all research assets open and transparent has to take into account privacy, ethics and the associated legal and regulatory needs for each institution and country. Whereas on the one hand sharing data (most often collected with public funds) is critical to advance science, on the other hand, sharing data can in some situations become infeasible to safeguard privacy. Data governance concerns the regulatory and ethical aspects of data management and sharing of data files, metadata and data-processing software (see sections <a class="reference internal" href="../06/dist.html#s61"><span class="std std-ref">6.1</span></a>, <a class="reference internal" href="../06/dist.html#s62"><span class="std std-ref">6.2</span></a> and <a class="reference internal" href="../06/dist.html#s63"><span class="std std-ref">6.3</span></a>). When data sharing crosses national borders, data governance is called International Data Governance (IDG). IDG depends on ethical, cultural and international laws.</p>
+<p class="sd-card-text">Data sharing is beneficial for both reproducibility and the exploration and formulation of new hypotheses. Therefore, it is important to ensure, prior to data collection, that the collected data could be later shared. Consent forms for neuroimaging studies should contain, or be accompanied with, a specific section to allow data sharing. Such data sharing forms should include information about where and in what form the data will be shared, as well as who will have access and how restrictive this access will be. Data sharing forms should also make explicit how these factors determine to what extent a later withdrawal or editing of the data on the repository is possible. Additional requirements might be in place depending on the location where the research is being conducted. Given the international nature of the majority of neuroscience projects, IDG has become a priority <span id="id22">[<a class="reference internal" href="#id273" title="Robert Eiss. Confusion over europe's data-protection law is stalling scientific progress. Nature, 584(7822):498, August 2020.">Eiss, 2020</a>]</span>. Further work will be needed to implement an IDG approach that can facilitate research while protecting privacy and ethics. Specific recommendations on how to implement IDG have been proposed by <span id="id23">[<a class="reference internal" href="../06/dist.html#id68" title="Damian Eke, Amy Bernard, Jan G Bjaalie, Ricardo Chavarriaga, Takashi Hanakawa, Anthony Hannan, Sean Hill, Maryann Elizabeth Martone, Agnes McMahon, Oliver Ruebel, Edda Thiels, and Franco Pestilli. International data governance for neuroscience. Neuron, 110(4):600–612, 2022.">Eke <em>et al.</em>, 2022</a>]</span>.</p>
+<p class="sd-card-text">Open and reproducible neuroimaging thus starts by (1) planning which data would be collected; (2) planning how these data would later be shared; (3) having ethical and legal clearance to share data; but also (4) the infrastructural means for this sharing (for more information about data sharing and available platforms, see <a class="reference internal" href="../06/dist.html"><span class="doc std std-doc">Section 6</span></a>; for data governance see <a class="reference internal" href="../04/data.html"><span class="doc std std-doc">Section 6</span></a>). The informed consent should include a statement about the research goals, inform about the experimental procedures, its expected duration, potential risks, who can participate in a study, and potential conflicts of interest if they exist. It should also inform participants that participation is voluntary, and that the consent can be withdrawn at any time during the experiment without a disadvantage for the participant. If limited intervals for consent withdrawal exist, they should be clearly stated. Furthermore, it should also include a statement that the participant understood the information provided and agreed to participate. Clinical research may require adherence to additional, country specific regulations.</p>
+<p class="sd-card-text">Since 2014 the Open Brain Consent project (see the <a class="reference internal" href="../09/table.html"><span class="doc std std-doc">resources table</span></a>), which was founded under the ReproNim project umbrella, provides examples and templates translated to multiple languages to help researchers prepare consent forms, including the recent development of an EU GDPR-compliant template (The Open Brain Consent working group 2021). When planning the recruitment procedures, it is important to aim for equity, diversity and inclusivity <span id="id24">[<a class="reference internal" href="../06/dist.html#id292" title="Samuel H Forbes, Prerna Aneja, and Olivia Guest. The myth of (a)typical development. PsyArXiv, October 2021.">Forbes <em>et al.</em>, 2021</a>, <a class="reference internal" href="../06/dist.html#id253" title="Joseph Henrich, Steven J Heine, and Ara Norenzayan. The weirdest people in the world? Behavioral and Brain Sciences, 33(2-3):61–83, June 2010.">Henrich <em>et al.</em>, 2010</a>]</span>, avoiding obtaining results that may not generalize to larger populations and improving the quality of research (e.g., <span id="id25">[<a class="reference internal" href="../06/dist.html#id122" title="Giovannella Baggio, Alberto Corsini, Annarosa Floreani, Sandro Giannini, and Vittorina Zagonel. Gender medicine: a task for the third millennium. Clinical Chemistry and Laboratory Medicine, 51(4):713–727, April 2013.">Baggio <em>et al.</em>, 2013</a>]</span>).</p>
 </div>
-</details><details class="sphinx-bs dropdown card mb-3 fade-in">
-<summary class="summary-title card-header bg-ch2 font-weight-bold">
-<span class="fa fa-share-alt"></span> 2.3 Ethical review and data sharing plan<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text" id="s23">The optimism of the scientific community about improving science by making all research assets open and transparent has to take into account privacy, ethics and the associated legal and regulatory needs for each institution and country. Whereas on the one hand sharing data (most often collected with public funds) is critical to advance science, on the other hand, sharing data can in some situations become infeasible to safeguard privacy. Data governance concerns the regulatory and ethical aspects of data management and sharing of data files, metadata and data-processing software (see sections <a class="reference internal" href="../06/dist.html#s61"><span class="std std-ref">6.1</span></a>, <a class="reference internal" href="../06/dist.html#s62"><span class="std std-ref">6.2</span></a> and <a class="reference internal" href="../06/dist.html#s63"><span class="std std-ref">6.3</span></a>). When data sharing crosses national borders, data governance is called International Data Governance (IDG). IDG depends on ethical, cultural and international laws.</p>
-<p class="card-text">Data sharing is beneficial for both reproducibility and the exploration and formulation of new hypotheses. Therefore, it is important to ensure, prior to data collection, that the collected data could be later shared. Consent forms for neuroimaging studies should contain, or be accompanied with, a specific section to allow data sharing. Such data sharing forms should include information about where and in what form the data will be shared, as well as who will have access and how restrictive this access will be. Data sharing forms should also make explicit how these factors determine to what extent a later withdrawal or editing of the data on the repository is possible. Additional requirements might be in place depending on the location where the research is being conducted. Given the international nature of the majority of neuroscience projects, IDG has become a priority <span id="id22">[<a class="reference internal" href="#id273" title="Robert Eiss. Confusion over europe's data-protection law is stalling scientific progress. Nature, 584(7822):498, August 2020.">Eiss, 2020</a>]</span>. Further work will be needed to implement an IDG approach that can facilitate research while protecting privacy and ethics. Specific recommendations on how to implement IDG have been proposed by <span id="id23">[<a class="reference internal" href="../06/dist.html#id68" title="Damian Eke, Amy Bernard, Jan G Bjaalie, Ricardo Chavarriaga, Takashi Hanakawa, Anthony Hannan, Sean Hill, Maryann Elizabeth Martone, Agnes McMahon, Oliver Ruebel, Edda Thiels, and Franco Pestilli. International data governance for neuroscience. Neuron, 110(4):600–612, 2022.">Eke <em>et al.</em>, 2022</a>]</span>.</p>
-<p class="card-text">Open and reproducible neuroimaging thus starts by (1) planning which data would be collected; (2) planning how these data would later be shared; (3) having ethical and legal clearance to share data; but also (4) the infrastructural means for this sharing (for more information about data sharing and available platforms, see <a class="reference internal" href="../06/dist.html"><span class="doc std std-doc">Section 6</span></a>; for data governance see <a class="reference internal" href="../04/data.html"><span class="doc std std-doc">Section 6</span></a>). The informed consent should include a statement about the research goals, inform about the experimental procedures, its expected duration, potential risks, who can participate in a study, and potential conflicts of interest if they exist. It should also inform participants that participation is voluntary, and that the consent can be withdrawn at any time during the experiment without a disadvantage for the participant. If limited intervals for consent withdrawal exist, they should be clearly stated. Furthermore, it should also include a statement that the participant understood the information provided and agreed to participate. Clinical research may require adherence to additional, country specific regulations.</p>
-<p class="card-text">Since 2014 the Open Brain Consent project (see the <a class="reference internal" href="../09/table.html"><span class="doc std std-doc">resources table</span></a>), which was founded under the ReproNim project umbrella, provides examples and templates translated to multiple languages to help researchers prepare consent forms, including the recent development of an EU GDPR-compliant template (The Open Brain Consent working group 2021). When planning the recruitment procedures, it is important to aim for equity, diversity and inclusivity <span id="id24">[<a class="reference internal" href="../06/dist.html#id292" title="Samuel H Forbes, Prerna Aneja, and Olivia Guest. The myth of (a)typical development. PsyArXiv, October 2021.">Forbes <em>et al.</em>, 2021</a>, <a class="reference internal" href="../06/dist.html#id253" title="Joseph Henrich, Steven J Heine, and Ara Norenzayan. The weirdest people in the world? Behavioral and Brain Sciences, 33(2-3):61–83, June 2010.">Henrich <em>et al.</em>, 2010</a>]</span>, avoiding obtaining results that may not generalize to larger populations and improving the quality of research (e.g., <span id="id25">[<a class="reference internal" href="../06/dist.html#id122" title="Giovannella Baggio, Alberto Corsini, Annarosa Floreani, Sandro Giannini, and Vittorina Zagonel. Gender medicine: a task for the third millennium. Clinical Chemistry and Laboratory Medicine, 51(4):713–727, April 2013.">Baggio <em>et al.</em>, 2013</a>]</span>).</p>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in">
+<summary class="sd-summary-title sd-card-header bg-ch2 font-weight-bold">
+<span class="fa fa-eye"></span> 2.4 Looking at the data early and often: monitoring quality<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text" id="s24">Inevitably, unexpected events and errors will occur during every experiment and in every part of the research workflow. These can take many forms, including dozing participants, hardware malfunction, data transfer errors, and mislabeled results files. As data progresses through the workflow, issues are likely to cascade and amplify, perhaps masking or mediating experimental effects, thereby damaging the reliability of the results. The impact of such surprises can range from the trivial and easily corrected to the catastrophic, rendering the collected data unusable or conclusions drawn from it invalid. Identifying issues and errors as early as possible is important to enable adding corrective measures to the protocol, but also because some issues are much easier to detect when the data are in a less-processed form. For example, a number of typical artifacts in anatomical MRI are known to be easier to identify in the background of the image and regions of no-interest <span id="id26">[<a class="reference internal" href="#id109" title="Bénédicte Mortamet, Matt A Bernstein, Clifford R Jack, Jr, Jeffrey L Gunter, Chadwick Ward, Paula J Britson, Reto Meuli, Jean-Philippe Thiran, Gunnar Krueger, and Alzheimer's Disease Neuroimaging Initiative. Automatic quality assessment in structural brain magnetic resonance imaging. Magn. Reson. Med., 62(2):365–372, August 2009.">Mortamet <em>et al.</em>, 2009</a>]</span>, and can easily remain undetected if the first quality control check is set up after, e.g., brain extraction, which masks out non brain tissue. Thus, it is fundamental to pre-establish within the SOPs (section 2.1) the mechanisms set in place to ensure the quality of the study. There are several mechanisms available that help to ensure that all required data are being recorded with sufficient quality and in a way that makes them analyzable.</p>
+<p class="sd-card-text">Quality control checkpoints. Establishing quality control (QC) checkpoints <span id="id27">[<a class="reference internal" href="#id69" title="Stephen C Strother. Evaluating fMRI preprocessing pipelines. IEEE Engineering in Medicine and Biology, 25(2):27–41, March 2006.">Strother, 2006</a>]</span> is necessary for every project: which data are usable for analyses, and which are not? At these key points in the preprocessing or analysis workflow the data’s quality is checked, and if insufficient, it does not move on to the next stage. Low quality data are much less likely to be reproducible with new data or methods. Critically, the exclusion criteria of each checkpoint must be defined in advance (preferably stated in the SOPs and the pre-registration document, see sections <a class="reference internal" href="#s21"><span class="std std-ref">2.1</span></a> and <a class="reference internal" href="#s22"><span class="std std-ref">2.2</span></a>) to preempt unintentional cherry-picking (i.e., excluding data points to reinforce the results), which is a major contributor to irreproducibility via undisclosed flexibility. Some criteria are widely accepted and applicable, for example, that all neuroimaging data should be screened to eliminate clear artifacts, such as data corrupted by incidental electromagnetic interference or participants movements. A similarly well-established checkpoint of the workflow is visualizing and inspecting the outputs of surface reconstruction methods in MRI, checking time activity curves in high binding regions for PET or power spectral content in MEG and EEG; these fundamental QC checkpoints and their implementation are heavily dependent on the immediately previous processing step. Such QC may be conducted manually by experts using software aids, like visual summary reports or visualization software such as MRIQC <span id="id28">[<a class="reference internal" href="../04/data.html#id144" title="Oscar Esteban, Daniel Birman, Marie Schaer, Oluwasanmi O Koyejo, Russell A Poldrack, and Krzysztof J Gorgolewski. MRIQC: advancing the automatic prediction of image quality in MRI from unseen sites. PLoS One, 12(9):e0184661, September 2017.">Esteban <em>et al.</em>, 2017</a>]</span>. More objective, automatic exclusion criteria, are currently an open and active line of work in neuroimaging (e.g., <span id="id29">[<a class="reference internal" href="#id190" title="Yang Ding, Sabrina Suffren, Pierre Bellec, and Gregory A Lodygensky. Supervised machine learning quality control for magnetic resonance artifacts in neonatal data sets. Hum. Brain Mapp., 40(4):1290–1297, March 2019.">Ding <em>et al.</em>, 2019</a>, <a class="reference internal" href="#id180" title="Oscar Esteban, Ross W Blair, Dylan M Nielson, Jan C Varada, Sean Marrett, Adam G Thomas, Russell A Poldrack, and Krzysztof J Gorgolewski. Crowdsourced MRI quality metrics and expert quality annotations for training of humans and machines. Sci Data, 6(1):30, April 2019.">Esteban <em>et al.</em>, 2019</a>, <a class="reference internal" href="#id199" title="Matthew Kollada, Qingzhu Gao, Monika S Mellem, Tathagata Banerjee, and William J Martin. A generalizable method for automated quality control of functional neuroimaging datasets. In Arash Shaban-Nejad, Martin Michalowski, and David L Buckeridge, editors, Explainable AI in Healthcare and Medicine: Building a Culture of Transparency and Accountability, pages 55–68. Springer International Publishing, Cham, 2021.">Kollada <em>et al.</em>, 2021</a>]</span>). Some QC checkpoints, such as for acceptable task performance or participant movement, are often defined for individual tasks, experiments and hypotheses.</p>
+<p class="sd-card-text">Quality assurance (QA). Tracking QC decisions will also enable identifying structured failures and artifacts that require not just excluding affected datasets, but rather taking corrective actions to preempt propagation to additional datasets. When a mishap occurs, the experimenters should investigate its cause, and if possible, change the SOPs (<a class="reference internal" href="#s21"><span class="std std-ref">Section 2.1</span></a>) and related materials to reduce the chance of it happening again. For example, if many participants report confusion about task instructions, the training procedure and experimenter script could be altered. Automated checks and reports can be very effective, such as real-time monitoring of participant motion during data collection <span id="id30">[<a class="reference internal" href="#id260" title="Stephan Heunis, Rolf Lamerichs, Svitlana Zinger, Cesar Caballero-Gaudes, Jacobus F A Jansen, Bert Aldenkamp, and Marcel Breeuwer. Quality and denoising in real-time functional magnetic resonance imaging neurofeedback: a methods review. Human Brain Mapping, 41(12):3439–3467, August 2020.">Heunis <em>et al.</em>, 2020</a>]</span>, or validating that image parameters are as expected before storage (e.g., with XNAT <span id="id31">[<a class="reference internal" href="#id272" title="Daniel S Marcus, Timothy R Olsen, Mohana Ramaratnam, and Randy L Buckner. The extensible neuroimaging archive toolkit: an informatics platform for managing, exploring, and sharing neuroimaging data. Neuroinformatics, 5(1):11–34, 2007.">Marcus <em>et al.</em>, 2007</a>]</span> or ReproNim tools <span id="id32">[<a class="reference internal" href="#id255" title="David N Kennedy, Sanu A Abraham, Julianna F Bates, Albert Crowley, Satrajit Ghosh, Tom Gillespie, Mathias Goncalves, Jeffrey S Grethe, Yaroslav O Halchenko, Michael Hanke, Christian Haselgrove, Steven M Hodge, Dorota Jarecka, Jakub Kaczmarzyk, David B Keator, Kyle Meyer, Maryann E Martone, Smruti Padhy, Jean-Baptiste Poline, Nina Preuss, Troy Sincomb, and Matt Travers. Everything matters: the ReproNim perspective on reproducible neuroimaging. Front. Neuroinform., 13:1, February 2019.">Kennedy <em>et al.</em>, 2019</a>]</span>).</p>
+<p class="sd-card-text">Positive control analyses. A final aspect of quality assurance is the incorporation of positive control analyses: analyses included not because they are of interest for the scientific questions, but because they provide evidence that the dataset is of sufficient quality to conduct the analyses of interest, and that the analysis is valid. Ideally, positive control analyses focus on strong, well-established effects that must be present if the dataset is valid. For example, with task fMRI designs, button pressing, which should be associated with contralateral motor activation, is often a convenient target for positive control analysis. In MEG and EEG, participants can be asked to blink their eyes, open their mouths, or clench their jaws, and the recordings checked for the associated artifacts. Positive control analyses should also be carried out during piloting, when changes to the protocol are still possible (see <a class="reference internal" href="#s21"><span class="std std-ref">Section 2.1</span></a>). For example, if button presses are not clearly detectable during piloting, the acquisition sequence may not have sufficient SNR for the planned analyses and so need modification. Positive controls can further serve for analysis pipeline optimization prior to conducting the optimized analysis on the outcome of interest, thus preventing legitimate optimization from turning into p-hacking.</p>
 </div>
-</details><details class="sphinx-bs dropdown card mb-3 fade-in">
-<summary class="summary-title card-header bg-ch2 font-weight-bold">
-<span class="fa fa-eye"></span> 2.4 Looking at the data early and often: monitoring quality<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text" id="s24">Inevitably, unexpected events and errors will occur during every experiment and in every part of the research workflow. These can take many forms, including dozing participants, hardware malfunction, data transfer errors, and mislabeled results files. As data progresses through the workflow, issues are likely to cascade and amplify, perhaps masking or mediating experimental effects, thereby damaging the reliability of the results. The impact of such surprises can range from the trivial and easily corrected to the catastrophic, rendering the collected data unusable or conclusions drawn from it invalid. Identifying issues and errors as early as possible is important to enable adding corrective measures to the protocol, but also because some issues are much easier to detect when the data are in a less-processed form. For example, a number of typical artifacts in anatomical MRI are known to be easier to identify in the background of the image and regions of no-interest <span id="id26">[<a class="reference internal" href="#id109" title="Bénédicte Mortamet, Matt A Bernstein, Clifford R Jack, Jr, Jeffrey L Gunter, Chadwick Ward, Paula J Britson, Reto Meuli, Jean-Philippe Thiran, Gunnar Krueger, and Alzheimer's Disease Neuroimaging Initiative. Automatic quality assessment in structural brain magnetic resonance imaging. Magn. Reson. Med., 62(2):365–372, August 2009.">Mortamet <em>et al.</em>, 2009</a>]</span>, and can easily remain undetected if the first quality control check is set up after, e.g., brain extraction, which masks out non brain tissue. Thus, it is fundamental to pre-establish within the SOPs (section 2.1) the mechanisms set in place to ensure the quality of the study. There are several mechanisms available that help to ensure that all required data are being recorded with sufficient quality and in a way that makes them analyzable.</p>
-<p class="card-text">Quality control checkpoints. Establishing quality control (QC) checkpoints <span id="id27">[<a class="reference internal" href="#id69" title="Stephen C Strother. Evaluating fMRI preprocessing pipelines. IEEE Engineering in Medicine and Biology, 25(2):27–41, March 2006.">Strother, 2006</a>]</span> is necessary for every project: which data are usable for analyses, and which are not? At these key points in the preprocessing or analysis workflow the data’s quality is checked, and if insufficient, it does not move on to the next stage. Low quality data are much less likely to be reproducible with new data or methods. Critically, the exclusion criteria of each checkpoint must be defined in advance (preferably stated in the SOPs and the pre-registration document, see sections <a class="reference internal" href="#s21"><span class="std std-ref">2.1</span></a> and <a class="reference internal" href="#s22"><span class="std std-ref">2.2</span></a>) to preempt unintentional cherry-picking (i.e., excluding data points to reinforce the results), which is a major contributor to irreproducibility via undisclosed flexibility. Some criteria are widely accepted and applicable, for example, that all neuroimaging data should be screened to eliminate clear artifacts, such as data corrupted by incidental electromagnetic interference or participants movements. A similarly well-established checkpoint of the workflow is visualizing and inspecting the outputs of surface reconstruction methods in MRI, checking time activity curves in high binding regions for PET or power spectral content in MEG and EEG; these fundamental QC checkpoints and their implementation are heavily dependent on the immediately previous processing step. Such QC may be conducted manually by experts using software aids, like visual summary reports or visualization software such as MRIQC <span id="id28">[<a class="reference internal" href="../04/data.html#id144" title="Oscar Esteban, Daniel Birman, Marie Schaer, Oluwasanmi O Koyejo, Russell A Poldrack, and Krzysztof J Gorgolewski. MRIQC: advancing the automatic prediction of image quality in MRI from unseen sites. PLoS One, 12(9):e0184661, September 2017.">Esteban <em>et al.</em>, 2017</a>]</span>. More objective, automatic exclusion criteria, are currently an open and active line of work in neuroimaging (e.g., <span id="id29">[<a class="reference internal" href="#id190" title="Yang Ding, Sabrina Suffren, Pierre Bellec, and Gregory A Lodygensky. Supervised machine learning quality control for magnetic resonance artifacts in neonatal data sets. Hum. Brain Mapp., 40(4):1290–1297, March 2019.">Ding <em>et al.</em>, 2019</a>, <a class="reference internal" href="#id180" title="Oscar Esteban, Ross W Blair, Dylan M Nielson, Jan C Varada, Sean Marrett, Adam G Thomas, Russell A Poldrack, and Krzysztof J Gorgolewski. Crowdsourced MRI quality metrics and expert quality annotations for training of humans and machines. Sci Data, 6(1):30, April 2019.">Esteban <em>et al.</em>, 2019</a>, <a class="reference internal" href="#id199" title="Matthew Kollada, Qingzhu Gao, Monika S Mellem, Tathagata Banerjee, and William J Martin. A generalizable method for automated quality control of functional neuroimaging datasets. In Arash Shaban-Nejad, Martin Michalowski, and David L Buckeridge, editors, Explainable AI in Healthcare and Medicine: Building a Culture of Transparency and Accountability, pages 55–68. Springer International Publishing, Cham, 2021.">Kollada <em>et al.</em>, 2021</a>]</span>). Some QC checkpoints, such as for acceptable task performance or participant movement, are often defined for individual tasks, experiments and hypotheses.</p>
-<p class="card-text">Quality assurance (QA). Tracking QC decisions will also enable identifying structured failures and artifacts that require not just excluding affected datasets, but rather taking corrective actions to preempt propagation to additional datasets. When a mishap occurs, the experimenters should investigate its cause, and if possible, change the SOPs (<a class="reference internal" href="#s21"><span class="std std-ref">Section 2.1</span></a>) and related materials to reduce the chance of it happening again. For example, if many participants report confusion about task instructions, the training procedure and experimenter script could be altered. Automated checks and reports can be very effective, such as real-time monitoring of participant motion during data collection <span id="id30">[<a class="reference internal" href="#id260" title="Stephan Heunis, Rolf Lamerichs, Svitlana Zinger, Cesar Caballero-Gaudes, Jacobus F A Jansen, Bert Aldenkamp, and Marcel Breeuwer. Quality and denoising in real-time functional magnetic resonance imaging neurofeedback: a methods review. Human Brain Mapping, 41(12):3439–3467, August 2020.">Heunis <em>et al.</em>, 2020</a>]</span>, or validating that image parameters are as expected before storage (e.g., with XNAT <span id="id31">[<a class="reference internal" href="#id272" title="Daniel S Marcus, Timothy R Olsen, Mohana Ramaratnam, and Randy L Buckner. The extensible neuroimaging archive toolkit: an informatics platform for managing, exploring, and sharing neuroimaging data. Neuroinformatics, 5(1):11–34, 2007.">Marcus <em>et al.</em>, 2007</a>]</span> or ReproNim tools <span id="id32">[<a class="reference internal" href="#id255" title="David N Kennedy, Sanu A Abraham, Julianna F Bates, Albert Crowley, Satrajit Ghosh, Tom Gillespie, Mathias Goncalves, Jeffrey S Grethe, Yaroslav O Halchenko, Michael Hanke, Christian Haselgrove, Steven M Hodge, Dorota Jarecka, Jakub Kaczmarzyk, David B Keator, Kyle Meyer, Maryann E Martone, Smruti Padhy, Jean-Baptiste Poline, Nina Preuss, Troy Sincomb, and Matt Travers. Everything matters: the ReproNim perspective on reproducible neuroimaging. Front. Neuroinform., 13:1, February 2019.">Kennedy <em>et al.</em>, 2019</a>]</span>).</p>
-<p class="card-text">Positive control analyses. A final aspect of quality assurance is the incorporation of positive control analyses: analyses included not because they are of interest for the scientific questions, but because they provide evidence that the dataset is of sufficient quality to conduct the analyses of interest, and that the analysis is valid. Ideally, positive control analyses focus on strong, well-established effects that must be present if the dataset is valid. For example, with task fMRI designs, button pressing, which should be associated with contralateral motor activation, is often a convenient target for positive control analysis. In MEG and EEG, participants can be asked to blink their eyes, open their mouths, or clench their jaws, and the recordings checked for the associated artifacts. Positive control analyses should also be carried out during piloting, when changes to the protocol are still possible (see <a class="reference internal" href="#s21"><span class="std std-ref">Section 2.1</span></a>). For example, if button presses are not clearly detectable during piloting, the acquisition sequence may not have sufficient SNR for the planned analyses and so need modification. Positive controls can further serve for analysis pipeline optimization prior to conducting the optimized analysis on the outcome of interest, thus preventing legitimate optimization from turning into p-hacking.</p>
-</div>
-</details><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-References on this page<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+References on this page<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
 <div class="docutils container" id="id33">
 <dl class="citation">
 <dt class="label" id="id215"><span class="brackets">B1</span><span class="fn-backref">(<a href="#id14">1</a>,<a href="#id15">2</a>)</span></dt>
-<dd><p class="card-text">Christopher Allen and David M A Mehler. Open science challenges, benefits and tips in early career and beyond. <em>PLoS Biology</em>, 17(5):e3000246, May 2019.</p>
+<dd><p class="sd-card-text">Christopher Allen and David M A Mehler. Open science challenges, benefits and tips in early career and beyond. <em>PLoS Biology</em>, 17(5):e3000246, May 2019.</p>
 </dd>
 <dt class="label" id="id111"><span class="brackets"><a class="fn-backref" href="#id25">B2</a></span></dt>
-<dd><p class="card-text">Giovannella Baggio, Alberto Corsini, Annarosa Floreani, Sandro Giannini, and Vittorina Zagonel. Gender medicine: a task for the third millennium. <em>Clinical Chemistry and Laboratory Medicine</em>, 51(4):713–727, April 2013.</p>
+<dd><p class="sd-card-text">Giovannella Baggio, Alberto Corsini, Annarosa Floreani, Sandro Giannini, and Vittorina Zagonel. Gender medicine: a task for the third millennium. <em>Clinical Chemistry and Laboratory Medicine</em>, 51(4):713–727, April 2013.</p>
 </dd>
 <dt class="label" id="id194"><span class="brackets"><a class="fn-backref" href="#id20">B3</a></span></dt>
-<dd><p class="card-text">Stephen D Benning, Rachel L Bachrach, Edward A Smith, Andrew J Freeman, and Aidan G C Wright. The registration continuum in clinical science: a guide toward transparent practices. <em>J. Abnorm. Psychol.</em>, 128(6):528–540, August 2019.</p>
+<dd><p class="sd-card-text">Stephen D Benning, Rachel L Bachrach, Edward A Smith, Andrew J Freeman, and Aidan G C Wright. The registration continuum in clinical science: a guide toward transparent practices. <em>J. Abnorm. Psychol.</em>, 128(6):528–540, August 2019.</p>
 </dd>
 <dt class="label" id="id203"><span class="brackets"><a class="fn-backref" href="#id9">B4</a></span></dt>
-<dd><p class="card-text">Chris Chambers. What's next for registered reports? <em>Nature</em>, 573(7773):187–189, September 2019.</p>
+<dd><p class="sd-card-text">Chris Chambers. What's next for registered reports? <em>Nature</em>, 573(7773):187–189, September 2019.</p>
 </dd>
 <dt class="label" id="id156"><span class="brackets"><a class="fn-backref" href="#id13">B5</a></span></dt>
-<dd><p class="card-text">Berna Devezer, Danielle J Navarro, Joachim Vandekerckhove, and Erkan Ozge Buzbas. The case for formal methodology in scientific reform. <em>Royal Society Open Science</em>, 8(3):200805, March 2021.</p>
+<dd><p class="sd-card-text">Berna Devezer, Danielle J Navarro, Joachim Vandekerckhove, and Erkan Ozge Buzbas. The case for formal methodology in scientific reform. <em>Royal Society Open Science</em>, 8(3):200805, March 2021.</p>
 </dd>
 <dt class="label" id="id190"><span class="brackets"><a class="fn-backref" href="#id29">B6</a></span></dt>
-<dd><p class="card-text">Yang Ding, Sabrina Suffren, Pierre Bellec, and Gregory A Lodygensky. Supervised machine learning quality control for magnetic resonance artifacts in neonatal data sets. <em>Hum. Brain Mapp.</em>, 40(4):1290–1297, March 2019.</p>
+<dd><p class="sd-card-text">Yang Ding, Sabrina Suffren, Pierre Bellec, and Gregory A Lodygensky. Supervised machine learning quality control for magnetic resonance artifacts in neonatal data sets. <em>Hum. Brain Mapp.</em>, 40(4):1290–1297, March 2019.</p>
 </dd>
 <dt class="label" id="id273"><span class="brackets"><a class="fn-backref" href="#id22">B7</a></span></dt>
-<dd><p class="card-text">Robert Eiss. Confusion over europe's data-protection law is stalling scientific progress. <em>Nature</em>, 584(7822):498, August 2020.</p>
+<dd><p class="sd-card-text">Robert Eiss. Confusion over europe's data-protection law is stalling scientific progress. <em>Nature</em>, 584(7822):498, August 2020.</p>
 </dd>
 <dt class="label" id="id57"><span class="brackets"><a class="fn-backref" href="#id23">B8</a></span></dt>
-<dd><p class="card-text">Damian Eke, Amy Bernard, Jan G Bjaalie, Ricardo Chavarriaga, Takashi Hanakawa, Anthony Hannan, Sean Hill, Maryann Elizabeth Martone, Agnes McMahon, Oliver Ruebel, Edda Thiels, and Franco Pestilli. International data governance for neuroscience. <em>Neuron</em>, 110(4):600–612, 2022.</p>
+<dd><p class="sd-card-text">Damian Eke, Amy Bernard, Jan G Bjaalie, Ricardo Chavarriaga, Takashi Hanakawa, Anthony Hannan, Sean Hill, Maryann Elizabeth Martone, Agnes McMahon, Oliver Ruebel, Edda Thiels, and Franco Pestilli. International data governance for neuroscience. <em>Neuron</em>, 110(4):600–612, 2022.</p>
 </dd>
 <dt class="label" id="id146"><span class="brackets"><a class="fn-backref" href="#id28">B9</a></span></dt>
-<dd><p class="card-text">Oscar Esteban, Daniel Birman, Marie Schaer, Oluwasanmi O Koyejo, Russell A Poldrack, and Krzysztof J Gorgolewski. MRIQC: advancing the automatic prediction of image quality in MRI from unseen sites. <em>PLoS One</em>, 12(9):e0184661, September 2017.</p>
+<dd><p class="sd-card-text">Oscar Esteban, Daniel Birman, Marie Schaer, Oluwasanmi O Koyejo, Russell A Poldrack, and Krzysztof J Gorgolewski. MRIQC: advancing the automatic prediction of image quality in MRI from unseen sites. <em>PLoS One</em>, 12(9):e0184661, September 2017.</p>
 </dd>
 <dt class="label" id="id180"><span class="brackets"><a class="fn-backref" href="#id29">B10</a></span></dt>
-<dd><p class="card-text">Oscar Esteban, Ross W Blair, Dylan M Nielson, Jan C Varada, Sean Marrett, Adam G Thomas, Russell A Poldrack, and Krzysztof J Gorgolewski. Crowdsourced MRI quality metrics and expert quality annotations for training of humans and machines. <em>Sci Data</em>, 6(1):30, April 2019.</p>
+<dd><p class="sd-card-text">Oscar Esteban, Ross W Blair, Dylan M Nielson, Jan C Varada, Sean Marrett, Adam G Thomas, Russell A Poldrack, and Krzysztof J Gorgolewski. Crowdsourced MRI quality metrics and expert quality annotations for training of humans and machines. <em>Sci Data</em>, 6(1):30, April 2019.</p>
 </dd>
 <dt class="label" id="id281"><span class="brackets"><a class="fn-backref" href="#id24">B11</a></span></dt>
-<dd><p class="card-text">Samuel H Forbes, Prerna Aneja, and Olivia Guest. The myth of (a)typical development. <em>PsyArXiv</em>, October 2021.</p>
+<dd><p class="sd-card-text">Samuel H Forbes, Prerna Aneja, and Olivia Guest. The myth of (a)typical development. <em>PsyArXiv</em>, October 2021.</p>
 </dd>
 <dt class="label" id="id210"><span class="brackets"><a class="fn-backref" href="#id9">B12</a></span></dt>
-<dd><p class="card-text">Tom E Hardwicke and John P A Ioannidis. Mapping the universe of registered reports. <em>Nature Human Behaviour</em>, 2(11):793–796, November 2018.</p>
+<dd><p class="sd-card-text">Tom E Hardwicke and John P A Ioannidis. Mapping the universe of registered reports. <em>Nature Human Behaviour</em>, 2(11):793–796, November 2018.</p>
 </dd>
 <dt class="label" id="id242"><span class="brackets"><a class="fn-backref" href="#id24">B13</a></span></dt>
-<dd><p class="card-text">Joseph Henrich, Steven J Heine, and Ara Norenzayan. The weirdest people in the world? <em>Behavioral and Brain Sciences</em>, 33(2-3):61–83, June 2010.</p>
+<dd><p class="sd-card-text">Joseph Henrich, Steven J Heine, and Ara Norenzayan. The weirdest people in the world? <em>Behavioral and Brain Sciences</em>, 33(2-3):61–83, June 2010.</p>
 </dd>
 <dt class="label" id="id260"><span class="brackets"><a class="fn-backref" href="#id30">B14</a></span></dt>
-<dd><p class="card-text">Stephan Heunis, Rolf Lamerichs, Svitlana Zinger, Cesar Caballero-Gaudes, Jacobus F A Jansen, Bert Aldenkamp, and Marcel Breeuwer. Quality and denoising in real-time functional magnetic resonance imaging neurofeedback: a methods review. <em>Human Brain Mapping</em>, 41(12):3439–3467, August 2020.</p>
+<dd><p class="sd-card-text">Stephan Heunis, Rolf Lamerichs, Svitlana Zinger, Cesar Caballero-Gaudes, Jacobus F A Jansen, Bert Aldenkamp, and Marcel Breeuwer. Quality and denoising in real-time functional magnetic resonance imaging neurofeedback: a methods review. <em>Human Brain Mapping</em>, 41(12):3439–3467, August 2020.</p>
 </dd>
 <dt class="label" id="id183"><span class="brackets">B15</span><span class="fn-backref">(<a href="#id14">1</a>,<a href="#id15">2</a>)</span></dt>
-<dd><p class="card-text">Robert M Kaplan and Veronica L Irvin. Likelihood of null effects of large NHLBI clinical trials has increased over time. <em>PLoS One</em>, 10(8):e0132382, August 2015.</p>
+<dd><p class="sd-card-text">Robert M Kaplan and Veronica L Irvin. Likelihood of null effects of large NHLBI clinical trials has increased over time. <em>PLoS One</em>, 10(8):e0132382, August 2015.</p>
 </dd>
 <dt class="label" id="id255"><span class="brackets"><a class="fn-backref" href="#id32">B16</a></span></dt>
-<dd><p class="card-text">David N Kennedy, Sanu A Abraham, Julianna F Bates, Albert Crowley, Satrajit Ghosh, Tom Gillespie, Mathias Goncalves, Jeffrey S Grethe, Yaroslav O Halchenko, Michael Hanke, Christian Haselgrove, Steven M Hodge, Dorota Jarecka, Jakub Kaczmarzyk, David B Keator, Kyle Meyer, Maryann E Martone, Smruti Padhy, Jean-Baptiste Poline, Nina Preuss, Troy Sincomb, and Matt Travers. Everything matters: the ReproNim perspective on reproducible neuroimaging. <em>Front. Neuroinform.</em>, 13:1, February 2019.</p>
+<dd><p class="sd-card-text">David N Kennedy, Sanu A Abraham, Julianna F Bates, Albert Crowley, Satrajit Ghosh, Tom Gillespie, Mathias Goncalves, Jeffrey S Grethe, Yaroslav O Halchenko, Michael Hanke, Christian Haselgrove, Steven M Hodge, Dorota Jarecka, Jakub Kaczmarzyk, David B Keator, Kyle Meyer, Maryann E Martone, Smruti Padhy, Jean-Baptiste Poline, Nina Preuss, Troy Sincomb, and Matt Travers. Everything matters: the ReproNim perspective on reproducible neuroimaging. <em>Front. Neuroinform.</em>, 13:1, February 2019.</p>
 </dd>
 <dt class="label" id="id252"><span class="brackets"><a class="fn-backref" href="#id11">B17</a></span></dt>
-<dd><p class="card-text">N L Kerr. HARKing: hypothesizing after the results are known. <em>Personality and Social Psychology Review</em>, 2(3):196–217, 1998.</p>
+<dd><p class="sd-card-text">N L Kerr. HARKing: hypothesizing after the results are known. <em>Personality and Social Psychology Review</em>, 2(3):196–217, 1998.</p>
 </dd>
 <dt class="label" id="id114"><span class="brackets"><a class="fn-backref" href="#id16">B18</a></span></dt>
-<dd><p class="card-text">Mallory C Kidwell, Ljiljana B Lazarević, Erica Baranski, Tom E Hardwicke, Sarah Piechowski, Lina-Sophia Falkenberg, Curtis Kennett, Agnieszka Slowik, Carina Sonnleitner, Chelsey Hess-Holden, Timothy M Errington, Susann Fiedler, and Brian A Nosek. Badges to acknowledge open practices: a simple, low-cost, effective method for increasing transparency. <em>PLoS Biology</em>, 14(5):e1002456, May 2016.</p>
+<dd><p class="sd-card-text">Mallory C Kidwell, Ljiljana B Lazarević, Erica Baranski, Tom E Hardwicke, Sarah Piechowski, Lina-Sophia Falkenberg, Curtis Kennett, Agnieszka Slowik, Carina Sonnleitner, Chelsey Hess-Holden, Timothy M Errington, Susann Fiedler, and Brian A Nosek. Badges to acknowledge open practices: a simple, low-cost, effective method for increasing transparency. <em>PLoS Biology</em>, 14(5):e1002456, May 2016.</p>
 </dd>
 <dt class="label" id="id115"><span class="brackets"><a class="fn-backref" href="#id6">B19</a></span></dt>
-<dd><p class="card-text">Gitte M Knudsen, Melanie Ganz, Stefan Appelhoff, Ronald Boellaard, Guy Bormans, Richard E Carson, Ciprian Catana, Doris Doudet, Antony D Gee, Douglas N Greve, Roger N Gunn, Christer Halldin, Peter Herscovitch, Henry Huang, Sune H Keller, Adriaan A Lammertsma, Rupert Lanzenberger, Jeih-San Liow, Talakad G Lohith, Mark Lubberink, Chul H Lyoo, J John Mann, Granville J Matheson, Thomas E Nichols, Martin Nørgaard, Todd Ogden, Ramin Parsey, Victor W Pike, Julie Price, Gaia Rizzo, Pedro Rosa-Neto, Martin Schain, Peter Jh Scott, Graham Searle, Mark Slifstein, Tetsuya Suhara, Peter S Talbot, Adam Thomas, Mattia Veronese, Dean F Wong, Maqsood Yaqub, Francesca Zanderigo, Sami Zoghbi, and Robert B Innis. Guidelines for the content and format of PET brain data in publications and archives: a consensus paper. <em>Journal of Cerebral Blood Flow and Metabolism</em>, 40(8):1576–1585, August 2020.</p>
+<dd><p class="sd-card-text">Gitte M Knudsen, Melanie Ganz, Stefan Appelhoff, Ronald Boellaard, Guy Bormans, Richard E Carson, Ciprian Catana, Doris Doudet, Antony D Gee, Douglas N Greve, Roger N Gunn, Christer Halldin, Peter Herscovitch, Henry Huang, Sune H Keller, Adriaan A Lammertsma, Rupert Lanzenberger, Jeih-San Liow, Talakad G Lohith, Mark Lubberink, Chul H Lyoo, J John Mann, Granville J Matheson, Thomas E Nichols, Martin Nørgaard, Todd Ogden, Ramin Parsey, Victor W Pike, Julie Price, Gaia Rizzo, Pedro Rosa-Neto, Martin Schain, Peter Jh Scott, Graham Searle, Mark Slifstein, Tetsuya Suhara, Peter S Talbot, Adam Thomas, Mattia Veronese, Dean F Wong, Maqsood Yaqub, Francesca Zanderigo, Sami Zoghbi, and Robert B Innis. Guidelines for the content and format of PET brain data in publications and archives: a consensus paper. <em>Journal of Cerebral Blood Flow and Metabolism</em>, 40(8):1576–1585, August 2020.</p>
 </dd>
 <dt class="label" id="id199"><span class="brackets"><a class="fn-backref" href="#id29">B20</a></span></dt>
-<dd><p class="card-text">Matthew Kollada, Qingzhu Gao, Monika S Mellem, Tathagata Banerjee, and William J Martin. A generalizable method for automated quality control of functional neuroimaging datasets. In Arash Shaban-Nejad, Martin Michalowski, and David L Buckeridge, editors, <em>Explainable AI in Healthcare and Medicine: Building a Culture of Transparency and Accountability</em>, pages 55–68. Springer International Publishing, Cham, 2021.</p>
+<dd><p class="sd-card-text">Matthew Kollada, Qingzhu Gao, Monika S Mellem, Tathagata Banerjee, and William J Martin. A generalizable method for automated quality control of functional neuroimaging datasets. In Arash Shaban-Nejad, Martin Michalowski, and David L Buckeridge, editors, <em>Explainable AI in Healthcare and Medicine: Building a Culture of Transparency and Accountability</em>, pages 55–68. Springer International Publishing, Cham, 2021.</p>
 </dd>
 <dt class="label" id="id272"><span class="brackets"><a class="fn-backref" href="#id31">B21</a></span></dt>
-<dd><p class="card-text">Daniel S Marcus, Timothy R Olsen, Mohana Ramaratnam, and Randy L Buckner. The extensible neuroimaging archive toolkit: an informatics platform for managing, exploring, and sharing neuroimaging data. <em>Neuroinformatics</em>, 5(1):11–34, 2007.</p>
+<dd><p class="sd-card-text">Daniel S Marcus, Timothy R Olsen, Mohana Ramaratnam, and Randy L Buckner. The extensible neuroimaging archive toolkit: an informatics platform for managing, exploring, and sharing neuroimaging data. <em>Neuroinformatics</em>, 5(1):11–34, 2007.</p>
 </dd>
 <dt class="label" id="id109"><span class="brackets"><a class="fn-backref" href="#id26">B22</a></span></dt>
-<dd><p class="card-text">Bénédicte Mortamet, Matt A Bernstein, Clifford R Jack, Jr, Jeffrey L Gunter, Chadwick Ward, Paula J Britson, Reto Meuli, Jean-Philippe Thiran, Gunnar Krueger, and Alzheimer's Disease Neuroimaging Initiative. Automatic quality assessment in structural brain magnetic resonance imaging. <em>Magn. Reson. Med.</em>, 62(2):365–372, August 2009.</p>
+<dd><p class="sd-card-text">Bénédicte Mortamet, Matt A Bernstein, Clifford R Jack, Jr, Jeffrey L Gunter, Chadwick Ward, Paula J Britson, Reto Meuli, Jean-Philippe Thiran, Gunnar Krueger, and Alzheimer's Disease Neuroimaging Initiative. Automatic quality assessment in structural brain magnetic resonance imaging. <em>Magn. Reson. Med.</em>, 62(2):365–372, August 2009.</p>
 </dd>
 <dt class="label" id="id268"><span class="brackets"><a class="fn-backref" href="#id11">B23</a></span></dt>
-<dd><p class="card-text">Marcus R Munafò, Brian A Nosek, Dorothy V M Bishop, Katherine S Button, Christopher D Chambers, Nathalie Percie Du Sert, Uri Simonsohn, Eric Jan Wagenmakers, Jennifer J Ware, and John P A Ioannidis. A manifesto for reproducible science. <em>Nature Human Behaviour</em>, 1(1):1–9, 2017.</p>
+<dd><p class="sd-card-text">Marcus R Munafò, Brian A Nosek, Dorothy V M Bishop, Katherine S Button, Christopher D Chambers, Nathalie Percie Du Sert, Uri Simonsohn, Eric Jan Wagenmakers, Jennifer J Ware, and John P A Ioannidis. A manifesto for reproducible science. <em>Nature Human Behaviour</em>, 1(1):1–9, 2017.</p>
 </dd>
 <dt class="label" id="id235"><span class="brackets"><a class="fn-backref" href="#id3">B24</a></span></dt>
-<dd><p class="card-text">Thomas E Nichols, Samir Das, Simon B Eickhoff, Alan C Evans, Tristan Glatard, Michael Hanke, Nikolaus Kriegeskorte, Michael P Milham, Russell A Poldrack, Jean-Baptiste Poline, Erika Proal, Bertrand Thirion, David C Van Essen, Tonya White, and B T Thomas Yeo. Best practices in data analysis and sharing in neuroimaging using MRI. <em>Nature Neuroscience</em>, 20(3):299–303, February 2017.</p>
+<dd><p class="sd-card-text">Thomas E Nichols, Samir Das, Simon B Eickhoff, Alan C Evans, Tristan Glatard, Michael Hanke, Nikolaus Kriegeskorte, Michael P Milham, Russell A Poldrack, Jean-Baptiste Poline, Erika Proal, Bertrand Thirion, David C Van Essen, Tonya White, and B T Thomas Yeo. Best practices in data analysis and sharing in neuroimaging using MRI. <em>Nature Neuroscience</em>, 20(3):299–303, February 2017.</p>
 </dd>
 <dt class="label" id="id228"><span class="brackets"><a class="fn-backref" href="#id11">B25</a></span></dt>
-<dd><p class="card-text">Brian A Nosek, Emorie D Beck, Lorne Campbell, Jessica K Flake, Tom E Hardwicke, David T Mellor, Anna E van 't Veer, and Simine Vazire. Preregistration is hard, and worthwhile. <em>Trends in Cognitive Sciences</em>, 23(10):815–818, October 2019.</p>
+<dd><p class="sd-card-text">Brian A Nosek, Emorie D Beck, Lorne Campbell, Jessica K Flake, Tom E Hardwicke, David T Mellor, Anna E van 't Veer, and Simine Vazire. Preregistration is hard, and worthwhile. <em>Trends in Cognitive Sciences</em>, 23(10):815–818, October 2019.</p>
 </dd>
 <dt class="label" id="id184"><span class="brackets"><a class="fn-backref" href="#id8">B26</a></span></dt>
-<dd><p class="card-text">Brian A Nosek, Charles R Ebersole, Alexander C DeHaven, and David T Mellor. The preregistration revolution. <em>Proceedings of the National Academy of Sciences</em>, 2017(15):201708274, 2018.</p>
+<dd><p class="sd-card-text">Brian A Nosek, Charles R Ebersole, Alexander C DeHaven, and David T Mellor. The preregistration revolution. <em>Proceedings of the National Academy of Sciences</em>, 2017(15):201708274, 2018.</p>
 </dd>
 <dt class="label" id="id125"><span class="brackets">B27</span><span class="fn-backref">(<a href="#id7">1</a>,<a href="#id17">2</a>,<a href="#id21">3</a>)</span></dt>
-<dd><p class="card-text">Brian A Nosek and D Stephen Lindsay. Preregistration becoming the norm in psychological science. <em>APS Observer</em>, February 2018.</p>
+<dd><p class="sd-card-text">Brian A Nosek and D Stephen Lindsay. Preregistration becoming the norm in psychological science. <em>APS Observer</em>, February 2018.</p>
 </dd>
 <dt class="label" id="id276"><span class="brackets">B28</span><span class="fn-backref">(<a href="#id13">1</a>,<a href="#id18">2</a>,<a href="#id21">3</a>)</span></dt>
-<dd><p class="card-text">Mariella Paul, Gisela Govaart, and Antonio Schettino. Making ERP research more transparent: guidelines for preregistration. <em>International Journal of Psychophysiology</em>, 164:52–63, 2021.</p>
+<dd><p class="sd-card-text">Mariella Paul, Gisela Govaart, and Antonio Schettino. Making ERP research more transparent: guidelines for preregistration. <em>International Journal of Psychophysiology</em>, 164:52–63, 2021.</p>
 </dd>
 <dt class="label" id="id166"><span class="brackets"><a class="fn-backref" href="#id4">B29</a></span></dt>
-<dd><p class="card-text">Cyril R Pernet, Marta I Garrido, Alexandre Gramfort, Natasha Maurits, Christoph M Michel, Elizabeth Pang, Riitta Salmelin, Jan Mathijs Schoffelen, Pedro A Valdes-Sosa, and Aina Puce. Issues and recommendations from the OHBM COBIDAS MEEG committee for reproducible EEG and MEG research. <em>Nature Neuroscience</em>, 23(12):1473–1483, December 2020.</p>
+<dd><p class="sd-card-text">Cyril R Pernet, Marta I Garrido, Alexandre Gramfort, Natasha Maurits, Christoph M Michel, Elizabeth Pang, Riitta Salmelin, Jan Mathijs Schoffelen, Pedro A Valdes-Sosa, and Aina Puce. Issues and recommendations from the OHBM COBIDAS MEEG committee for reproducible EEG and MEG research. <em>Nature Neuroscience</em>, 23(12):1473–1483, December 2020.</p>
 </dd>
 <dt class="label" id="id62"><span class="brackets"><a class="fn-backref" href="#id13">B30</a></span></dt>
-<dd><p class="card-text">Mark Rubin. Does preregistration improve the credibility of research findings? <em>The Quantitative Methods in Psychology</em>, 16(4):376–390, 2020.</p>
+<dd><p class="sd-card-text">Mark Rubin. Does preregistration improve the credibility of research findings? <em>The Quantitative Methods in Psychology</em>, 16(4):376–390, 2020.</p>
 </dd>
 <dt class="label" id="id132"><span class="brackets">B31</span><span class="fn-backref">(<a href="#id14">1</a>,<a href="#id15">2</a>)</span></dt>
-<dd><p class="card-text">Anne M Scheel. Registered reports: a process to safeguard high-quality evidence. <em>Quality of Life Research</em>, 29(12):3181–3182, December 2020.</p>
+<dd><p class="sd-card-text">Anne M Scheel. Registered reports: a process to safeguard high-quality evidence. <em>Quality of Life Research</em>, 29(12):3181–3182, December 2020.</p>
 </dd>
 <dt class="label" id="id160"><span class="brackets"><a class="fn-backref" href="#id19">B32</a></span></dt>
-<dd><p class="card-text">Joseph P Simmons, Leif Nelson, and Uri Simonsohn. Pre‐registration: why and how. <em>Journal of Consumer Psychology</em>, 31(1):151–162, January 2021.</p>
+<dd><p class="sd-card-text">Joseph P Simmons, Leif Nelson, and Uri Simonsohn. Pre‐registration: why and how. <em>Journal of Consumer Psychology</em>, 31(1):151–162, January 2021.</p>
 </dd>
 <dt class="label" id="id217"><span class="brackets"><a class="fn-backref" href="#id10">B33</a></span></dt>
-<dd><p class="card-text">Joseph P Simmons, Leif D Nelson, and Uri Simonsohn. False-positive psychology: undisclosed flexibility in data collection and analysis allows presenting anything as significant. <em>Psychological Science</em>, 22(11):1359–1366, 2011.</p>
+<dd><p class="sd-card-text">Joseph P Simmons, Leif D Nelson, and Uri Simonsohn. False-positive psychology: undisclosed flexibility in data collection and analysis allows presenting anything as significant. <em>Psychological Science</em>, 22(11):1359–1366, 2011.</p>
 </dd>
 <dt class="label" id="id213"><span class="brackets"><a class="fn-backref" href="#id12">B34</a></span></dt>
-<dd><p class="card-text">Courtney K Soderberg, Timothy M Errington, Sarah R Schiavone, Julia Bottesini, Felix Singleton Thorn, Simine Vazire, Kevin M Esterling, and Brian A Nosek. Initial evidence of research quality of registered reports compared with the standard publishing model. <em>Nature Human Behaviour</em>, 5(8):990–997, August 2021.</p>
+<dd><p class="sd-card-text">Courtney K Soderberg, Timothy M Errington, Sarah R Schiavone, Julia Bottesini, Felix Singleton Thorn, Simine Vazire, Kevin M Esterling, and Brian A Nosek. Initial evidence of research quality of registered reports compared with the standard publishing model. <em>Nature Human Behaviour</em>, 5(8):990–997, August 2021.</p>
 </dd>
 <dt class="label" id="id37"><span class="brackets"><a class="fn-backref" href="#id2">B35</a></span></dt>
-<dd><p class="card-text">Julia Strand. Error tight: exercises for lab groups to prevent research mistakes. <em>PsyArXiv</em>, 2021.</p>
+<dd><p class="sd-card-text">Julia Strand. Error tight: exercises for lab groups to prevent research mistakes. <em>PsyArXiv</em>, 2021.</p>
 </dd>
 <dt class="label" id="id69"><span class="brackets"><a class="fn-backref" href="#id27">B36</a></span></dt>
-<dd><p class="card-text">Stephen C Strother. Evaluating fMRI preprocessing pipelines. <em>IEEE Engineering in Medicine and Biology</em>, 25(2):27–41, March 2006.</p>
+<dd><p class="sd-card-text">Stephen C Strother. Evaluating fMRI preprocessing pipelines. <em>IEEE Engineering in Medicine and Biology</em>, 25(2):27–41, March 2006.</p>
 </dd>
 <dt class="label" id="id51"><span class="brackets"><a class="fn-backref" href="#id16">B37</a></span></dt>
-<dd><p class="card-text">Eric-Jan Wagenmakers and Gilles Dutilh. Seven selfish reasons for preregistration. <em>APS Observer</em>, October 2016.</p>
+<dd><p class="sd-card-text">Eric-Jan Wagenmakers and Gilles Dutilh. Seven selfish reasons for preregistration. <em>APS Observer</em>, October 2016.</p>
 </dd>
 <dt class="label" id="id74"><span class="brackets"><a class="fn-backref" href="#id5">B38</a></span></dt>
-<dd><p class="card-text">Meryem A Yücel, Alexander V Lühmann, Felix Scholkmann, Judit Gervain, Ippeita Dan, Hasan Ayaz, David Boas, Robert J Cooper, Joseph Culver, Clare E Elwell, Adam Eggebrecht, Maria A Franceschini, Christophe Grova, Fumitaka Homae, Frédéric Lesage, Hellmuth Obrig, Ilias Tachtsidis, Sungho Tak, Yunjie Tong, Alessandro Torricelli, Heidrun Wabnitz, and Martin Wolf. Best practices for fNIRS publications. <em>Neurophotonics</em>, 8(1):012101, January 2021.</p>
+<dd><p class="sd-card-text">Meryem A Yücel, Alexander V Lühmann, Felix Scholkmann, Judit Gervain, Ippeita Dan, Hasan Ayaz, David Boas, Robert J Cooper, Joseph Culver, Clare E Elwell, Adam Eggebrecht, Maria A Franceschini, Christophe Grova, Fumitaka Homae, Frédéric Lesage, Hellmuth Obrig, Ilias Tachtsidis, Sungho Tak, Yunjie Tong, Alessandro Torricelli, Heidrun Wabnitz, and Martin Wolf. Best practices for fNIRS publications. <em>Neurophotonics</em>, 8(1):012101, January 2021.</p>
 </dd>
 <dt class="label" id="id170"><span class="brackets"><a class="fn-backref" href="#id11">B39</a></span></dt>
-<dd><p class="card-text">Nature. Let's think about cognitive bias. <em>Nature</em>, 526(7572):163, October 2015.</p>
+<dd><p class="sd-card-text">Nature. Let's think about cognitive bias. <em>Nature</em>, 526(7572):163, October 2015.</p>
 </dd>
 </dl>
 </div>
@@ -490,7 +559,7 @@ References on this page<div class="summary-down docutils">
 <dd><p>Sources: Icons from the Noun Project: Registration by WEBTECHOPS LLP; Shared by arjuazka; Computer warranty by Thuy Nguyen; Logos: used with permission by the respective copyright holders.</p>
 </dd>
 </dl>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -514,9 +583,11 @@ References on this page<div class="summary-down docutils">
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="../01/introduction.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -532,27 +603,31 @@ References on this page<div class="summary-down docutils">
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Guiomar Niso, Rotem Botvinik-Nezer, Stefan Appelhoff, Alejandro De La Vega, Oscar Esteban, Joset A. Etzel, Karolina Finc, Melanie Ganz, Rémi Gau, Yaroslav O. Halchenko, Peer Herholz, Agah Karakuzu, David B. Keator, Christopher J. Markiewicz, Camille Maumet, Cyril R. Pernet, Franco Pestilli, Nazek Queder, Tina Schmitt, Weronika Sójka, Adina S. Wagner, Kirstie J. Whitaker, Jochem W. Rieger<br/>
+  
+      &copy; Copyright 2022.<br/>
+    <div class="extra_footer">
+      <img href="http://creativecommons.org/publicdomain/zero/1.0/" src="https://licensebuttons.net/l/zero/1.0/80x15.png" alt="CC0 licence">
+    </div>
+</p>
+        </footer>
+    </div>
     
-      By Guiomar Niso, Rotem Botvinik-Nezer, Stefan Appelhoff, Alejandro De La Vega, Oscar Esteban, Joset A. Etzel, Karolina Finc, Melanie Ganz, Rémi Gau, Yaroslav O. Halchenko, Peer Herholz, Agah Karakuzu, David B. Keator, Christopher J. Markiewicz, Camille Maumet, Cyril R. Pernet, Franco Pestilli, Nazek Queder, Tina Schmitt, Weronika Sójka, Adina S. Wagner, Kirstie J. Whitaker, Jochem W. Rieger<br/>
-    
-        &copy; Copyright 2022.<br/>
-      <div class="extra_footer">
-        <img href="http://creativecommons.org/publicdomain/zero/1.0/" src="https://licensebuttons.net/l/zero/1.0/80x15.png" alt="CC0 licence">
-      </div>
-  </p>
-</footer>
-</main>
+</div>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>
