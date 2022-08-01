@@ -1,0 +1,499 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction &#8212; Open and reproducible neuroimaging: from study inception to publication</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Study inception, planning, and ethics" href="../02/ipe.html" />
+    <link rel="prev" title="Abstract" href="../index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/icon.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Open and reproducible neuroimaging: from study inception to publication</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   Abstract
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Overview
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Introduction
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Design
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../02/ipe.html">
+   Study inception, planning, and ethics
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Acquisition
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../03/acq.html">
+   Data acquisition
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Data
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../04/data.html">
+   Research data management
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Processing
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../05/proc.html">
+   Data processing and analysis
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Sharing
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../06/dist.html">
+   Research disemmination
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Conclusion
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../07/conclusion.html">
+   Conclusions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contributions
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../08/contributions.html">
+   Contributions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Resources
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../09/table.html">
+   Resources
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/01/introduction.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Introduction</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>Science is an incremental progress towards creating and organizing knowledge through theories and testable predictions. Reproducibility is a core part of science: being able to repeat or recreate scientific results is essential for the complex process of knowledge accumulation. Due to its relevance, different terms have been introduced to describe specific aspects of the process (e.g., “reproducibility” when the same data and methods are used, “replicability” when new data and potentially new methods are used, “robustness” when the same data but different methods are used, and “generalizability” when new data and methods are used) <span id="id1">[<a class="reference internal" href="#id21" title="The Turing Way Community, Becky Arnold, Louise Bowler, Sarah Gibson, Patricia Herterich, Rosie Higman, Anna Krystalli, Alexander Morley, Martin O'Reilly, and Kirstie Whitaker. The turing way: a handbook for reproducible data science. 2019.">The Turing Way Community <em>et al.</em>, 2019</a>]</span>. Here, we will use “reproducibility” as an umbrella term comprising them together to refer to the ability of recreating scientific results <span id="id2">[<a class="reference internal" href="#id209" title="Russell A Poldrack, Kirstie Whitaker, and David Kennedy. Introduction to the special issue on reproducibility in neuroimaging. Neuroimage, 218:116357, September 2020.">Poldrack <em>et al.</em>, 2020</a>]</span>. Open science tools and practices have been developed to advance reproducibility, as well as accessibility and transparency at all stages of the research cycle and across all levels of society. Together, they remove barriers to sharing and facilitate collaboration, with the goal of improving reproducibility and, ultimately, accelerating scientific discoveries.</p>
+<div class="admonition-issue admonition">
+<p class="admonition-title">Issue</p>
+<p>Empirical observations of how labs conduct research indicate that the adoption rate of open practices and tools for reproducible and collaborative science, unfortunately, remains in its infancy.</p>
+</div>
+<p>Even when members of a specific scientific community have taken a central role in open science advocacy and tool development, like in the neuroimaging community, the impact on the rest of the very same community is limited. A recent survey <span id="id3">[<a class="reference internal" href="#id229" title="Christian Paret, Nike Unverhau, Franklin Feingold, Russell A Poldrack, Madita Stirner, Christian Schmahl, and Maurizio Sicorello. Survey on open science practices in functional neuroimaging. bioRxiv, pages 2021.11.26.470115, November 2021.">Paret <em>et al.</em>, 2021</a>]</span> including researchers who are senior and likely to hold a positive attitude towards open science, indicated that 42% have never pre-registered a neuroimaging study and 34% have never shared their raw neuroimaging data. Many of those who indicated that they pre-registered or shared their data at least once likely did not do so in all their studies, and thus, the actual rate of pre-registration and data sharing in neuroimaging is likely much lower.</p>
+<p>The limited adoption of open science practices is at odds with the overwhelming evidence that a lack of open practices and tools can hinder reproducibility with costs for scientific progress and for society. Indeed, reproducibility issues have been undermining the foundation of scientific research in several fields, such as psychology <span id="id4">[<a class="reference internal" href="#id260" title="Richard A Klein, Michelangelo Vianello, Fred Hasselman, Byron G Adams, Reginald B Adams, Jr, Sinan Alper, Mark Aveyard, Jordan R Axt, Mayowa T Babalola, Štěpán Bahník, Rishtee Batra, Mihály Berkics, Michael J Bernstein, Daniel R Berry, Olga Bialobrzeska, Evans Dami Binan, Konrad Bocian, Mark J Brandt, Robert Busching, Anna Cabak Rédei, Huajian Cai, Fanny Cambier, Katarzyna Cantarero, Cheryl L Carmichael, Francisco Ceric, Jesse Chandler, Jen-Ho Chang, Armand Chatard, Eva E Chen, Winnee Cheong, David C Cicero, Sharon Coen, Jennifer A Coleman, Brian Collisson, Morgan A Conway, Katherine S Corker, Paul G Curran, Fiery Cushman, Zubairu K Dagona, Ilker Dalgar, Anna Dalla Rosa, William E Davis, Maaike de Bruijn, Leander De Schutter, Thierry Devos, Marieke de Vries, Canay Doğulu, Nerisa Dozo, Kristin Nicole Dukes, Yarrow Dunham, Kevin Durrheim, Charles R Ebersole, John E Edlund, Anja Eller, Alexander Scott English, Carolyn Finck, Natalia Frankowska, Miguel-Ángel Freyre, Mike Friedman, Elisa Maria Galliani, Joshua C Gandi, Tanuka Ghoshal, Steffen R Giessner, Tripat Gill, Timo Gnambs, Ángel Gómez, Roberto González, Jesse Graham, Jon E Grahe, Ivan Grahek, Eva G T Green, Kakul Hai, Matthew Haigh, Elizabeth L Haines, Michael P Hall, Marie E Heffernan, Joshua A Hicks, Petr Houdek, Jeffrey R Huntsinger, Ho Phi Huynh, Hans IJzerman, Yoel Inbar, Åse H Innes-Ker, William Jiménez-Leal, Melissa-Sue John, Jennifer A Joy-Gaba, Roza G Kamiloğlu, Heather Barry Kappes, Serdar Karabati, Haruna Karick, Victor N Keller, Anna Kende, Nicolas Kervyn, Goran Knežević, Carrie Kovacs, Lacy E Krueger, German Kurapov, Jamie Kurtz, Daniël Lakens, Ljiljana B Lazarević, Carmel A Levitan, Neil A Lewis, Jr, Samuel Lins, Nikolette P Lipsey, Joy E Losee, Esther Maassen, Angela T Maitner, Winfrida Malingumu, Robyn K Mallett, Satia A Marotta, Janko Međedović, Fernando Mena-Pacheco, Taciano L Milfont, Wendy L Morris, Sean C Murphy, Andriy Myachykov, Nick Neave, Koen Neijenhuijs, Anthony J Nelson, Félix Neto, Austin Lee Nichols, Aaron Ocampo, Susan L O'Donnell, Haruka Oikawa, Masanori Oikawa, Elsie Ong, Gábor Orosz, Malgorzata Osowiecka, Grant Packard, Rolando Pérez-Sánchez, Boban Petrović, Ronaldo Pilati, Brad Pinter, Lysandra Podesta, Gabrielle Pogge, Monique M H Pollmann, Abraham M Rutchick, Patricio Saavedra, Alexander K Saeri, Erika Salomon, Kathleen Schmidt, Felix D Schönbrodt, Maciej B Sekerdej, David Sirlopú, Jeanine L M Skorinko, Michael A Smith, Vanessa Smith-Castro, Karin C H J Smolders, Agata Sobkow, Walter Sowden, Philipp Spachtholz, Manini Srivastava, Troy G Steiner, Jeroen Stouten, Chris N H Street, Oskar K Sundfelt, Stephanie Szeto, Ewa Szumowska, Andrew C W Tang, Norbert Tanzer, Morgan J Tear, Jordan Theriault, Manuela Thomae, David Torres, Jakub Traczyk, Joshua M Tybur, Adrienn Ujhelyi, Robbie C M van Aert, Marcel A L M van Assen, Marije van der Hulst, Paul A M van Lange, Anna Elisabeth van 't Veer, Alejandro Vásquez- Echeverría, Leigh Ann Vaughn, Alexandra Vázquez, Luis Diego Vega, Catherine Verniers, Mark Verschoor, Ingrid P J Voermans, Marek A Vranka, Cheryl Welch, Aaron L Wichman, Lisa A Williams, Michael Wood, Julie A Woodzicka, Marta K Wronska, Liane Young, John M Zelenski, Zeng Zhijia, and Brian A Nosek. Many labs 2: investigating variation in replicability across samples and settings. Advances in Methods and Practices in Psychological Science, 1(4):443–490, December 2018.">Klein <em>et al.</em>, 2018</a>, <a class="reference internal" href="#id201" title="Open Science Collaboration. PSYCHOLOGY. estimating the reproducibility of psychological science. Science, 349(6251):aac4716, August 2015.">Open Science Collaboration, 2015</a>]</span> social sciences <span id="id5">[<a class="reference internal" href="#id73" title="Colin F Camerer, Anna Dreber, Eskil Forsell, Teck-Hua Ho, Jürgen Huber, Magnus Johannesson, Michael Kirchler, Johan Almenberg, Adam Altmejd, Taizan Chan, Emma Heikensten, Felix Holzmeister, Taisuke Imai, Siri Isaksson, Gideon Nave, Thomas Pfeiffer, Michael Razen, and Hang Wu. Evaluating replicability of laboratory experiments in economics. Science, 351(6280):1433–1436, March 2016.">Camerer <em>et al.</em>, 2016</a>, <a class="reference internal" href="#id219" title="Colin F Camerer, Anna Dreber, Felix Holzmeister, Teck-Hua Ho, Jürgen Huber, Magnus Johannesson, Michael Kirchler, Gideon Nave, Brian A Nosek, Thomas Pfeiffer, Adam Altmejd, Nick Buttrick, Taizan Chan, Yiling Chen, Eskil Forsell, Anup Gampa, Emma Heikensten, Lily Hummer, Taisuke Imai, Siri Isaksson, Dylan Manfredi, Julia Rose, Eric-Jan Wagenmakers, and Hang Wu. Evaluating the replicability of social science experiments in nature and science between 2010 and 2015. Nature Human Behaviour, 2(9):637–644, September 2018.">Camerer <em>et al.</em>, 2018</a>]</span>, neuroimaging <span id="id6">[<a class="reference internal" href="#id190" title="Rotem Botvinik-Nezer, Felix Holzmeister, Colin F Camerer, Anna Dreber, Juergen Huber, Magnus Johannesson, Michael Kirchler, Roni Iwanir, Jeanette A Mumford, R Alison Adcock, Paolo Avesani, Blazej M Baczkowski, Aahana Bajracharya, Leah Bakst, Sheryl Ball, Marco Barilari, Nadège Bault, Derek Beaton, Julia Beitner, Roland G Benoit, Ruud M W J Berkers, Jamil P Bhanji, Bharat B Biswal, Sebastian Bobadilla-Suarez, Tiago Bortolini, Katherine L Bottenhorn, Alexander Bowring, Senne Braem, Hayley R Brooks, Emily G Brudner, Cristian B Calderon, Julia A Camilleri, Jaime J Castrellon, Luca Cecchetti, Edna C Cieslik, Zachary J Cole, Olivier Collignon, Robert W Cox, William A Cunningham, Stefan Czoschke, Kamalaker Dadi, Charles P Davis, Alberto De Luca, Mauricio R Delgado, Lysia Demetriou, Jeffrey B Dennison, Xin Di, Erin W Dickie, Ekaterina Dobryakova, Claire L Donnat, Juergen Dukart, Niall W Duncan, Joke Durnez, Amr Eed, Simon B Eickhoff, Andrew Erhart, Laura Fontanesi, G Matthew Fricke, Shiguang Fu, Adriana Galván, Remi Gau, Sarah Genon, Tristan Glatard, Enrico Glerean, Jelle J Goeman, Sergej A E Golowin, Carlos González-García, Krzysztof J Gorgolewski, Cheryl L Grady, Mikella A Green, João F Guassi Moreira, Olivia Guest, Shabnam Hakimi, J Paul Hamilton, Roeland Hancock, Giacomo Handjaras, Bronson B Harry, Colin Hawco, Peer Herholz, Gabrielle Herman, Stephan Heunis, Felix Hoffstaedter, Jeremy Hogeveen, Susan Holmes, Chuan-Peng Hu, Scott A Huettel, Matthew E Hughes, Vittorio Iacovella, Alexandru D Iordan, Peder M Isager, Ayse I Isik, Andrew Jahn, Matthew R Johnson, Tom Johnstone, Michael J E Joseph, Anthony C Juliano, Joseph W Kable, Michalis Kassinopoulos, Cemal Koba, Xiang-Zhen Kong, Timothy R Koscik, Nuri Erkut Kucukboyaci, Brice A Kuhl, Sebastian Kupek, Angela R Laird, Claus Lamm, Robert Langner, Nina Lauharatanahirun, Hongmi Lee, Sangil Lee, Alexander Leemans, Andrea Leo, Elise Lesage, Flora Li, Monica Y C Li, Phui Cheng Lim, Evan N Lintz, Schuyler W Liphardt, Annabel B Losecaat Vermeer, Bradley C Love, Michael L Mack, Norberto Malpica, Theo Marins, Camille Maumet, Kelsey McDonald, Joseph T McGuire, Helena Melero, Adriana S Méndez Leal, Benjamin Meyer, Kristin N Meyer, Glad Mihai, Georgios D Mitsis, Jorge Moll, Dylan M Nielson, Gustav Nilsonne, Michael P Notter, Emanuele Olivetti, Adrian I Onicas, Paolo Papale, Kaustubh R Patil, Jonathan E Peelle, Alexandre Pérez, Doris Pischedda, Jean-Baptiste Poline, Yanina Prystauka, Shruti Ray, Patricia A Reuter-Lorenz, Richard C Reynolds, Emiliano Ricciardi, Jenny R Rieck, Anais M Rodriguez-Thompson, Anthony Romyn, Taylor Salo, Gregory R Samanez-Larkin, Emilio Sanz-Morales, Margaret L Schlichting, Douglas H Schultz, Qiang Shen, Margaret A Sheridan, Jennifer A Silvers, Kenny Skagerlund, Alec Smith, David V Smith, Peter Sokol-Hessner, Simon R Steinkamp, Sarah M Tashjian, Bertrand Thirion, John N Thorp, Gustav Tinghög, Loreen Tisdall, Steven H Tompson, Claudio Toro-Serey, Juan Jesus Torre Tresols, Leonardo Tozzi, Vuong Truong, Luca Turella, Anna E van 't Veer, Tom Verguts, Jean M Vettel, Sagana Vijayarajah, Khoi Vo, Matthew B Wall, Wouter D Weeda, Susanne Weis, David J White, David Wisniewski, Alba Xifra-Porxas, Emily A Yearling, Sangsuk Yoon, Rui Yuan, Kenneth S L Yuen, Lei Zhang, Xu Zhang, Joshua E Zosky, Thomas E Nichols, Russell A Poldrack, and Tom Schonberg. Variability in the analysis of a single neuroimaging dataset by many teams. Nature, 582(7810):84–88, June 2020.">Botvinik-Nezer <em>et al.</em>, 2020</a>, <a class="reference internal" href="#id238">Li <em>et al.</em>, 2021</a>, <a class="reference internal" href="#id250" title="Marcus R Munafò, Brian A Nosek, Dorothy V M Bishop, Katherine S Button, Christopher D Chambers, Nathalie Percie Du Sert, Uri Simonsohn, Eric Jan Wagenmakers, Jennifer J Ware, and John P A Ioannidis. A manifesto for reproducible science. Nature Human Behaviour, 1(1):1–9, 2017.">Munafò <em>et al.</em>, 2017</a>]</span>, preclinical cancer biology research <span id="id7">[<a class="reference internal" href="#id213" title="Timothy M Errington, Alexandria Denis, Nicole Perfito, Elizabeth Iorns, and Brian A Nosek. Challenges for assessing replicability in preclinical cancer biology. eLife, 2021.">Errington <em>et al.</em>, 2021</a>, <a class="reference internal" href="#id121" title="Timothy M Errington, Maya Mathur, Courtney K Soderberg, Alexandria Denis, Nicole Perfito, Elizabeth Iorns, and Brian A Nosek. Investigating the replicability of preclinical cancer biology. Elife, December 2021.">Errington <em>et al.</em>, 2021</a>]</span>, and more <span id="id8">[<a class="reference internal" href="#id105" title="Matthew Hutson. Artificial intelligence faces reproducibility crisis. Science, 359(6377):725–726, February 2018.">Hutson, 2018</a>, <a class="reference internal" href="#id203" title="Silas Boye Nissen, Tali Magidson, Kevin Gross, and Carl T Bergstrom. Publication bias and the canonization of false facts. eLife, December 2016.">Nissen <em>et al.</em>, 2016</a>, <a class="reference internal" href="#id163" title="Marta Serra-Garcia and Uri Gneezy. Nonreplicable publications are cited more than replicable ones. Science Advances, May 2021.">Serra-Garcia and Gneezy, 2021</a>]</span>. As a response, there has been a rise in the development of tools and approaches to facilitate reproducibility and open science, in the spirit of Findability, Accessibility, Interoperability, and Reusability principles (FAIR) <span id="id9">[<a class="reference internal" href="#id230" title="Peter E Clayson, Andreas Keil, and Michael J Larson. Open science in human electrophysiology. Int. J. Psychophysiol., 174:43–46, April 2022.">Clayson <em>et al.</em>, 2022</a>, <a class="reference internal" href="#id89" title="Krzysztof J Gorgolewski and Russell A Poldrack. A practical guide for improving transparency and reproducibility in neuroimaging research. PLoS Biology, 14(7):e1002506, July 2016.">Gorgolewski and Poldrack, 2016</a>, <a class="reference internal" href="#id210" title="Brian A Nosek, Emorie D Beck, Lorne Campbell, Jessica K Flake, Tom E Hardwicke, David T Mellor, Anna E van 't Veer, and Simine Vazire. Preregistration is hard, and worthwhile. Trends in Cognitive Sciences, 23(10):815–818, October 2019.">Nosek <em>et al.</em>, 2019</a>, <a class="reference internal" href="#id207" title="Brian A Nosek, Jeffrey R Spies, and Matt Motyl. Scientific utopia: II. restructuring incentives and practices to promote truth over publishability. Perspect. Psychol. Sci., 7(6):615–631, November 2012.">Nosek <em>et al.</em>, 2012</a>, <a class="reference internal" href="#id216" title="Russell A Poldrack, Chris I Baker, Joke Durnez, Krzysztof J Gorgolewski, Paul M Matthews, Marcus R Munafò, Thomas E Nichols, Jean Baptiste Poline, Edward Vul, and Tal Yarkoni. Scanning the horizon: towards transparent and reproducible neuroimaging research. Nat. Rev. Neurosci., 18(2):115–126, 2017.">Poldrack <em>et al.</em>, 2017</a>, <a class="reference internal" href="#id99" title="Russell A Poldrack, Franklin Feingold, Michael J Frank, Padraig Gleeson, Gilles de Hollander, Quentin Jm Huys, Bradley C Love, Christopher J Markiewicz, Rosalyn Moran, Petra Ritter, Timothy T Rogers, Brandon M Turner, Tal Yarkoni, Ming Zhan, and Jonathan D Cohen. The importance of standards for sharing of computational models and data. Computational Brain &amp; Behavior, 2(3-4):229–232, December 2019.">Poldrack <em>et al.</em>, 2019</a>, <a class="reference internal" href="#id130" title="Russell A Poldrack, Grace Huckins, and Gael Varoquaux. Establishment of best practices for evidence for prediction: a review. JAMA Psychiatry, 77(5):534–540, May 2020.">Poldrack <em>et al.</em>, 2020</a>, <a class="reference internal" href="#id122" title="Mark D Wilkinson, Michel Dumontier, I Jsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, Jan-Willem Boiten, Luiz Bonino da Silva Santos, Philip E Bourne, Jildau Bouwman, Anthony J Brookes, Tim Clark, Mercè Crosas, Ingrid Dillo, Olivier Dumon, Scott Edmunds, Chris T Evelo, Richard Finkers, Alejandra Gonzalez-Beltran, Alasdair J G Gray, Paul Groth, Carole Goble, Jeffrey S Grethe, Jaap Heringa, Peter A C 't Hoen, Rob Hooft, Tobias Kuhn, Ruben Kok, Joost Kok, Scott J Lusher, Maryann E Martone, Albert Mons, Abel L Packer, Bengt Persson, Philippe Rocca-Serra, Marco Roos, Rene van Schaik, Susanna-Assunta Sansone, Erik Schultes, Thierry Sengstag, Ted Slater, George Strawn, Morris A Swertz, Mark Thompson, Johan van der Lei, Erik van Mulligen, Jan Velterop, Andra Waagmeester, Peter Wittenburg, Katherine Wolstencroft, Jun Zhao, and Barend Mons. The FAIR guiding principles for scientific data management and stewardship. Scientific Data, 3:160018, March 2016.">Wilkinson <em>et al.</em>, 2016</a>]</span>. Beyond their potential to mitigate transparency and reproducibility issues, these practices provide important benefits for individual researchers by increasing exposure, reputation, chances of publication, number of citations, media attention, potential collaborations, and position and funding opportunities <span id="id10">[<a class="reference internal" href="#id197" title="Christopher Allen and David M A Mehler. Open science challenges, benefits and tips in early career and beyond. PLoS Biology, 17(5):e3000246, May 2019.">Allen and Mehler, 2019</a>, <a class="reference internal" href="#id235" title="Laurence T Hunt. The life-changing magic of sharing your data. Nat Hum Behav, 3(4):312–315, April 2019.">Hunt, 2019</a>, <a class="reference internal" href="#id145" title="Florian Markowetz. Five selfish reasons to work reproducibly. Genome Biol., 16:274, December 2015.">Markowetz, 2015</a>, <a class="reference internal" href="#id126" title="Erin C McKiernan, Philip E Bourne, C Titus Brown, Stuart Buck, Amye Kenall, Jennifer Lin, Damon McDougall, Brian A Nosek, Karthik Ram, Courtney K Soderberg, Jeffrey R Spies, Kaitlin Thaney, Andrew Updegrove, Kara H Woo, and Tal Yarkoni. How open science helps researchers succeed. eLife, July 2016.">McKiernan <em>et al.</em>, 2016</a>, <a class="reference internal" href="#id147" title="Brian A Nosek, Tom E Hardwicke, Hannah Moshontz, Aurélien Allard, Katherine S Corker, Anna Dreber, Fiona Fidler, Joe Hilgard, Melissa Kline Struhl, Michèle B Nuijten, Julia M Rohrer, Felipe Romero, Anne M Scheel, Laura D Scherer, Felix D Schönbrodt, and Simine Vazire. Replicability, robustness, and reproducibility in psychological science. Annu. Rev. Psychol., 73:719–748, January 2022.">Nosek <em>et al.</em>, 2022</a>]</span>. Hence, one could have expected a higher uptake for such beneficial practices and tools.</p>
+<p>Recently, there is a parallel top-down change of policies to further support the adoption of open science practices and tools. For example, funding agencies are now enforcing the implementation of certain open data practices for publicly funded research (<span id="id11">[<a class="reference internal" href="#id174" title="Alea López de San Román. Open science in horizon europe. April 2021.">de San Román, 2021</a>]</span>; e.g., the NIH in the U.S. and the ERC in Europe; <span id="id12">[<a class="reference internal" href="#id28" title="Hans de Jonge, Maria Cruz, and Stephanie Holst. Funders need to credit open science. Nature, 599(7885):372, November 2021.">de Jonge <em>et al.</em>, 2021</a>]</span>), and some require a plan for research data storage and sharing, openly accessible publication formats and dissemination plans beyond the classical journal publication. Additionally, they provide funding for the development of necessary software, hardware, and collaborative infrastructure) to support the transition to open and reproducible neuroscience (e.g., the NIH BRAIN Initiative, NIH ReproNim project <span id="id13">[<a class="reference internal" href="#id237" title="David N Kennedy, Sanu A Abraham, Julianna F Bates, Albert Crowley, Satrajit Ghosh, Tom Gillespie, Mathias Goncalves, Jeffrey S Grethe, Yaroslav O Halchenko, Michael Hanke, Christian Haselgrove, Steven M Hodge, Dorota Jarecka, Jakub Kaczmarzyk, David B Keator, Kyle Meyer, Maryann E Martone, Smruti Padhy, Jean-Baptiste Poline, Nina Preuss, Troy Sincomb, and Matt Travers. Everything matters: the ReproNim perspective on reproducible neuroimaging. Front. Neuroinform., 13:1, February 2019.">Kennedy <em>et al.</em>, 2019</a>]</span>, NSF CRCNS, EU Human Brain Project, German NFDI). These efforts by funding agencies are complemented by stakeholder institutions like the OHBM, the International Neuroinformatics Coordinating Facility (INCF), the Chinese Open Science Network (COSN), and the Open Science Framework (OSF), who provide platforms for the development of standards and best practices of open and FAIR neuroscience research, assemble training material, quality control, and promote open science practices. Moreover, journals have started changing their policies with regard to open access options and data sharing. Together, these institutional measures aim at fostering the benefits of open science practices, and the adoption of open and reproducible science standards will be increasingly required for labs and individual researchers.</p>
+<div class="admonition-issue admonition">
+<p class="admonition-title">Issue</p>
+<p>Nevertheless, multiple barriers of entry to open science practices are driving the modest rate of adoption in the general research community. Among them are lack of knowledge or training and lack of skills or resources.</p>
+</div>
+<p>A survey by Borghi and Van Gulick <span id="id14">Borghi and Van Gulick [<a class="reference internal" href="#id240" title="John A Borghi and Ana E Van Gulick. Data management and sharing in neuroimaging: practices and perceptions of MRI researchers. PLoS One, 13(7):e0200562, July 2018.">2018</a>]</span> found that 65% of researchers reported openness and reproducibility as motivation for implementing research data management in MRI, but between 40-50% pointed to the lack of best practices/tools and knowledge/training as main obstacles for embracing these practices. Likewise, a more recent survey indicated that similar percentages of researchers in neuroimaging have never learned how to pre-register or share their data online and that they know too little about pre-registration platforms and suitable data repositories <span id="id15">[<a class="reference internal" href="#id229" title="Christian Paret, Nike Unverhau, Franklin Feingold, Russell A Poldrack, Madita Stirner, Christian Schmahl, and Maurizio Sicorello. Survey on open science practices in functional neuroimaging. bioRxiv, pages 2021.11.26.470115, November 2021.">Paret <em>et al.</em>, 2021</a>]</span>. These later challenges could be alleviated by a simplified overview of the open resources available. However, information required for implementing open science practices over the full research cycle is currently scattered among many different sources. Even experienced researchers in the topic often find it hard to navigate the ecosystem of community-developed tools and to make sustainable choices.</p>
+<div class="admonition-what-do-we-provide admonition">
+<p class="admonition-title">What do we provide</p>
+<p>This manuscript provides <strong>an integrated overview of community-developed resources critical to support open and reproducible neuroimaging</strong> throughout the entire research cycle and across different neuroimaging modalities (particularly MRI, MEG, EEG, and PET).</p>
+</div>
+<p>Most previous reviews on the topic have focused on the importance and benefits of open and reproducible science <span id="id16">[<a class="reference internal" href="#id250" title="Marcus R Munafò, Brian A Nosek, Dorothy V M Bishop, Katherine S Button, Christopher D Chambers, Nathalie Percie Du Sert, Uri Simonsohn, Eric Jan Wagenmakers, Jennifer J Ware, and John P A Ioannidis. A manifesto for reproducible science. Nature Human Behaviour, 1(1):1–9, 2017.">Munafò <em>et al.</em>, 2017</a>, <a class="reference internal" href="#id207" title="Brian A Nosek, Jeffrey R Spies, and Matt Motyl. Scientific utopia: II. restructuring incentives and practices to promote truth over publishability. Perspect. Psychol. Sci., 7(6):615–631, November 2012.">Nosek <em>et al.</em>, 2012</a>, <a class="reference internal" href="#id216" title="Russell A Poldrack, Chris I Baker, Joke Durnez, Krzysztof J Gorgolewski, Paul M Matthews, Marcus R Munafò, Thomas E Nichols, Jean Baptiste Poline, Edward Vul, and Tal Yarkoni. Scanning the horizon: towards transparent and reproducible neuroimaging research. Nat. Rev. Neurosci., 18(2):115–126, 2017.">Poldrack <em>et al.</em>, 2017</a>, <a class="reference internal" href="#id256" title="McKiernan, Bourne, Brown, Buck, Kenall, and others. &amp; spies, JR (2016). point of view: how open science helps researchers succeed. Elife, 2016.">McKiernan <em>et al.</em>, 2016</a>]</span>. Here, we instead focus on a detailed overview, which we believe is urgently needed to accelerate the wider adoption of open science tools and practices by the general research community. The goal is to increase scientific reproducibility and openness by making it easier for scientists to select the best instruments offered by open science at every step of their research workflow. We provide justification on why each of them implements good practices and information on how to access and how to integrate them in the research workflow.</p>
+<div class="admonition-what-do-we-not-provide admonition">
+<p class="admonition-title">What do we not provide</p>
+<p><strong>We do not recommend particular tools over others in this review, as the ideal tools may depend on many factors that vary between researchers.</strong> However, we can recommend points to consider when selecting tools. Typically we want to choose tools that integrate with tools and practices already established in the lab, have a steep learning curve, and a long benefit.</p>
+</div>
+<p>In order to increase the likelihood of tools being sustainable, they should be relatively mature, well maintained, and supported by an active community. Another indicator is whether the tools and practices are integrated in already established toolboxes or supported by one of the larger openscience organizations. If still multiple tools meet these criteria, then it might be advantageous to choose one that is used by peers and collaboration partners. When we recommend practices, we state the problems they are supposed to address.</p>
+<p>We also encourage the readers to join the development teams and leadership of those tools, becoming an active part of the open neuroimaging community. Contributions from individuals who are experiencing barriers to the uptake of specific practices are particularly encouraged, since they can help mitigate these barriers for the benefit of everyone.</p>
+<div class="admonition-resources-table admonition">
+<p class="admonition-title">Resources table</p>
+<p>To further guide the readers, the manuscript is accompanied by a detailed table containing links and pointers to the resources featured in the text of each section (see the <a class="reference internal" href="../09/table.html"><span class="doc std std-doc">resources table</span></a>).</p>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+References on this page<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="docutils container" id="id17">
+<dl class="citation">
+<dt class="label" id="id197"><span class="brackets"><a class="fn-backref" href="#id10">A1</a></span></dt>
+<dd><p class="card-text">Christopher Allen and David M A Mehler. Open science challenges, benefits and tips in early career and beyond. <em>PLoS Biology</em>, 17(5):e3000246, May 2019.</p>
+</dd>
+<dt class="label" id="id240"><span class="brackets"><a class="fn-backref" href="#id14">A2</a></span></dt>
+<dd><p class="card-text">John A Borghi and Ana E Van Gulick. Data management and sharing in neuroimaging: practices and perceptions of MRI researchers. <em>PLoS One</em>, 13(7):e0200562, July 2018.</p>
+</dd>
+<dt class="label" id="id190"><span class="brackets"><a class="fn-backref" href="#id6">A3</a></span></dt>
+<dd><p class="card-text">Rotem Botvinik-Nezer, Felix Holzmeister, Colin F Camerer, Anna Dreber, Juergen Huber, Magnus Johannesson, Michael Kirchler, Roni Iwanir, Jeanette A Mumford, R Alison Adcock, Paolo Avesani, Blazej M Baczkowski, Aahana Bajracharya, Leah Bakst, Sheryl Ball, Marco Barilari, Nadège Bault, Derek Beaton, Julia Beitner, Roland G Benoit, Ruud M W J Berkers, Jamil P Bhanji, Bharat B Biswal, Sebastian Bobadilla-Suarez, Tiago Bortolini, Katherine L Bottenhorn, Alexander Bowring, Senne Braem, Hayley R Brooks, Emily G Brudner, Cristian B Calderon, Julia A Camilleri, Jaime J Castrellon, Luca Cecchetti, Edna C Cieslik, Zachary J Cole, Olivier Collignon, Robert W Cox, William A Cunningham, Stefan Czoschke, Kamalaker Dadi, Charles P Davis, Alberto De Luca, Mauricio R Delgado, Lysia Demetriou, Jeffrey B Dennison, Xin Di, Erin W Dickie, Ekaterina Dobryakova, Claire L Donnat, Juergen Dukart, Niall W Duncan, Joke Durnez, Amr Eed, Simon B Eickhoff, Andrew Erhart, Laura Fontanesi, G Matthew Fricke, Shiguang Fu, Adriana Galván, Remi Gau, Sarah Genon, Tristan Glatard, Enrico Glerean, Jelle J Goeman, Sergej A E Golowin, Carlos González-García, Krzysztof J Gorgolewski, Cheryl L Grady, Mikella A Green, João F Guassi Moreira, Olivia Guest, Shabnam Hakimi, J Paul Hamilton, Roeland Hancock, Giacomo Handjaras, Bronson B Harry, Colin Hawco, Peer Herholz, Gabrielle Herman, Stephan Heunis, Felix Hoffstaedter, Jeremy Hogeveen, Susan Holmes, Chuan-Peng Hu, Scott A Huettel, Matthew E Hughes, Vittorio Iacovella, Alexandru D Iordan, Peder M Isager, Ayse I Isik, Andrew Jahn, Matthew R Johnson, Tom Johnstone, Michael J E Joseph, Anthony C Juliano, Joseph W Kable, Michalis Kassinopoulos, Cemal Koba, Xiang-Zhen Kong, Timothy R Koscik, Nuri Erkut Kucukboyaci, Brice A Kuhl, Sebastian Kupek, Angela R Laird, Claus Lamm, Robert Langner, Nina Lauharatanahirun, Hongmi Lee, Sangil Lee, Alexander Leemans, Andrea Leo, Elise Lesage, Flora Li, Monica Y C Li, Phui Cheng Lim, Evan N Lintz, Schuyler W Liphardt, Annabel B Losecaat Vermeer, Bradley C Love, Michael L Mack, Norberto Malpica, Theo Marins, Camille Maumet, Kelsey McDonald, Joseph T McGuire, Helena Melero, Adriana S Méndez Leal, Benjamin Meyer, Kristin N Meyer, Glad Mihai, Georgios D Mitsis, Jorge Moll, Dylan M Nielson, Gustav Nilsonne, Michael P Notter, Emanuele Olivetti, Adrian I Onicas, Paolo Papale, Kaustubh R Patil, Jonathan E Peelle, Alexandre Pérez, Doris Pischedda, Jean-Baptiste Poline, Yanina Prystauka, Shruti Ray, Patricia A Reuter-Lorenz, Richard C Reynolds, Emiliano Ricciardi, Jenny R Rieck, Anais M Rodriguez-Thompson, Anthony Romyn, Taylor Salo, Gregory R Samanez-Larkin, Emilio Sanz-Morales, Margaret L Schlichting, Douglas H Schultz, Qiang Shen, Margaret A Sheridan, Jennifer A Silvers, Kenny Skagerlund, Alec Smith, David V Smith, Peter Sokol-Hessner, Simon R Steinkamp, Sarah M Tashjian, Bertrand Thirion, John N Thorp, Gustav Tinghög, Loreen Tisdall, Steven H Tompson, Claudio Toro-Serey, Juan Jesus Torre Tresols, Leonardo Tozzi, Vuong Truong, Luca Turella, Anna E van 't Veer, Tom Verguts, Jean M Vettel, Sagana Vijayarajah, Khoi Vo, Matthew B Wall, Wouter D Weeda, Susanne Weis, David J White, David Wisniewski, Alba Xifra-Porxas, Emily A Yearling, Sangsuk Yoon, Rui Yuan, Kenneth S L Yuen, Lei Zhang, Xu Zhang, Joshua E Zosky, Thomas E Nichols, Russell A Poldrack, and Tom Schonberg. Variability in the analysis of a single neuroimaging dataset by many teams. <em>Nature</em>, 582(7810):84–88, June 2020.</p>
+</dd>
+<dt class="label" id="id73"><span class="brackets"><a class="fn-backref" href="#id5">A4</a></span></dt>
+<dd><p class="card-text">Colin F Camerer, Anna Dreber, Eskil Forsell, Teck-Hua Ho, Jürgen Huber, Magnus Johannesson, Michael Kirchler, Johan Almenberg, Adam Altmejd, Taizan Chan, Emma Heikensten, Felix Holzmeister, Taisuke Imai, Siri Isaksson, Gideon Nave, Thomas Pfeiffer, Michael Razen, and Hang Wu. Evaluating replicability of laboratory experiments in economics. <em>Science</em>, 351(6280):1433–1436, March 2016.</p>
+</dd>
+<dt class="label" id="id219"><span class="brackets"><a class="fn-backref" href="#id5">A5</a></span></dt>
+<dd><p class="card-text">Colin F Camerer, Anna Dreber, Felix Holzmeister, Teck-Hua Ho, Jürgen Huber, Magnus Johannesson, Michael Kirchler, Gideon Nave, Brian A Nosek, Thomas Pfeiffer, Adam Altmejd, Nick Buttrick, Taizan Chan, Yiling Chen, Eskil Forsell, Anup Gampa, Emma Heikensten, Lily Hummer, Taisuke Imai, Siri Isaksson, Dylan Manfredi, Julia Rose, Eric-Jan Wagenmakers, and Hang Wu. Evaluating the replicability of social science experiments in nature and science between 2010 and 2015. <em>Nature Human Behaviour</em>, 2(9):637–644, September 2018.</p>
+</dd>
+<dt class="label" id="id230"><span class="brackets"><a class="fn-backref" href="#id9">A6</a></span></dt>
+<dd><p class="card-text">Peter E Clayson, Andreas Keil, and Michael J Larson. Open science in human electrophysiology. <em>Int. J. Psychophysiol.</em>, 174:43–46, April 2022.</p>
+</dd>
+<dt class="label" id="id28"><span class="brackets"><a class="fn-backref" href="#id12">A7</a></span></dt>
+<dd><p class="card-text">Hans de Jonge, Maria Cruz, and Stephanie Holst. Funders need to credit open science. <em>Nature</em>, 599(7885):372, November 2021.</p>
+</dd>
+<dt class="label" id="id174"><span class="brackets"><a class="fn-backref" href="#id11">A8</a></span></dt>
+<dd><p class="card-text">Alea López de San Román. Open science in horizon europe. April 2021.</p>
+</dd>
+<dt class="label" id="id213"><span class="brackets"><a class="fn-backref" href="#id7">A9</a></span></dt>
+<dd><p class="card-text">Timothy M Errington, Alexandria Denis, Nicole Perfito, Elizabeth Iorns, and Brian A Nosek. Challenges for assessing replicability in preclinical cancer biology. <em>eLife</em>, 2021.</p>
+</dd>
+<dt class="label" id="id121"><span class="brackets"><a class="fn-backref" href="#id7">A10</a></span></dt>
+<dd><p class="card-text">Timothy M Errington, Maya Mathur, Courtney K Soderberg, Alexandria Denis, Nicole Perfito, Elizabeth Iorns, and Brian A Nosek. Investigating the replicability of preclinical cancer biology. <em>Elife</em>, December 2021.</p>
+</dd>
+<dt class="label" id="id89"><span class="brackets"><a class="fn-backref" href="#id9">A11</a></span></dt>
+<dd><p class="card-text">Krzysztof J Gorgolewski and Russell A Poldrack. A practical guide for improving transparency and reproducibility in neuroimaging research. <em>PLoS Biology</em>, 14(7):e1002506, July 2016.</p>
+</dd>
+<dt class="label" id="id235"><span class="brackets"><a class="fn-backref" href="#id10">A12</a></span></dt>
+<dd><p class="card-text">Laurence T Hunt. The life-changing magic of sharing your data. <em>Nat Hum Behav</em>, 3(4):312–315, April 2019.</p>
+</dd>
+<dt class="label" id="id105"><span class="brackets"><a class="fn-backref" href="#id8">A13</a></span></dt>
+<dd><p class="card-text">Matthew Hutson. Artificial intelligence faces reproducibility crisis. <em>Science</em>, 359(6377):725–726, February 2018.</p>
+</dd>
+<dt class="label" id="id237"><span class="brackets"><a class="fn-backref" href="#id13">A14</a></span></dt>
+<dd><p class="card-text">David N Kennedy, Sanu A Abraham, Julianna F Bates, Albert Crowley, Satrajit Ghosh, Tom Gillespie, Mathias Goncalves, Jeffrey S Grethe, Yaroslav O Halchenko, Michael Hanke, Christian Haselgrove, Steven M Hodge, Dorota Jarecka, Jakub Kaczmarzyk, David B Keator, Kyle Meyer, Maryann E Martone, Smruti Padhy, Jean-Baptiste Poline, Nina Preuss, Troy Sincomb, and Matt Travers. Everything matters: the ReproNim perspective on reproducible neuroimaging. <em>Front. Neuroinform.</em>, 13:1, February 2019.</p>
+</dd>
+<dt class="label" id="id260"><span class="brackets"><a class="fn-backref" href="#id4">A15</a></span></dt>
+<dd><p class="card-text">Richard A Klein, Michelangelo Vianello, Fred Hasselman, Byron G Adams, Reginald B Adams, Jr, Sinan Alper, Mark Aveyard, Jordan R Axt, Mayowa T Babalola, Štěpán Bahník, Rishtee Batra, Mihály Berkics, Michael J Bernstein, Daniel R Berry, Olga Bialobrzeska, Evans Dami Binan, Konrad Bocian, Mark J Brandt, Robert Busching, Anna Cabak Rédei, Huajian Cai, Fanny Cambier, Katarzyna Cantarero, Cheryl L Carmichael, Francisco Ceric, Jesse Chandler, Jen-Ho Chang, Armand Chatard, Eva E Chen, Winnee Cheong, David C Cicero, Sharon Coen, Jennifer A Coleman, Brian Collisson, Morgan A Conway, Katherine S Corker, Paul G Curran, Fiery Cushman, Zubairu K Dagona, Ilker Dalgar, Anna Dalla Rosa, William E Davis, Maaike de Bruijn, Leander De Schutter, Thierry Devos, Marieke de Vries, Canay Doğulu, Nerisa Dozo, Kristin Nicole Dukes, Yarrow Dunham, Kevin Durrheim, Charles R Ebersole, John E Edlund, Anja Eller, Alexander Scott English, Carolyn Finck, Natalia Frankowska, Miguel-Ángel Freyre, Mike Friedman, Elisa Maria Galliani, Joshua C Gandi, Tanuka Ghoshal, Steffen R Giessner, Tripat Gill, Timo Gnambs, Ángel Gómez, Roberto González, Jesse Graham, Jon E Grahe, Ivan Grahek, Eva G T Green, Kakul Hai, Matthew Haigh, Elizabeth L Haines, Michael P Hall, Marie E Heffernan, Joshua A Hicks, Petr Houdek, Jeffrey R Huntsinger, Ho Phi Huynh, Hans IJzerman, Yoel Inbar, Åse H Innes-Ker, William Jiménez-Leal, Melissa-Sue John, Jennifer A Joy-Gaba, Roza G Kamiloğlu, Heather Barry Kappes, Serdar Karabati, Haruna Karick, Victor N Keller, Anna Kende, Nicolas Kervyn, Goran Knežević, Carrie Kovacs, Lacy E Krueger, German Kurapov, Jamie Kurtz, Daniël Lakens, Ljiljana B Lazarević, Carmel A Levitan, Neil A Lewis, Jr, Samuel Lins, Nikolette P Lipsey, Joy E Losee, Esther Maassen, Angela T Maitner, Winfrida Malingumu, Robyn K Mallett, Satia A Marotta, Janko Međedović, Fernando Mena-Pacheco, Taciano L Milfont, Wendy L Morris, Sean C Murphy, Andriy Myachykov, Nick Neave, Koen Neijenhuijs, Anthony J Nelson, Félix Neto, Austin Lee Nichols, Aaron Ocampo, Susan L O'Donnell, Haruka Oikawa, Masanori Oikawa, Elsie Ong, Gábor Orosz, Malgorzata Osowiecka, Grant Packard, Rolando Pérez-Sánchez, Boban Petrović, Ronaldo Pilati, Brad Pinter, Lysandra Podesta, Gabrielle Pogge, Monique M H Pollmann, Abraham M Rutchick, Patricio Saavedra, Alexander K Saeri, Erika Salomon, Kathleen Schmidt, Felix D Schönbrodt, Maciej B Sekerdej, David Sirlopú, Jeanine L M Skorinko, Michael A Smith, Vanessa Smith-Castro, Karin C H J Smolders, Agata Sobkow, Walter Sowden, Philipp Spachtholz, Manini Srivastava, Troy G Steiner, Jeroen Stouten, Chris N H Street, Oskar K Sundfelt, Stephanie Szeto, Ewa Szumowska, Andrew C W Tang, Norbert Tanzer, Morgan J Tear, Jordan Theriault, Manuela Thomae, David Torres, Jakub Traczyk, Joshua M Tybur, Adrienn Ujhelyi, Robbie C M van Aert, Marcel A L M van Assen, Marije van der Hulst, Paul A M van Lange, Anna Elisabeth van 't Veer, Alejandro Vásquez- Echeverría, Leigh Ann Vaughn, Alexandra Vázquez, Luis Diego Vega, Catherine Verniers, Mark Verschoor, Ingrid P J Voermans, Marek A Vranka, Cheryl Welch, Aaron L Wichman, Lisa A Williams, Michael Wood, Julie A Woodzicka, Marta K Wronska, Liane Young, John M Zelenski, Zeng Zhijia, and Brian A Nosek. Many labs 2: investigating variation in replicability across samples and settings. <em>Advances in Methods and Practices in Psychological Science</em>, 1(4):443–490, December 2018.</p>
+</dd>
+<dt class="label" id="id238"><span class="brackets"><a class="fn-backref" href="#id6">A16</a></span></dt>
+<dd><p class="card-text"><strong>missing note in Li2021-pk</strong></p>
+</dd>
+<dt class="label" id="id145"><span class="brackets"><a class="fn-backref" href="#id10">A17</a></span></dt>
+<dd><p class="card-text">Florian Markowetz. Five selfish reasons to work reproducibly. <em>Genome Biol.</em>, 16:274, December 2015.</p>
+</dd>
+<dt class="label" id="id126"><span class="brackets"><a class="fn-backref" href="#id10">A18</a></span></dt>
+<dd><p class="card-text">Erin C McKiernan, Philip E Bourne, C Titus Brown, Stuart Buck, Amye Kenall, Jennifer Lin, Damon McDougall, Brian A Nosek, Karthik Ram, Courtney K Soderberg, Jeffrey R Spies, Kaitlin Thaney, Andrew Updegrove, Kara H Woo, and Tal Yarkoni. How open science helps researchers succeed. <em>eLife</em>, July 2016.</p>
+</dd>
+<dt class="label" id="id250"><span class="brackets">A19</span><span class="fn-backref">(<a href="#id6">1</a>,<a href="#id16">2</a>)</span></dt>
+<dd><p class="card-text">Marcus R Munafò, Brian A Nosek, Dorothy V M Bishop, Katherine S Button, Christopher D Chambers, Nathalie Percie Du Sert, Uri Simonsohn, Eric Jan Wagenmakers, Jennifer J Ware, and John P A Ioannidis. A manifesto for reproducible science. <em>Nature Human Behaviour</em>, 1(1):1–9, 2017.</p>
+</dd>
+<dt class="label" id="id203"><span class="brackets"><a class="fn-backref" href="#id8">A20</a></span></dt>
+<dd><p class="card-text">Silas Boye Nissen, Tali Magidson, Kevin Gross, and Carl T Bergstrom. Publication bias and the canonization of false facts. <em>eLife</em>, December 2016.</p>
+</dd>
+<dt class="label" id="id210"><span class="brackets"><a class="fn-backref" href="#id9">A21</a></span></dt>
+<dd><p class="card-text">Brian A Nosek, Emorie D Beck, Lorne Campbell, Jessica K Flake, Tom E Hardwicke, David T Mellor, Anna E van 't Veer, and Simine Vazire. Preregistration is hard, and worthwhile. <em>Trends in Cognitive Sciences</em>, 23(10):815–818, October 2019.</p>
+</dd>
+<dt class="label" id="id147"><span class="brackets"><a class="fn-backref" href="#id10">A22</a></span></dt>
+<dd><p class="card-text">Brian A Nosek, Tom E Hardwicke, Hannah Moshontz, Aurélien Allard, Katherine S Corker, Anna Dreber, Fiona Fidler, Joe Hilgard, Melissa Kline Struhl, Michèle B Nuijten, Julia M Rohrer, Felipe Romero, Anne M Scheel, Laura D Scherer, Felix D Schönbrodt, and Simine Vazire. Replicability, robustness, and reproducibility in psychological science. <em>Annu. Rev. Psychol.</em>, 73:719–748, January 2022.</p>
+</dd>
+<dt class="label" id="id207"><span class="brackets">A23</span><span class="fn-backref">(<a href="#id9">1</a>,<a href="#id16">2</a>)</span></dt>
+<dd><p class="card-text">Brian A Nosek, Jeffrey R Spies, and Matt Motyl. Scientific utopia: II. restructuring incentives and practices to promote truth over publishability. <em>Perspect. Psychol. Sci.</em>, 7(6):615–631, November 2012.</p>
+</dd>
+<dt class="label" id="id229"><span class="brackets">A24</span><span class="fn-backref">(<a href="#id3">1</a>,<a href="#id15">2</a>)</span></dt>
+<dd><p class="card-text">Christian Paret, Nike Unverhau, Franklin Feingold, Russell A Poldrack, Madita Stirner, Christian Schmahl, and Maurizio Sicorello. Survey on open science practices in functional neuroimaging. <em>bioRxiv</em>, pages 2021.11.26.470115, November 2021.</p>
+</dd>
+<dt class="label" id="id216"><span class="brackets">A25</span><span class="fn-backref">(<a href="#id9">1</a>,<a href="#id16">2</a>)</span></dt>
+<dd><p class="card-text">Russell A Poldrack, Chris I Baker, Joke Durnez, Krzysztof J Gorgolewski, Paul M Matthews, Marcus R Munafò, Thomas E Nichols, Jean Baptiste Poline, Edward Vul, and Tal Yarkoni. Scanning the horizon: towards transparent and reproducible neuroimaging research. <em>Nat. Rev. Neurosci.</em>, 18(2):115–126, 2017.</p>
+</dd>
+<dt class="label" id="id99"><span class="brackets"><a class="fn-backref" href="#id9">A26</a></span></dt>
+<dd><p class="card-text">Russell A Poldrack, Franklin Feingold, Michael J Frank, Padraig Gleeson, Gilles de Hollander, Quentin Jm Huys, Bradley C Love, Christopher J Markiewicz, Rosalyn Moran, Petra Ritter, Timothy T Rogers, Brandon M Turner, Tal Yarkoni, Ming Zhan, and Jonathan D Cohen. The importance of standards for sharing of computational models and data. <em>Computational Brain &amp; Behavior</em>, 2(3-4):229–232, December 2019.</p>
+</dd>
+<dt class="label" id="id130"><span class="brackets"><a class="fn-backref" href="#id9">A27</a></span></dt>
+<dd><p class="card-text">Russell A Poldrack, Grace Huckins, and Gael Varoquaux. Establishment of best practices for evidence for prediction: a review. <em>JAMA Psychiatry</em>, 77(5):534–540, May 2020.</p>
+</dd>
+<dt class="label" id="id209"><span class="brackets"><a class="fn-backref" href="#id2">A28</a></span></dt>
+<dd><p class="card-text">Russell A Poldrack, Kirstie Whitaker, and David Kennedy. Introduction to the special issue on reproducibility in neuroimaging. <em>Neuroimage</em>, 218:116357, September 2020.</p>
+</dd>
+<dt class="label" id="id163"><span class="brackets"><a class="fn-backref" href="#id8">A29</a></span></dt>
+<dd><p class="card-text">Marta Serra-Garcia and Uri Gneezy. Nonreplicable publications are cited more than replicable ones. <em>Science Advances</em>, May 2021.</p>
+</dd>
+<dt class="label" id="id122"><span class="brackets"><a class="fn-backref" href="#id9">A30</a></span></dt>
+<dd><p class="card-text">Mark D Wilkinson, Michel Dumontier, I Jsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, Jan-Willem Boiten, Luiz Bonino da Silva Santos, Philip E Bourne, Jildau Bouwman, Anthony J Brookes, Tim Clark, Mercè Crosas, Ingrid Dillo, Olivier Dumon, Scott Edmunds, Chris T Evelo, Richard Finkers, Alejandra Gonzalez-Beltran, Alasdair J G Gray, Paul Groth, Carole Goble, Jeffrey S Grethe, Jaap Heringa, Peter A C 't Hoen, Rob Hooft, Tobias Kuhn, Ruben Kok, Joost Kok, Scott J Lusher, Maryann E Martone, Albert Mons, Abel L Packer, Bengt Persson, Philippe Rocca-Serra, Marco Roos, Rene van Schaik, Susanna-Assunta Sansone, Erik Schultes, Thierry Sengstag, Ted Slater, George Strawn, Morris A Swertz, Mark Thompson, Johan van der Lei, Erik van Mulligen, Jan Velterop, Andra Waagmeester, Peter Wittenburg, Katherine Wolstencroft, Jun Zhao, and Barend Mons. The FAIR guiding principles for scientific data management and stewardship. <em>Scientific Data</em>, 3:160018, March 2016.</p>
+</dd>
+<dt class="label" id="id256"><span class="brackets"><a class="fn-backref" href="#id16">A31</a></span></dt>
+<dd><p class="card-text">McKiernan, Bourne, Brown, Buck, Kenall, and others. &amp; spies, JR (2016). point of view: how open science helps researchers succeed. <em>Elife</em>, 2016.</p>
+</dd>
+<dt class="label" id="id201"><span class="brackets"><a class="fn-backref" href="#id4">A32</a></span></dt>
+<dd><p class="card-text">Open Science Collaboration. PSYCHOLOGY. estimating the reproducibility of psychological science. <em>Science</em>, 349(6251):aac4716, August 2015.</p>
+</dd>
+<dt class="label" id="id21"><span class="brackets"><a class="fn-backref" href="#id1">A33</a></span></dt>
+<dd><p class="card-text">The Turing Way Community, Becky Arnold, Louise Bowler, Sarah Gibson, Patricia Herterich, Rosie Higman, Anna Krystalli, Alexander Morley, Martin O'Reilly, and Kirstie Whitaker. The turing way: a handbook for reproducible data science. 2019.</p>
+</dd>
+</dl>
+</div>
+</div>
+</details></div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./01"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../index.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Abstract</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../02/ipe.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Study inception, planning, and ethics</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Guiomar Niso, Rotem Botvinik-Nezer, Stefan Appelhoff, Alejandro De La Vega, Oscar Esteban, Joset A. Etzel, Karolina Finc, Melanie Ganz, Rémi Gau, Yaroslav O. Halchenko, Peer Herholz, Agah Karakuzu, David B. Keator, Christopher J. Markiewicz, Camille Maumet, Cyril R. Pernet, Franco Pestilli, Nazek Queder, Tina Schmitt, Weronika Sójka, Adina S. Wagner, Kirstie J. Whitaker, Jochem W. Rieger<br/>
+    
+        &copy; Copyright 2022.<br/>
+      <div class="extra_footer">
+        <img href="http://creativecommons.org/publicdomain/zero/1.0/" src="https://licensebuttons.net/l/zero/1.0/80x15.png" alt="CC0 licence">
+      </div>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

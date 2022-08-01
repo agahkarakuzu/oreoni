@@ -1,0 +1,113 @@
+.admonition-issue {
+    border-left-color: purple;
+}
+.admonition-issue .admonition-title {
+    background-color: rgba(197, 0, 246, 0.1);
+    color: black;
+}
+.admonition-issue .admonition-title:before {
+    color: purple;
+    content: '\f14e';
+}
+
+.admonition-highlights {
+    border-left-color: goldenrod;
+}
+.admonition-highlights .admonition-title {
+    background-color: rgba(255, 217, 0, 0.746);
+    color: black;
+}
+.admonition-highlights .admonition-title:before {
+    color: orange;
+    content: '\f0a3';
+}
+
+.admonition-what-do-we-provide {
+    border-left-color: rgba(38, 128, 0,1);
+}
+.admonition-what-do-we-provide .admonition-title {
+    background-color: rgba(38, 128, 0,0.3);
+    color: black;
+}
+.admonition-what-do-we-provide .admonition-title:before {
+    color: rgb(49, 152, 9);
+    content: '\f14a';
+}
+.admonition-what-do-we-provide .admonition-title:after {
+    color: black;
+    content: '?';
+}
+
+.admonition-what-do-we-not-provide {
+    border-left-color: rgb(128, 0, 0);
+}
+.admonition-what-do-we-not-provide .admonition-title {
+    background-color: rgba(128, 0, 0,0.2);
+    color: black;
+}
+.admonition-what-do-we-not-provide .admonition-title:before {
+    color: red;
+    content: '\f146';
+}
+.admonition-what-do-we-not-provide .admonition-title:after {
+    color: black;
+    content: '?';
+}
+
+.admonition-resources-table {
+    border-left-color: rgb(0, 204, 239);
+}
+.admonition-resources-table .admonition-title {
+    background-color: rgba(0, 204, 239,0.3);
+    color: black;
+}
+.admonition-resources-table .admonition-title:before {
+    color: rgb(15, 62, 191);
+    content: '\f0ce';
+}
+
+.dropdown-issue {
+    border-left-color: purple;
+}
+.dropdown-issue .dropdown-title {
+    background-color: rgba(197, 0, 246, 0.1);
+    color: black;
+}
+.dropdown-issue .dropdown-title:before {
+    color: purple;
+    content: '\f14e';
+}
+
+.p{
+    text-align: justify!important;
+}
+
+.bg-ch2{
+    background-color: #6aa8509e;
+    font-size: 1.5em;
+    color: black;
+}
+
+.bg-ch3{
+    background-color: #F1C232;
+    font-size: 1.5em;
+    color: black;
+}
+
+.bg-ch4{
+    background-color: #E69138;
+    font-size: 1.5em;
+    color: black;
+}
+
+.bg-ch5{
+    background-color: #A64D79;
+    font-size: 1.5em;
+    color: lavenderblush;
+}
+
+.bg-ch6{
+    background-color: #3C78D8;
+    font-size: 1.5em;
+    color: aliceblue;
+}

@@ -1,0 +1,420 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data acquisition &#8212; Open and reproducible neuroimaging: from study inception to publication</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Research data management" href="../04/data.html" />
+    <link rel="prev" title="Study inception, planning, and ethics" href="../02/ipe.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/icon.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Open and reproducible neuroimaging: from study inception to publication</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   Abstract
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Overview
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01/introduction.html">
+   Introduction
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Design
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../02/ipe.html">
+   Study inception, planning, and ethics
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Acquisition
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Data acquisition
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Data
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../04/data.html">
+   Research data management
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Processing
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../05/proc.html">
+   Data processing and analysis
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Sharing
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../06/dist.html">
+   Research disemmination
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Conclusion
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../07/conclusion.html">
+   Conclusions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contributions
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../08/contributions.html">
+   Contributions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Resources
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../09/table.html">
+   Resources
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/03/acq.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Data acquisition</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="data-acquisition">
+<h1>Data acquisition<a class="headerlink" href="#data-acquisition" title="Permalink to this headline">¶</a></h1>
+<div class="admonition-issue admonition">
+<p class="admonition-title">Issue</p>
+<p>Data acquisition is largely carried out with vendored systems. Manufacturers typically keep their software and hardware closed or semi-open at most. As a result, researchers often receive highly processed (e.g., reconstructed) data as ‘raw’ data from the devices. The lack of transparency in the acquisition details and downstream proprietary processing prevents end-to-end reproducible neuroimaging workflows. Reproducibility is endangered, for instance, by heterogeneity in data formats, definition of critical experimental parameters, and technological differences that are translated into the data as spurious, non-biological differences between acquisition devices.</p>
+</div>
+<div class="admonition-what-do-we-provide admonition">
+<p class="admonition-title">What do we provide</p>
+<p>These shortcomings of mostly closed solutions have triggered a growing interest in open-source acquisition hardware and software <span id="id1">[<a class="reference internal" href="#id248" title="Lukas Winter, H Haopeng, Antonia Barghoorn, Werner Hoffmann, Stefan Hetzer, Simone Winkler, and Others. Open source imaging initiative. Proc. of. the International Society for Magnetic Resonance in Medicine (ISMRM), 2016.">Winter <em>et al.</em>, 2016</a>]</span>. <strong>Here, we provide a brief review of these developments and accompanying solutions aimed at fostering open and collaborative acquisition method development across imaging modalities.</strong></p>
+</div>
+<div class="figure align-default" id="fig2">
+<img alt="../_images/fig2.png" src="../_images/fig2.png" />
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Data acquisition <a class="footnote-reference brackets" href="#footnote2" id="id2">1</a>.</span><a class="headerlink" href="#fig2" title="Permalink to this image">¶</a></p>
+</div>
+<details class="sphinx-bs dropdown card mb-3 fade-in">
+<summary class="summary-title card-header bg-ch3 font-weight-bold">
+<span class="fa fa-brain"></span> Brain data acquisition<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">A common approach advocated by MRI researchers is establishing consensus protocols to standardize data acquisition. One of the flagship applications of this strategy is the Human Connectome Project (HCP) protocol, which achieved this within the confines of a single vendor (Smith et al. 2013). The HCP acquisition sequences and reconstruction software are compiled for different MRI scanner versions of a single vendor, openly distributed and maintained for fMRI applications (Uğurbil et al. 2013). However, it is generally difficult to achieve good inter vendor agreement using off the shelf software even for widely used protocols, such as apparent diffusion coefficient and longitudinal relaxation time (Sasaki et al. 2008; Lee et al. 2019). In addition, not all software options are available from all vendors (for example, compressed sensing (Lustig et al. 2008) and frequency-domain based parallel imaging methods (Breuer et al. 2005; Griswold et al. 2002)). Moreover, even seemingly simple image enhancement protocols, such as image inhomogeneity corrections, are often scarcely documented and validated but can affect inferences drawn from an experiment (Schmitt and Rieger 2021; e.g., Jellús and Kannengiesser 2014). Users typically have access to key parameters of pulse sequences, which are at the center of data acquisition. The exact pulse sequence descriptions are vendor-specific and may even change between software upgrades of a single vendor. This makes it difficult to evaluate multi-center validity of new acquisition methods or to acquire longitudinal data with confidence.
+Fortunately, in the last decade, several vendor-neutral data acquisition pulse sequences and reconstruction frameworks have been developed to mitigate this problem: Pulseq (Layton et al. 2017), PyPulseq (Ravi, Geethanath, and Vaughan 2019), GammaStar (Cordes et al. 2020), TOPPE (Nielsen and Noll 2018), ODIN (Jochimsen and von Mengershausen 2004), and SequenceTree (Magland et al. 2016) (see Table S1). Although these tools vary in vendor compatibility and the flexibility of their acquisition runtime, they enable vendor-neutral deployment of pulse sequences with transparent access to all the details needed. Nevertheless, vendor-neutral raw data (k-space, i.e. the 2D or 3D Fourier space representation of the image) collection is half the battle.
+To complete the puzzle of MR image acquisition, interoperable and open-source reconstruction frameworks are essential. Thanks to ISMRM-RD (Inati et al. 2017), a k-space data standard, community-developed reconstruction tools can have a unified way to run advanced reconstruction algorithms against undersampled raw data (Maier et al. 2021). Some of these tools include Gadgetron (Hansen and Sørensen 2013), BART (Uecker et al. 2015), MRIReco.Jl (Knopp and Grosser 2021) (see Table S1 for further tools and details). By streamlining these acquisition and reconstruction tools using data standards at multiple levels (Karakuzu, Appelhoff, et al. 2021; Inati et al. 2017) on a data-driven and container-mediated workflow engine (Di Tommaso et al. 2017), end-to-end reproducible MRI workflows can be developed. A recent study has shown that this approach can significantly reduce inter-vendor variability of quantitative MRI measurements <span id="id3">[<a class="reference internal" href="#id59" title="Agah Karakuzu, Mathieu Boudreau, Tanguy Duval, Tommy Boshkovski, Ilana Leppert, Jean-François Cabana, Ian Gagnon, Pascale Beliveau, G Pike, Julien Cohen-Adad, and Nikola Stikov. qMRLab: quantitative MRI analysis, under one umbrella. Journal of Open Source Software, 5(53):2343, September 2020.">Karakuzu <em>et al.</em>, 2020</a>]</span> (Karakuzu, Biswas, et al. 2021; Karakuzu et al. 2020). Given the growing open-source MRI acquisition ecosystem, a variety of end-to-end workflows are possible. Therefore, community-driven validation frameworks have a key importance for interoperable solutions (Tong et al. 2021). Facilitated by these standards, effective and open communication methods development sets the future direction for reproducible MRI research (Stikov, Trzasko, and Bernstein 2019).</p>
+<p class="card-text">In PET, the variety between different scanners is even larger than in MRI. An overview over different scanner types based on their usage for a specific radiotracer targeting the serotonin transporter, namely [11C]DASB, is given in (Nørgaard, Ganz, et al. 2019). Different PET scanners export images in slightly different data formats with little overlap in the Digital Imaging and Communications in Medicine (DICOM) PET specific tags. As with MRI, reconstruction is vendor/machine specific but open source solutions to image reconstruction are being developed, for instance the OMEGA toolbox (Wettenhovi, Vauhkonen, and Kolehmainen 2021). Data acquisition for PET is further complicated by the use of different PET tracers, injection methods, scan duration and scan framing or injected radioactivity dose.</p>
+<p class="card-text">In MEG and EEG, the problem of standardized data acquisition starts even earlier: unlike the common DICOM data format used across vendors in MRI or PET, MEG and EEG manufacturers do not use a common data format, and format specifications are rarely made public. More importantly, equipment implementation significantly differs between vendors, for example with respect to MEG sensor types,(software noise suppression techniques, and EEG amplifiers and electrodes. There have been some efforts on developing open versions of some proprietary tools, for example, the Maxwell filtering for signal space separation by the MNE-python team (Gramfort et al. 2014). Additionally, initiatives, such as the OpenBCI, offer open EEG hardware and tools for biosensing and brain computer interfacing through continuous community driven development. As we have mentioned, very little is known on how the variability of data acquisition parameters affect downstream comparability of results. The EEGManyLabs project (Pavlov et al. 2021) will provide a comprehensive dataset in this regard, as many labs with different equipment try to replicate the same studies.</p>
+<p class="card-text">Given the large variations across different vendors for all neuroimaging modalities, which often cannot be overcome, it is crucial to report all data acquisition parameters in a comprehensive and standardized manner to make potential differences in data acquisition across studies and sites transparent (for a discussion of reporting guidelines see section 6.4).</p>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3 fade-in">
+<summary class="summary-title card-header bg-ch3 font-weight-bold">
+<span class="fa fa-bolt"></span> Stimulus presentation and behavior<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Several actively maintained programs for stimulus presentation and response logging are available. Open source software includes PsychoPy (Peirce et al. 2019) in Python and Psychtoolbox (Brainard 1997; Pelli 1997; Kleiner, Brainard, and Pelli 2007) in MATLAB. Both have many users, making it possible to get assistance and perhaps find an already-implemented task protocol (e.g., on Pavlovia for Psychopy). Modality specific resources also exist, for instance the ERP CORE (Compendium of Open Resources and Experiments; Kappenman et al. 2021) openly provides optimized paradigms for several widely used ERP components, along with scripts, data processing pipelines, and sample data.</p>
+<p class="card-text">Using open stimuli and presentation software generally increases the likelihood that other researchers can perform replications, because the stimuli and software will be accessible to them. Although desirable, it is not always possible to use fully open stimuli, particularly in the case of commercial movies, audio plays, and image databases. The license of stimuli one wishes to use should always be checked, as should the license one chooses to attach to a dataset when sharing. Stimuli, presentation scripts, behavioral tests and related material should be shared whenever possible (see DuPre, Hanke, and Poline 2019 for a list of datasets sharing naturalistic stimuli and section 6). To facilitate stimuli feature analysis and exact reproducibility of the experimental paradigms, such projects as ReproNim’s ReproStim (Connolly and Halchenko 2022) could automate recording and archival of the delivered to audio-video stimulation. When specific stimuli or material can not be released, they should be described as unambiguously as possible and, if possible, providing the source, such as identification number (e.g., a GTIN), and scripts to (re)produce used stimuli from the commercial media.</p>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+References on this page<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="docutils container" id="id4">
+<dl class="citation">
+<dt class="label" id="id59"><span class="brackets"><a class="fn-backref" href="#id3">C1</a></span></dt>
+<dd><p class="card-text">Agah Karakuzu, Mathieu Boudreau, Tanguy Duval, Tommy Boshkovski, Ilana Leppert, Jean-François Cabana, Ian Gagnon, Pascale Beliveau, G Pike, Julien Cohen-Adad, and Nikola Stikov. qMRLab: quantitative MRI analysis, under one umbrella. <em>Journal of Open Source Software</em>, 5(53):2343, September 2020.</p>
+</dd>
+<dt class="label" id="id248"><span class="brackets"><a class="fn-backref" href="#id1">C2</a></span></dt>
+<dd><p class="card-text">Lukas Winter, H Haopeng, Antonia Barghoorn, Werner Hoffmann, Stefan Hetzer, Simone Winkler, and Others. Open source imaging initiative. <em>Proc. of. the International Society for Magnetic Resonance in Medicine (ISMRM)</em>, 2016.</p>
+</dd>
+</dl>
+</div>
+</div>
+</details><hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="footnote2"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
+<dd><p>Sources: Icons from the Noun Project: Brain by parkjisun; Computer Screen by Icon Solid (adapted with a star); Logos: used with permission by the copyright holders.</p>
+</dd>
+</dl>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./03"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../02/ipe.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Study inception, planning, and ethics</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../04/data.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Research data management</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Guiomar Niso, Rotem Botvinik-Nezer, Stefan Appelhoff, Alejandro De La Vega, Oscar Esteban, Joset A. Etzel, Karolina Finc, Melanie Ganz, Rémi Gau, Yaroslav O. Halchenko, Peer Herholz, Agah Karakuzu, David B. Keator, Christopher J. Markiewicz, Camille Maumet, Cyril R. Pernet, Franco Pestilli, Nazek Queder, Tina Schmitt, Weronika Sójka, Adina S. Wagner, Kirstie J. Whitaker, Jochem W. Rieger<br/>
+    
+        &copy; Copyright 2022.<br/>
+      <div class="extra_footer">
+        <img href="http://creativecommons.org/publicdomain/zero/1.0/" src="https://licensebuttons.net/l/zero/1.0/80x15.png" alt="CC0 licence">
+      </div>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
