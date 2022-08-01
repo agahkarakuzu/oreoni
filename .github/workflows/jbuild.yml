@@ -18,21 +18,8 @@ jobs:
       with:
         python-version: 3.9
 
-    - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
-        wget https://github.com/executablebooks/jupyter-book/archive/refs/tags/v0.13.zip -O jupyter-book.zip
-        unzip jupyter-book.zip
-        cd jupyter-book-0.13
-        python -m build
-        cd dist
-        pip install jupyter-book-0.13.0.tar.gz
-
-    # Build the book
-    - name: Build the book
-      run: |
-        cd $GITHUB_WORKSPACE
-        jupyter-book build ./content
+    - name: Install dependencies && build the book
+      run: make all
 
     # Push the book's HTML to github-pages
     - name: GitHub Pages action
