@@ -1,4 +1,4 @@
-jupyter-book==0.12.2
-
+jupyter-book==0.12.1
+sphinxcontrib-bibtex==2.4.2
 # for development
 pre-commit
