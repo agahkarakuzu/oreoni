@@ -47,7 +47,7 @@ TOPPE,https://www.opensourceimaging.org/project/toppe-rapid-mr-pulse-sequence-pr
 ODIN,http://od1n.sourceforge.net/,  C++ software framework to develop and simulate magnetic resonance sequences,MRI,Yes,https://doi.org/10.1016/j.jmr.2004.05.021
 SequenceTree,https://github.com/magland/sequencetree4,  Pulse sequence programming in a dynamic visual environment,MRI,Yes,
 ISMSM Raw data format,https://ismrmrd.github.io/apidocs/1.4.2/,  Standard for MRI raw datasets,MRI,Yes,https://doi.org/10.1002/mrm.26089
-Gadgetron,http://gadgetron.github.io/,  Open source framework for medical image reconstruction,MRI,Yes,https://doi.org/10.1002/mrm.24389  https://doi.org/10.1002/mrm.25213 
+Gadgetron,http://gadgetron.github.io/,  Open source framework for medical image reconstruction,MRI,Yes,https://doi.org/10.1002/mrm.24389  https://doi.org/10.1002/mrm.25213
 BART,https://mrirecon.github.io/bart/,  Open source image-reconstruction framework for computational MRI,MRI,Yes,https://doi.org/10.5281/zenodo.4570601
 MRIReco.jl,https://github.com/MagneticResonanceImaging/MRIReco.jl,  MRI reconstruction framework,MRI,Yes,https://doi.org/10.48550/arXiv.2101.12624
 Vendor-neutral sequences (VENUS),https://github.com/qmrlab/venus,  Open-source pulse sequences integrated with qMRLab for reproducible quantitative imaging,MRI,No,

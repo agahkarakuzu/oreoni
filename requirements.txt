@@ -1,0 +1,4 @@
+jupyter-book==0.12.2
+
+# for development
+pre-commit

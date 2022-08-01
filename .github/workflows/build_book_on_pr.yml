@@ -1,0 +1,31 @@
+name: build-book
+
+# run on pushes and pull requests to main
+on:
+  pull_request:
+    branches:
+      - main
+
+# This job installs dependencies, build the book, and pushes it to `gh-pages`
+
+jobs:
+  build-book:
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        python_version: ["3.10"]
+      fail-fast: false  # Don't cancel all jobs if one fails
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+    - name: Checkout-repository
+      uses: actions/checkout@v3
+
+    - name: Setup Python ${{ matrix.python_version }}
+      uses: actions/setup-python@v3
+      with:
+        python-version: ${{ matrix.python_version }}
+
+    - name: Install dependencies && build the book
+      run: make all
