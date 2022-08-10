@@ -5,3 +5,5 @@ _build
 # python virtual environment
 venv
 env
+
+.ipynb_checkpoints
