@@ -4,7 +4,10 @@
 
 Open and REprOducible NeuroImaging: from study inception to publication | Jupyter Book
 
-See out [contributing document](./CONTRIBUTING.md) to see how to build the book locally.
+If you want to add a resource to our resource list, please use [our form](https://github.com/agahkarakuzu/oreoni/issues/new?assignees=&labels=&template=feature_request.yml&title=%5BENH%5D+).
+<!-- TODO update URL if the repo moves -->
+
+See our [contributing document](./CONTRIBUTING.md) to see how to build the book locally.
 
 ---
 
