@@ -1,5 +1,7 @@
 .DS_Store
 
+*.log
+
 _build
 
 # python virtual environment
